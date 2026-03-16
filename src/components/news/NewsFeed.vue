@@ -54,14 +54,45 @@
       </p>
     </div>
 
-    <!-- News cards -->
+    <!-- News cards with pinned section -->
     <template v-else>
-      <div class="space-y-3">
-        <NewsCard
-          v-for="article in articles"
-          :key="article.id"
-          :article="article"
-        />
+      <!-- Pinned headlines section -->
+      <div v-if="pinnedArticles.length > 0">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+            24h Headlines
+          </span>
+          <span class="text-xs text-gray-400 dark:text-gray-500">
+            Top {{ pinnedArticles.length }}
+          </span>
+        </div>
+        <div class="space-y-3 mb-6">
+          <NewsCard
+            v-for="article in pinnedArticles"
+            :key="article.id"
+            :article="article"
+            pinned
+          />
+        </div>
+      </div>
+
+      <!-- Rest of articles -->
+      <div v-if="otherArticles.length > 0">
+        <div v-if="pinnedArticles.length > 0" class="flex items-center gap-3 mb-3">
+          <div class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></div>
+          <span class="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">
+            更多新闻
+          </span>
+          <div class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></div>
+        </div>
+        <div class="space-y-3">
+          <NewsCard
+            v-for="article in otherArticles"
+            :key="article.id"
+            :article="article"
+          />
+        </div>
       </div>
     </template>
   </div>
@@ -74,4 +105,6 @@ import NewsCard from './NewsCard.vue'
 
 const store = useNewsStore()
 const articles = computed(() => store.filteredArticles)
+const pinnedArticles = computed(() => articles.value.filter(a => a._pinned))
+const otherArticles = computed(() => articles.value.filter(a => !a._pinned))
 </script>

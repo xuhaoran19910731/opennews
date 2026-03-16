@@ -1,59 +1,100 @@
 /**
  * 新闻重要性评分算法
  *
- * 综合分 = 来源权威分 × 0.3 + 关键词分 × 0.3 + 时效分 × 0.2 + 热度分 × 0.2
+ * 综合分 = 来源权威分 × 0.2 + 关键词分 × 0.2 + 时效分 × 0.4 + 热度分 × 0.2
+ *
+ * 时效性权重从 0.2 提升至 0.4，确保最新新闻获得更高排名
+ * 24小时内的新闻额外获得置顶加分
  *
  * 最终 score 范围 0–10，level 1–5，score > 9 为 Breaking News
  */
 
 // ─────────────────────────────────────────
-// 关键词权重配置
+// 关键词权重配置（多语言）
 // ─────────────────────────────────────────
 
-/** 超高权重词（×2.0） */
+/** 超高权重词（×2.0）— 覆盖英/中/德/法/俄/阿/西/日 */
 const ULTRA_HIGH_KEYWORDS = [
   // 英文
   'war', 'nuclear', 'nuclear attack', 'ww3', 'world war',
   'election', 'election result', 'presidential election',
-  'central bank', 'federal reserve', 'fed rate', 'interest rate hike',
+  'central bank', 'federal reserve', 'fed rate', 'interest rate',
   'gdp', 'recession', 'financial crisis', 'stock market crash',
   'artificial intelligence', 'ai breakthrough',
   'pandemic', 'outbreak', 'epidemic', 'virus',
-  'coup', 'assassination', 'terrorist attack',
-  'ceasefire', 'peace deal', 'war crime',
+  'coup', 'assassination', 'terrorist attack', 'terrorism',
+  'ceasefire', 'peace deal', 'war crime', 'invasion',
   // 中文
-  '战争', '核战争', '核攻击', '世界大战',
+  '战争', '核战争', '核攻击', '世界大战', '入侵',
   '大选', '总统选举', '选举结果',
-  '央行', '美联储', '利率',
+  '央行', '美联储', '利率', '加息', '降息',
   'GDP', '经济衰退', '金融危机', '股市崩溃',
-  '人工智能突破', '疫情', '爆发', '病毒',
+  '人工智能', '疫情', '爆发', '病毒',
   '政变', '暗杀', '恐袭', '停火', '和平协议', '战争罪行',
+  // 德语
+  'Krieg', 'Wahl', 'Bundestagswahl', 'Zentralbank', 'Rezession',
+  'Finanzkrise', 'Atomangriff', 'Terroranschlag', 'Putsch',
+  'Waffenstillstand', 'Pandemie', 'Staatsstreich', 'Invasion',
+  // 法语
+  'guerre', 'élection', 'présidentielle', 'banque centrale',
+  'récession', 'crise financière', 'attentat', 'terrorisme',
+  'cessez-le-feu', 'pandémie', 'coup d\'état', 'invasion',
+  // 俄语
+  'война', 'выборы', 'центральный банк', 'рецессия',
+  'финансовый кризис', 'теракт', 'вторжение', 'пандемия',
+  'перемирие', 'переворот',
+  // 阿拉伯语
+  'حرب', 'انتخابات', 'أزمة مالية', 'هجوم', 'غزو', 'وباء',
+  'انقلاب', 'وقف إطلاق النار', 'إرهاب',
+  // 西班牙语
+  'guerra', 'elección', 'banco central', 'recesión',
+  'crisis financiera', 'atentado', 'terrorismo', 'invasión',
+  'pandemia', 'golpe de estado',
+  // 日语
+  '戦争', '選挙', '中央銀行', '景気後退', '金融危機',
+  'テロ', '侵攻', 'パンデミック',
 ];
 
-/** 高权重词（×1.5） */
+/** 高权重词（×1.5）— 多语言 */
 const HIGH_KEYWORDS = [
   // 英文
   'sanction', 'sanctions', 'summit', 'ipo', 'merger', 'acquisition',
   'inflation', 'tariff', 'trade war', 'supply chain',
   'climate change', 'global warming', 'carbon',
-  'missile', 'weapons', 'military', 'troops',
+  'missile', 'weapons', 'military', 'troops', 'nato',
   'protest', 'demonstration', 'riot',
   'immigration', 'refugee', 'border crisis',
   'human rights', 'democracy', 'authoritarian',
-  'space', 'launch', 'satellite', 'moon',
+  'space', 'launch', 'satellite', 'moon', 'mars',
   'oil price', 'energy crisis', 'fuel',
   'cybersecurity', 'hacking', 'data breach',
   'semiconductor', 'chip shortage',
   'bitcoin', 'cryptocurrency',
   'unemployment', 'jobs report',
+  'earthquake', 'hurricane', 'typhoon', 'tsunami', 'flood',
   // 中文
   '制裁', '峰会', '通货膨胀', '贸易战', '供应链',
   '气候变化', '全球变暖', '碳排放',
-  '导弹', '军队', '抗议', '示威', '暴乱',
+  '导弹', '军队', '北约', '抗议', '示威', '暴乱',
   '移民', '难民', '边境危机',
   '民主', '威权', '太空', '卫星',
   '油价', '能源危机', '网络安全', '芯片短缺',
   '比特币', '加密货币', '失业率', '就业报告',
+  '地震', '飓风', '台风', '海啸', '洪水',
+  // 德语
+  'Sanktionen', 'Gipfel', 'Inflation', 'Klimawandel',
+  'Rakete', 'Protest', 'Flüchtling', 'Erdbeben',
+  // 法语
+  'sanctions', 'sommet', 'inflation', 'changement climatique',
+  'missile', 'manifestation', 'réfugiés', 'séisme',
+  // 俄语
+  'санкции', 'саммит', 'инфляция', 'ракета', 'протест',
+  // 阿拉伯语
+  'عقوبات', 'قمة', 'تضخم', 'صاروخ', 'احتجاج', 'زلزال',
+  // 西班牙语
+  'sanciones', 'cumbre', 'inflación', 'misil', 'protesta', 'terremoto',
+  // 日语
+  '制裁', 'サミット', 'インフレ', 'ミサイル', '抗議', '地震',
 ];
 
 /** 中等权重词（×1.0） */
@@ -71,10 +112,11 @@ const MEDIUM_KEYWORDS = [
   '外交', '条约', '协议', '议会', '立法',
   '投资', '基金', '债券', '医院', '疫苗', '健康',
   '教育', '大学', '环境', '污染', '科技', '创新', '基础设施',
+  // 德语
+  'Diplomatie', 'Vertrag', 'Investition', 'Technologie',
+  // 法语
+  'diplomatie', 'traité', 'investissement', 'technologie',
 ];
-
-// 最大可能关键词分（用于 normalize 到 0-10）
-const MAX_KEYWORD_RAW = ULTRA_HIGH_KEYWORDS.length * 2.0 * 1; // 实际动态计算
 
 // ─────────────────────────────────────────
 // 来源权威分
@@ -82,21 +124,35 @@ const MAX_KEYWORD_RAW = ULTRA_HIGH_KEYWORDS.length * 2.0 * 1; // 实际动态计
 const TIER_SCORE = { 1: 10, 2: 7, 3: 5 };
 
 // ─────────────────────────────────────────
-// 时效分
+// 时效分 — 更细粒度，强化最新新闻优势
 // ─────────────────────────────────────────
 function calcFreshnessScore(publishedAt) {
-  if (!publishedAt) return 2;
+  if (!publishedAt) return 1;
   const now = Date.now();
   const pub = new Date(publishedAt).getTime();
-  if (isNaN(pub)) return 2;
+  if (isNaN(pub)) return 1;
 
   const diffHours = (now - pub) / (1000 * 60 * 60);
 
-  if (diffHours < 1) return 10;
-  if (diffHours < 3) return 8;
-  if (diffHours < 6) return 6;
-  if (diffHours < 12) return 4;
-  return 2;
+  if (diffHours < 0.5) return 10;   // 30分钟内
+  if (diffHours < 1) return 9.5;    // 1小时内
+  if (diffHours < 2) return 9;      // 2小时内
+  if (diffHours < 3) return 8;      // 3小时内
+  if (diffHours < 6) return 7;      // 6小时内
+  if (diffHours < 12) return 5;     // 12小时内
+  if (diffHours < 24) return 3;     // 24小时内
+  if (diffHours < 48) return 1.5;   // 48小时内
+  return 1;                          // 超过48小时
+}
+
+/**
+ * 判断文章是否在24小时内发布
+ */
+export function isWithin24Hours(publishedAt) {
+  if (!publishedAt) return false;
+  const pub = new Date(publishedAt).getTime();
+  if (isNaN(pub)) return false;
+  return (Date.now() - pub) < 24 * 60 * 60 * 1000;
 }
 
 // ─────────────────────────────────────────
@@ -120,8 +176,7 @@ function calcKeywordScore(text) {
     if (lower.includes(kw.toLowerCase())) rawScore += 1.0;
   }
 
-  // 动态 normalize 到 0–10（按实际词库上限的 10% 封顶，避免超量词拉满）
-  const cap = maxPossible * 0.10;
+  const cap = maxPossible * 0.08;
   const normalized = Math.min(rawScore / cap, 1) * 10;
   return Math.round(normalized * 10) / 10;
 }
@@ -140,8 +195,8 @@ function calcPopularityScore(/* article */) {
 /**
  * 对单篇文章进行重要性评分
  * @param {{ title: string, summary: string, publishedAt: string }} article
- * @param {{ tier: number, baseScore: number }} sourceConfig - RSS 源配置
- * @returns {{ score: number, level: number, isBreaking: boolean }}
+ * @param {{ tier: number, baseScore: number }} sourceConfig
+ * @returns {{ score: number, level: number, isBreaking: boolean, isRecent: boolean }}
  */
 export function scoreArticle(article, sourceConfig) {
   const tier = sourceConfig?.tier ?? 3;
@@ -152,30 +207,23 @@ export function scoreArticle(article, sourceConfig) {
   const freshnessScore = calcFreshnessScore(article.publishedAt);
   const popularityScore = calcPopularityScore(article);
 
-  // 加权综合分
+  // 加权综合分 — 时效性权重 0.4（最高）
   const raw =
-    authorityScore * 0.3 +
-    keywordScore   * 0.3 +
-    freshnessScore * 0.2 +
+    authorityScore  * 0.2 +
+    keywordScore    * 0.2 +
+    freshnessScore  * 0.4 +
     popularityScore * 0.2;
 
-  // 保留一位小数，限制在 0–10
   const score = Math.min(Math.round(raw * 10) / 10, 10);
-
-  // level 1–5（ceil(score/2) 并 clamp）
   const level = Math.min(Math.max(Math.ceil(score / 2), 1), 5);
-
-  // Breaking News 阈值
   const isBreaking = score > 9;
+  const isRecent = isWithin24Hours(article.publishedAt);
 
-  return { score, level, isBreaking };
+  return { score, level, isBreaking, isRecent };
 }
 
 /**
  * 批量评分
- * @param {Array} articles
- * @param {Function} getSourceConfig - (article) => sourceConfig
- * @returns {Array}
  */
 export function scoreArticles(articles, getSourceConfig) {
   return articles.map((article) => {

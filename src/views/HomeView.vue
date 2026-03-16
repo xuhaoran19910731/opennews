@@ -12,6 +12,12 @@
         >
           {{ activeCategoryLabel }}
         </span>
+        <span
+          v-if="store.pinnedCount > 0"
+          class="badge bg-red-500/10 text-red-600 dark:text-red-400 text-xs"
+        >
+          {{ store.pinnedCount }} 条置顶
+        </span>
       </div>
       <div v-if="store.meta?.lastUpdated" class="text-xs text-gray-400 dark:text-gray-500 hidden sm:block">
         {{ lastUpdatedFormatted }}

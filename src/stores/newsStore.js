@@ -10,6 +10,16 @@ export const useNewsStore = defineStore('news', () => {
   const activeCategory = ref('all')
   const searchQuery = ref('')
 
+  /**
+   * 判断文章是否在24小时内发布
+   */
+  function isWithin24h(publishedAt) {
+    if (!publishedAt) return false
+    const pub = new Date(publishedAt).getTime()
+    if (isNaN(pub)) return false
+    return (Date.now() - pub) < 24 * 60 * 60 * 1000
+  }
+
   // Getters
   const filteredArticles = computed(() => {
     let result = articles.value
@@ -29,7 +39,25 @@ export const useNewsStore = defineStore('news', () => {
       )
     }
 
-    return result
+    // Split into pinned (24h headlines) and rest
+    const recent = result
+      .filter(a => isWithin24h(a.publishedAt) || a.importance?.isRecent)
+      .sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0))
+      .slice(0, 10)
+
+    const recentIds = new Set(recent.map(a => a.id))
+    const rest = result.filter(a => !recentIds.has(a.id))
+
+    // Mark pinned articles
+    const pinned = recent.map(a => ({ ...a, _pinned: true }))
+    const others = rest.map(a => ({ ...a, _pinned: false }))
+
+    return [...pinned, ...others]
+  })
+
+  // Derived counts
+  const pinnedCount = computed(() => {
+    return filteredArticles.value.filter(a => a._pinned).length
   })
 
   // Actions
@@ -74,6 +102,7 @@ export const useNewsStore = defineStore('news', () => {
     activeCategory,
     searchQuery,
     filteredArticles,
+    pinnedCount,
     fetchNews,
     setCategory,
     setSearchQuery

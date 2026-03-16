@@ -1,7 +1,12 @@
 <template>
-  <article class="card p-4 cursor-pointer" @click.self="handleCardClick">
+  <article class="card p-4 cursor-pointer" :class="{ 'ring-1 ring-red-500/20 dark:ring-red-400/20': pinned }" @click.self="handleCardClick">
     <!-- Top row: importance + source + time -->
     <div class="flex items-center gap-2 flex-wrap mb-2">
+      <!-- Pinned indicator -->
+      <span v-if="pinned" class="badge bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 text-xs font-semibold">
+        TOP
+      </span>
+
       <ImportanceBadge
         :level="article.importance?.level || 1"
         :is-breaking="article.importance?.isBreaking || false"
@@ -95,6 +100,10 @@ const props = defineProps({
   article: {
     type: Object,
     required: true
+  },
+  pinned: {
+    type: Boolean,
+    default: false
   }
 })
 
