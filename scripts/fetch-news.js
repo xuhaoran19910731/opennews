@@ -15,8 +15,14 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import crypto from 'crypto';
+import https from 'https';
 import Parser from 'rss-parser';
 import axios from 'axios';
+
+// ─────────────────────────────────────────
+// 信任所有TLS证书（许多权威媒体RSS源的证书链不完整）
+// ─────────────────────────────────────────
+const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 
 import RSS_SOURCES, { getSourceById } from './rss-sources.js';
 import { classifyArticle } from './category-classifier.js';
@@ -73,12 +79,15 @@ function parseDate(item) {
 // ─────────────────────────────────────────
 
 const rssParser = new Parser({
-  timeout: 10000,
+  timeout: 15000,
   headers: {
     'User-Agent':
       'Mozilla/5.0 (compatible; NewsAggregatorBot/1.0; +https://example.com)',
     Accept:
       'application/rss+xml, application/atom+xml, application/xml, text/xml, */*',
+  },
+  requestOptions: {
+    agent: httpsAgent,
   },
   customFields: {
     item: [

@@ -28,6 +28,7 @@ jobs:
       - name: Run news fetch script
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          NODE_TLS_REJECT_UNAUTHORIZED: '0'
         run: node scripts/fetch-news.js
 
       - name: Check for changes
