@@ -1,24 +1,29 @@
 {
   "lastUpdated": "2026-03-16T12:00:00Z",
   "nextUpdate": "2026-03-16T13:00:00Z",
-  "totalCount": 8,
+  "totalCount": 72,
   "sourceStats": {
-    "Reuters": 2,
-    "BBC": 1,
-    "Financial Times": 1,
-    "New York Times": 1,
-    "Wall Street Journal": 1,
-    "The Guardian": 1,
-    "Bloomberg": 1
+    "Reuters": 14,
+    "BBC": 10,
+    "AP News": 7,
+    "New York Times": 7,
+    "Financial Times": 3,
+    "Wall Street Journal": 2,
+    "The Guardian": 6,
+    "Bloomberg": 1,
+    "Deutsche Welle": 4,
+    "France 24": 5,
+    "Al Jazeera": 3,
+    "CNBC": 3,
+    "Nikkei Asia": 2
   },
   "categoryStats": {
-    "economy": 2,
-    "politics": 1,
-    "technology": 2,
-    "environment": 1,
-    "society": 1,
-    "military": 1
-  },
-  "breakingCount": 1,
-  "avgImportanceScore": 8.39
+    "economy": 10,
+    "politics": 10,
+    "technology": 10,
+    "society": 10,
+    "military": 10,
+    "environment": 10,
+    "general": 12
+  }
 }

@@ -9,7 +9,7 @@
 export const CATEGORIES = {
   politics: { label: '国际政治', labelEn: 'Politics' },
   economy: { label: '财经', labelEn: 'Economy' },
-  tech: { label: '科技', labelEn: 'Technology' },
+  technology: { label: '科技', labelEn: 'Technology' },
   society: { label: '社会', labelEn: 'Society' },
   military: { label: '军事', labelEn: 'Military' },
   environment: { label: '环境', labelEn: 'Environment' },
@@ -84,7 +84,7 @@ const CATEGORY_KEYWORDS = {
     ],
   },
 
-  tech: {
+  technology: {
     en: [
       'artificial intelligence', 'ai', 'machine learning', 'deep learning',
       'chatgpt', 'openai', 'google', 'microsoft', 'apple', 'meta', 'amazon',

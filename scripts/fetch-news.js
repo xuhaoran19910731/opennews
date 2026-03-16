@@ -251,14 +251,51 @@ async function main() {
     return { ...a, importance };
   });
 
-  // Step 6: 按分数降序，取前50
-  allArticles.sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0));
-  const top50 = allArticles.slice(0, 50);
-  console.log(`\n🏆 Top 50 筛选完成（最高分: ${top50[0]?.importance?.score ?? 0}）`);
+  // Step 6: 按分类保证至少10条，再按分数填充
+  const MIN_PER_CATEGORY = 10;
+  const categoryGroups = {};
+  for (const a of allArticles) {
+    const cat = a.category || 'general';
+    if (!categoryGroups[cat]) categoryGroups[cat] = [];
+    categoryGroups[cat].push(a);
+  }
+
+  // 每个分类先取前10（按分数降序已排好）
+  const selectedIds = new Set();
+  const guaranteed = [];
+  for (const [cat, items] of Object.entries(categoryGroups)) {
+    items.sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0));
+    const topN = items.slice(0, MIN_PER_CATEGORY);
+    for (const a of topN) {
+      if (!selectedIds.has(a.id)) {
+        selectedIds.add(a.id);
+        guaranteed.push(a);
+      }
+    }
+  }
+
+  // 剩余名额用全局最高分填充
+  const MAX_TOTAL = Math.max(100, guaranteed.length);
+  const remaining = allArticles.filter(a => !selectedIds.has(a.id));
+  remaining.sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0));
+  const filler = remaining.slice(0, MAX_TOTAL - guaranteed.length);
+  const topArticles = [...guaranteed, ...filler];
+  topArticles.sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0));
+
+  // 统计各分类数量
+  const catCounts = {};
+  for (const a of topArticles) {
+    const cat = a.category || 'general';
+    catCounts[cat] = (catCounts[cat] || 0) + 1;
+  }
+  console.log(`\n🏆 选取 ${topArticles.length} 条文章（每分类至少 ${MIN_PER_CATEGORY} 条）`);
+  for (const [cat, count] of Object.entries(catCounts).sort((a, b) => b[1] - a[1])) {
+    console.log(`   ${cat}: ${count} 条`);
+  }
 
   // Step 7: 生成分析师评论
   console.log('\n💬 生成分析师评论...');
-  const finalArticles = generateCommentsForAll(top50, analysts);
+  const finalArticles = generateCommentsForAll(topArticles, analysts);
 
   // ─────────────────────────────────────────
   // 写入 data/news.json

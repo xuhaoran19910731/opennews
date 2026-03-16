@@ -20,9 +20,13 @@
         {{ article.source?.name || '未知来源' }}
       </span>
 
-      <!-- Publish time -->
-      <span class="text-xs text-gray-400 dark:text-gray-500 ml-auto shrink-0">
-        {{ relativeTime }}
+      <!-- Publish time: absolute + relative -->
+      <span class="text-xs text-gray-400 dark:text-gray-500 ml-auto shrink-0 text-right">
+        <time :datetime="article.publishedAt" :title="fullDateTime">
+          {{ absoluteTime }}
+          <span class="text-gray-300 dark:text-gray-600 mx-0.5">·</span>
+          {{ relativeTime }}
+        </time>
       </span>
     </div>
 
@@ -128,10 +132,38 @@ const sourceBadgeClass = computed(() => {
   return 'badge-tier3'
 })
 
+// Absolute time: show date + HH:mm
+const absoluteTime = computed(() => {
+  if (!props.article.publishedAt) return ''
+  const d = new Date(props.article.publishedAt)
+  if (isNaN(d.getTime())) return ''
+  const now = new Date()
+  const sameYear = d.getFullYear() === now.getFullYear()
+  const month = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  const hours = String(d.getHours()).padStart(2, '0')
+  const minutes = String(d.getMinutes()).padStart(2, '0')
+  if (sameYear) return `${month}-${day} ${hours}:${minutes}`
+  return `${d.getFullYear()}-${month}-${day} ${hours}:${minutes}`
+})
+
+// Full datetime for tooltip
+const fullDateTime = computed(() => {
+  if (!props.article.publishedAt) return ''
+  const d = new Date(props.article.publishedAt)
+  if (isNaN(d.getTime())) return ''
+  return d.toLocaleString('zh-CN', {
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hour12: false
+  })
+})
+
 // Relative time
 const relativeTime = computed(() => {
   if (!props.article.publishedAt) return ''
   const d = new Date(props.article.publishedAt)
+  if (isNaN(d.getTime())) return ''
   const now = new Date()
   const diff = Math.floor((now - d) / 60000) // minutes
 
