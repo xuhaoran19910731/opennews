@@ -1,0 +1,270 @@
+{
+  "generatedAt": "2026-03-16T12:00:00Z",
+  "totalCount": 8,
+  "articles": [
+    {
+      "id": "reuters_20260316_001",
+      "title": "美联储宣布暂停加息周期，暗示年内可能降息两次",
+      "summary": "美联储主席鲍威尔在新闻发布会上表示，随着通胀数据持续回落，联邦公开市场委员会一致同意维持基准利率不变，并在政策声明中首次删除「进一步收紧」措辞，市场普遍解读为货币政策转向的明确信号。",
+      "url": "https://www.reuters.com/markets/us/fed-pauses-rate-hikes-2026",
+      "source": { "name": "Reuters", "tier": 1, "logoColor": "#FF6B35" },
+      "publishedAt": "2026-03-16T10:30:00Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": ["美联储", "降息", "货币政策", "通胀"],
+      "importance": { "score": 9.2, "level": 5, "isBreaking": true },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "宏观经济分析师",
+          "avatar": "李",
+          "color": "#8B5CF6",
+          "comment": "这是近两年最重要的货币政策信号。市场已经提前price in了三次降息预期，若Fed确实在6月启动降息，美元指数将面临较大压力，新兴市场资产或迎来重新配置机会。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "债券市场专家",
+          "avatar": "王",
+          "color": "#0EA5E9",
+          "comment": "10年期美债收益率已从高位回落约80个基点，曲线倒挂程度收窄。如果降息落地，长端利率还有下行空间，但需警惕通胀二次抬头的风险，历史上过早放松货币政策曾导致1970年代的滞胀重演。"
+        },
+        {
+          "id": "chen_hao",
+          "name": "陈浩",
+          "role": "全球资产配置顾问",
+          "avatar": "陈",
+          "color": "#10B981",
+          "comment": "对A股而言是外部环境改善的积极信号。美元走弱将减轻人民币贬值压力，北向资金有望重新流入。建议关注受益于流动性宽松的成长股板块，尤其是科技和消费赛道。"
+        }
+      ]
+    },
+    {
+      "id": "bbc_20260316_002",
+      "title": "中欧峰会达成绿色能源合作框架协议，拟共同投资5000亿欧元",
+      "summary": "在布鲁塞尔举行的第25届中欧峰会上，双方签署了《绿色转型伙伴关系行动计划》，将在可再生能源、电动汽车供应链和碳市场互联互通三大领域展开合作，目标是到2035年实现可再生能源装机容量翻番。",
+      "url": "https://www.bbc.com/news/world-europe-china-summit-2026",
+      "source": { "name": "BBC", "tier": 1, "logoColor": "#BB1919" },
+      "publishedAt": "2026-03-16T08:00:00Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": ["中欧关系", "绿色能源", "气候合作", "布鲁塞尔"],
+      "importance": { "score": 8.5, "level": 4, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "张",
+          "color": "#F59E0B",
+          "comment": "这次峰会的成果超出预期。在中美博弈持续升温的背景下，欧洲战略自主意识增强，选择在高技术绿色领域与中国深化合作，体现出欧盟'去风险'而非'脱钩'的务实立场。"
+        },
+        {
+          "id": "liu_ying",
+          "name": "刘颖",
+          "role": "欧盟事务研究员",
+          "avatar": "刘",
+          "color": "#EC4899",
+          "comment": "5000亿欧元投资规模令人印象深刻，但落地执行才是关键。欧洲议会内部对与中国在光伏和电池领域合作存在分歧，部分成员国担忧产业竞争加剧。协议实施细则将在未来6个月内谈判，过程料将复杂。"
+        }
+      ]
+    },
+    {
+      "id": "ft_20260316_003",
+      "title": "OpenAI发布GPT-5模型，推理能力据称达到博士水平",
+      "summary": "OpenAI在旧金山总部举行发布会，正式推出GPT-5大语言模型。该公司CEO山姆·奥特曼表示，GPT-5在数学推理、科学研究辅助和代码生成等基准测试中全面超越前代模型，并首次通过了医学执照和律师资格考试的模拟测试。",
+      "url": "https://www.ft.com/content/openai-gpt5-release-2026",
+      "source": { "name": "Financial Times", "tier": 1, "logoColor": "#FF1E00" },
+      "publishedAt": "2026-03-16T07:00:00Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": ["OpenAI", "GPT-5", "人工智能", "大语言模型"],
+      "importance": { "score": 9.0, "level": 5, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "AI产业分析师",
+          "avatar": "赵",
+          "color": "#6366F1",
+          "comment": "GPT-5的发布将对知识工作者市场产生深远影响。从演示效果来看，多步推理能力的突破意义重大，这意味着AI首次能够可靠地完成需要逻辑链条的复杂任务，而不仅仅是模式匹配。"
+        },
+        {
+          "id": "sun_xiaoming",
+          "name": "孙晓明",
+          "role": "科技公司战略顾问",
+          "avatar": "孙",
+          "color": "#14B8A6",
+          "comment": "国内AI公司压力陡增。百度、阿里和华为都在快速跟进，但在基础模型参数量和训练数据质量上仍存在差距。这次发布也会加速国内对AI计算基础设施的投资，GPU需求将进一步上升。"
+        },
+        {
+          "id": "ma_lin",
+          "name": "马琳",
+          "role": "技术伦理研究员",
+          "avatar": "马",
+          "color": "#F97316",
+          "comment": "能力跃升的同时，安全对齐问题更加迫切。OpenAI表示已在模型中内置更强的拒绝机制，但历史上每次模型升级后都会出现新的越狱方式。监管部门需要加快建立针对前沿AI系统的评估框架。"
+        }
+      ]
+    },
+    {
+      "id": "nyt_20260316_004",
+      "title": "联合国报告：2025年全球极端天气事件创历史新高，经济损失超8000亿美元",
+      "summary": "联合国世界气象组织发布年度气候状况报告，2025年是有记录以来全球平均气温最高的一年，比工业化前水平高出1.52°C，首次突破《巴黎协定》1.5°C临界点。飓风、洪水和极端干旱导致的直接经济损失达8200亿美元。",
+      "url": "https://www.nytimes.com/2026/03/16/climate/wmo-report-2025",
+      "source": { "name": "New York Times", "tier": 1, "logoColor": "#000000" },
+      "publishedAt": "2026-03-16T06:00:00Z",
+      "category": "environment",
+      "categoryLabel": "环境",
+      "keywords": ["气候变化", "极端天气", "巴黎协定", "联合国"],
+      "importance": { "score": 8.8, "level": 5, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "he_jing",
+          "name": "何静",
+          "role": "气候政策专家",
+          "avatar": "何",
+          "color": "#22C55E",
+          "comment": "1.5°C临界点的突破具有里程碑意义，不是因为明年就会发生不可逆转的灾难，而是因为它代表了一个心理和政治上的转折点。各国政府将面临更大的减排行动压力，COP31的谈判氛围将因此发生根本性变化。"
+        },
+        {
+          "id": "guo_peng",
+          "name": "郭鹏",
+          "role": "绿色金融研究员",
+          "avatar": "郭",
+          "color": "#84CC16",
+          "comment": "8000亿美元的损失数字将显著提升保险和再保险行业的风险评估模型。预计未来5年内，高风险区域的保险费率将上涨30-50%，部分沿海地区甚至可能面临承保撤出，这将引发新一轮的资产重定价。"
+        }
+      ]
+    },
+    {
+      "id": "wsj_20260316_005",
+      "title": "苹果公司宣布收购英国AI芯片初创公司Graphcore，交易额约30亿美元",
+      "summary": "苹果公司确认以约30亿美元收购英国AI芯片设计公司Graphcore，这是苹果历史上规模最大的欧洲并购之一。Graphcore以其智能处理单元(IPU)架构著称，在AI训练和推理加速方面具有差异化优势。",
+      "url": "https://www.wsj.com/tech/apple-graphcore-acquisition-2026",
+      "source": { "name": "Wall Street Journal", "tier": 1, "logoColor": "#0080C6" },
+      "publishedAt": "2026-03-15T22:00:00Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": ["苹果", "Graphcore", "AI芯片", "并购"],
+      "importance": { "score": 7.8, "level": 4, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "AI产业分析师",
+          "avatar": "赵",
+          "color": "#6366F1",
+          "comment": "苹果一直在构建自研芯片生态系统，从M系列到Neural Engine，这次收购Graphcore将显著加强其端侧AI推理能力。尤其对于Vision Pro等空间计算设备，本地运行大模型将成为可能。"
+        },
+        {
+          "id": "tang_jian",
+          "name": "唐健",
+          "role": "半导体行业分析师",
+          "avatar": "唐",
+          "color": "#A855F7",
+          "comment": "这笔收购也有防御性意义——阻止英伟达或谷歌将Graphcore纳入麾下。IPU架构在稀疏计算上的优势如果整合进苹果生态，将对高通骁龙的端侧AI市场地位形成挑战。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_20260316_006",
+      "title": "印度超越中国成为全球第一人口大国后首次人口普查揭示城镇化加速",
+      "summary": "印度统计局公布最新人口普查数据，截至2026年初，印度总人口达14.7亿，城镇人口比例从2011年的31%上升至46%。调查同时显示劳动年龄人口比例高达67%，被分析人士称为「人口红利」的黄金窗口期。",
+      "url": "https://www.theguardian.com/world/2026/india-census-urbanisation",
+      "source": { "name": "The Guardian", "tier": 2, "logoColor": "#052962" },
+      "publishedAt": "2026-03-15T18:00:00Z",
+      "category": "society",
+      "categoryLabel": "社会",
+      "keywords": ["印度", "人口普查", "城镇化", "人口红利"],
+      "importance": { "score": 7.5, "level": 3, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "xu_hong",
+          "name": "徐鸿",
+          "role": "新兴市场经济学家",
+          "avatar": "徐",
+          "color": "#EF4444",
+          "comment": "印度人口结构优势是实实在在的长期竞争力。14亿人口中有近10亿处于劳动年龄，如果教育和基础设施投入跟上，未来20年印度GDP有望实现年均6-7%的增长，这对全球供应链格局将产生深远影响。"
+        },
+        {
+          "id": "pang_rui",
+          "name": "庞瑞",
+          "role": "城市规划研究员",
+          "avatar": "庞",
+          "color": "#F59E0B",
+          "comment": "城镇化加速是把双刃剑。每年新增约2000万城镇人口对住房、交通、水和电力基础设施形成巨大压力。印度城市污染问题已经相当严峻，如何实现可持续城镇化是莫迪政府面临的最大挑战之一。"
+        }
+      ]
+    },
+    {
+      "id": "reuters_20260316_007",
+      "title": "北约东翼五国联合演习规模创冷战后之最，参与兵力超过十万人",
+      "summary": "代号「铁拳2026」的北约联合军事演习在波兰、立陶宛、拉脱维亚、爱沙尼亚和芬兰五国举行，共有来自28个成员国的10.2万名士兵参与，演习重点模拟大规模常规战争防御场景，持续时间长达三个月。",
+      "url": "https://www.reuters.com/world/europe/nato-iron-fist-exercise-2026",
+      "source": { "name": "Reuters", "tier": 1, "logoColor": "#FF6B35" },
+      "publishedAt": "2026-03-15T14:00:00Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": ["北约", "军事演习", "欧洲安全", "东欧"],
+      "importance": { "score": 8.0, "level": 4, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "张",
+          "color": "#F59E0B",
+          "comment": "规模如此庞大的演习具有强烈的政治信号意义。北约通过这种方式向俄罗斯传递威慑信息，同时向新入盟的芬兰和正在谈判的瑞典展示集体防御的可信度。这标志着欧洲安全秩序的根本性重构。"
+        },
+        {
+          "id": "wu_pengfei",
+          "name": "吴鹏飞",
+          "role": "军事战略研究员",
+          "avatar": "吴",
+          "color": "#64748B",
+          "comment": "从技术层面看，演习重点是多域联合作战能力和后勤补给体系的验证。北约在波罗的海方向的部署密度显著提升，与俄罗斯的军事对峙格局正在从「边境接触」演变为「纵深防御」，这种变化将是持久的。"
+        }
+      ]
+    },
+    {
+      "id": "bloomberg_20260316_008",
+      "title": "全球最大主权财富基金挪威GPFG宣布将把中国资产配置比例从8%提升至12%",
+      "summary": "管理约1.9万亿美元资产的挪威政府全球养老基金（GPFG）宣布对其基准指数进行调整，将在新兴市场配置中提高A股和港股的权重，此次调整预计将为中国股市带来约400亿美元的增量资金流入。",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-15/norges-bank-china-allocation",
+      "source": { "name": "Bloomberg", "tier": 1, "logoColor": "#1F3D7A" },
+      "publishedAt": "2026-03-15T10:00:00Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": ["挪威主权基金", "中国股市", "外资流入", "A股"],
+      "importance": { "score": 8.3, "level": 4, "isBreaking": false },
+      "analysts": [
+        {
+          "id": "chen_hao",
+          "name": "陈浩",
+          "role": "全球资产配置顾问",
+          "avatar": "陈",
+          "color": "#10B981",
+          "comment": "这是一个具有重要示范效应的决策。挪威主权基金以谨慎和专业著称，其增配中国资产的举动将引导其他主权财富基金和养老金跟进。400亿美元体量虽然不大，但象征意义远大于数字本身。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "债券市场专家",
+          "avatar": "王",
+          "color": "#0EA5E9",
+          "comment": "从估值角度看，当前沪深300的市盈率约12倍，远低于美股的22倍，从长期资产配置视角确实具有吸引力。但需关注地缘政治风险溢价和信息披露质量问题，这些因素会持续影响外资对中国市场的定价。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "宏观经济分析师",
+          "avatar": "李",
+          "color": "#8B5CF6",
+          "comment": "配合美联储降息预期，外资回流新兴市场的趋势正在形成。中国不仅估值低，而且政策刺激空间充足。如果消费复苏数据进一步确认，A股年内突破3800点并不是不可能的目标。"
+        }
+      ]
+    }
+  ]
+}
