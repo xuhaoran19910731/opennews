@@ -1,7 +1,279 @@
 {
-  "generatedAt": "2026-03-17T04:52:09.234Z",
+  "generatedAt": "2026-03-17T05:59:45.103Z",
   "totalCount": 100,
   "articles": [
+    {
+      "id": "rfi_fr_20260317_6519d479",
+      "title": "EN DIRECT – Guerre au Moyen-Orient: des explosions à Dubaï, Israël frappe Téhéran et Beyrouth",
+      "summary": "Au dix-huitième jour de la guerre au Moyen-Orient, les frappes israélo-américaines continuent de s’abattre sur les capitales iranienne et libanaise. Tôt, ce mardi 17 mars au matin, plusieurs explosion…",
+      "url": "https://www.rfi.fr/fr/moyen-orient/20260317-en-direct-guerre-au-moyen-orient-explosions-dubai-israel-frappe-teheran-beyrouth",
+      "source": {
+        "id": "rfi_fr",
+        "name": "RFI",
+        "tier": 1,
+        "logoColor": "#00205B"
+      },
+      "publishedAt": "2026-03-17T05:23:26.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "主要组织对主要经济体实施新一轮制裁，短期内将加剧双边经济脱钩，但制裁的长期有效性历来存在争议。"
+        }
+      ]
+    },
+    {
+      "id": "tagesschau_20260317_80457cf6",
+      "title": "Nahost-Liveblog: ++ Israel startet \"großangelegte\" Angriffswelle ++",
+      "summary": "Die israelische Armee hat nach eigenen Angaben eine großangelegte Angriffswelle auf Ziele in Iran und im Libanon begonnen. Die Hisbollah meldet Angriffe auf die israelischen Truppen im Südlibanon.",
+      "url": "https://www.tagesschau.de/newsticker/liveblog-iran-dienstag-100.html",
+      "source": {
+        "id": "tagesschau",
+        "name": "Tagesschau",
+        "tier": 1,
+        "logoColor": "#004B93"
+      },
+      "publishedAt": "2026-03-17T05:52:16.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关方的响应速度远落后于科学预警。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "Nahost-Liveblog: ++背景下通胀数据超预期，预计市场将重新定价未来相当数量的个月内的降息预期。"
+        }
+      ]
+    },
+    {
+      "id": "nhk_world_20260317_b038a1fe",
+      "title": "アフガニスタン首都の病院 パキスタン軍の空爆受け400人死亡か",
+      "summary": "パキスタンとアフガニスタンの間で武力衝突が続く中、アフガニスタンのタリバン暫定政権は、首都カブールにある病院が16日夜、パキスタン軍の空爆を受けたと発表しました。一方、パキスタン側は病院ではなく、軍事施設を狙ったものだと反論しています。",
+      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077791000.html",
+      "source": {
+        "id": "nhk_world",
+        "name": "NHK World",
+        "tier": 1,
+        "logoColor": "#0076D1"
+      },
+      "publishedAt": "2026-03-17T05:42:42.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，相关国家如何在创新与治理之间找到平衡是核心命题。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "主要经济体此次攻势的战略纵深有限，若无法在400天内取得决定性成果，将陷入战略被动。"
+        }
+      ]
+    },
+    {
+      "id": "tagesschau_20260317_41b1914f",
+      "title": "Wie Jeffrey Epstein offenbar mit Steuern trickste",
+      "summary": "Wie kam Jeffrey Epstein an sein Vermögen? Eine Auswertung der veröffentlichten Akten durch WDR, NDR und SZ zeigt: Eine seiner Quellen waren offenbar Steuertricks, die er auch gewinnbringend als Beratu…",
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/epstein-geld-100.html",
+      "source": {
+        "id": "tagesschau",
+        "name": "Tagesschau",
+        "tier": 1,
+        "logoColor": "#004B93"
+      },
+      "publishedAt": "2026-03-17T05:00:22.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.9,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "此次Wie Jeffrey Epstein事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Wie Jeffrey Epstein战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "rfi_fr_20260317_0576e1f3",
+      "title": "Togo: la commission d'enquête sur les disparitions inquiétantes présente le résultat de ses recherches",
+      "summary": "Au Togo, les autorités ont enquêté, ces dernières semaines, sur des cas de disparitions inquiétantes notamment de jeunes. Des cas signalés sur les réseaux sociaux, selon le pouvoir togolais, qui a mis…",
+      "url": "https://www.rfi.fr/fr/afrique/20260317-togo-cr%C3%A9ation-d-une-commission-d-enqu%C3%AAte-pour-faire-face-aux-disparitions-inqui%C3%A9tantes",
+      "source": {
+        "id": "rfi_fr",
+        "name": "RFI",
+        "tier": 1,
+        "logoColor": "#00205B"
+      },
+      "publishedAt": "2026-03-17T05:14:35.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.8,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "Togo: la commission背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "安理会的否决权机制在Togo: la commission上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_f1c83ac0",
+      "title": "Le troisième procès de Nicolas Zepeda, jugé pour l’assassinat de son ex-petite amie Narumi Kurosaki, s’ouvre devant la cour d’assises du Rhône",
+      "summary": "Condamné deux fois à vingt-huit ans de réclusion criminelle, l’accusé chilien a toujours proclamé son innocence. En cas de nouvelle condamnation, il devra cette fois s’acquitter de frais du procès, du…",
+      "url": "https://www.lemonde.fr/societe/article/2026/03/17/le-troisieme-proces-de-nicolas-zepeda-juge-pour-l-assassinat-de-son-ex-petite-amie-narumi-kurosaki-s-ouvre-devant-la-cour-d-assises-du-rhone_6671597_3224.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T05:00:03.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.8,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "主要经济体与主要组织的结构性矛盾在Le troisième procès上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "此次主要经济体通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_ee203c58",
+      "title": "La liberté de la recherche et de l’enseignement est en recul dans un grand nombre de pays",
+      "summary": "Selon le rapport 2026 de l’indice de liberté académique, les libertés individuelles des chercheurs et l’intégrité des campus universitaires sont les dimensions les plus affectées.",
+      "url": "https://www.lemonde.fr/education/article/2026/03/17/la-liberte-de-la-recherche-et-de-l-enseignement-est-en-recul-dans-un-grand-nombre-de-pays_6671598_1473685.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T05:00:04.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.8,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "La liberté de la rec战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "La liberté de la rec再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+        }
+      ]
+    },
     {
       "id": "bbc_zhongwen_20260317_98c54479",
       "title": "腦膜炎有哪些症狀？有疫苗嗎？",
@@ -18,7 +290,7 @@
       "categoryLabel": "社会",
       "keywords": [],
       "importance": {
-        "score": 7.2,
+        "score": 6.8,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -30,7 +302,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "相关国家医疗体系在腦膜炎有哪些症狀？有疫苗嗎？压力下的应对表现，是衡量一个社会公共卫生承诺的最真实镜子。"
+          "comment": "当事国医疗体系在腦膜炎有哪些症狀？有疫苗嗎？压力下的应对表现，是衡量一个社会公共卫生承诺的最真实镜子。"
         }
       ]
     },
@@ -50,7 +322,47 @@
       "categoryLabel": "国际政治",
       "keywords": [],
       "importance": {
-        "score": 7,
+        "score": 6.8,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "相关方对当事国局势的暧昧态度，折射出其在干涉与不干涉之间的战略困境。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Présidentielle au Co战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "bbc_zhongwen_20260317_e7e509f7",
+      "title": "誰是皮特·赫格塞斯？從電視新聞主持人到特朗普的國防部長",
+      "summary": "對這位美國國防部長而言，這是忙碌的第一年。從Signal聊天群組風波到「史詩狂怒行動」，皮特·赫格塞斯一直在登上新聞頭條。",
+      "url": "https://www.bbc.com/zhongwen/articles/c4g0nd20k88o/trad?at_medium=RSS&at_campaign=rss",
+      "source": {
+        "id": "bbc_zhongwen",
+        "name": "BBC中文",
+        "tier": 1,
+        "logoColor": "#BB1919"
+      },
+      "publishedAt": "2026-03-17T05:12:38.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.8,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -62,15 +374,39 @@
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "当事国此次攻势的战略纵深有限，若无法在82天内取得决定性成果，将陷入战略被动。"
-        },
+          "comment": "誰是皮特·赫格塞斯？從電視新聞主持人到特战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "tagesschau_20260317_9da7bf34",
+      "title": "11KM-Podcast: Wie läuft das Verfahren gegen die Reichsbürger?",
+      "summary": "Die mutmaßliche Reichsbürger-Gruppe um Prinz Reuß soll einen Umsturz geplant haben. Seit zwei Jahren laufen inzwischen die Gerichtsverfahren. 11KM blickt hinter die Kulissen.",
+      "url": "https://www.tagesschau.de/podcast-11km-justiz-reichsbuerger-100.html",
+      "source": {
+        "id": "tagesschau",
+        "name": "Tagesschau",
+        "tier": 1,
+        "logoColor": "#004B93"
+      },
+      "publishedAt": "2026-03-17T05:22:32.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.8,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
         {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关机构的响应速度远落后于科学预警。"
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "11KM-Podcast: Wie lä战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
         },
         {
           "id": "zhang_wei",
@@ -78,14 +414,14 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "相关机构对主要经济体局势的暧昧态度，折射出其在干涉与不干涉之间的战略困境。"
+          "comment": "11KM-Podcast: Wie lä选举释放出明确的民粹主义信号，这一趋势对相关方的多边合作框架构成系统性挑战。"
         }
       ]
     },
     {
-      "id": "nhk_world_20260317_1e80a463",
+      "id": "nhk_world_20260317_58dd0018",
       "title": "トランプ大統領 艦船派遣めぐり各国に不満 圧力強める",
-      "summary": "海上輸送の要衝であるホルムズ海峡が事実上、封鎖され、世界経済への影響が広がるなか、アメリカのトランプ大統領は、ホルムズ海峡を経由する原油に大きく依存する国として、改めて日本や中国、韓国を挙げ、艦船を派遣して海峡の安全を確保することに協力を求めました。その上で「私が驚かされたのは、彼らが積極的ではないということだ」と不満を示し、各国への圧力を強めています。",
+      "summary": "海上輸送の要衝であるホルムズ海峡が事実上、封鎖され、世界経済への影響が広がるなか、アメリカのトランプ大統領はホルムズ海峡を経由する原油に大きく依存する国として、改めて日本や中国、韓国を挙げ、艦船を派遣して海峡の安全を確保することに協力を求めました。その上で「私が驚かされたのは、彼らが積極的ではないということだ」と不満を示し、各国への圧力を強めています。",
       "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077481000.html",
       "source": {
         "id": "nhk_world",
@@ -93,12 +429,12 @@
         "tier": 1,
         "logoColor": "#0076D1"
       },
-      "publishedAt": "2026-03-17T04:25:58.000Z",
+      "publishedAt": "2026-03-17T05:16:51.000Z",
       "category": "general",
       "categoryLabel": "综合",
       "keywords": [],
       "importance": {
-        "score": 7,
+        "score": 6.8,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -110,47 +446,47 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "トランプ大統領 艦船派遣めぐり各国に不満背景下通胀数据超预期，预计市场将重新定价未来若干个月内的降息预期。"
+          "comment": "此次中国通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "中国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
     {
-      "id": "lemonde_20260317_9d113dab",
-      "title": "Logement : le parc HLM s’éloigne de sa cible principale, les demandeurs les plus précaires",
-      "summary": "Dans une étude publiée mardi, l’organisme de contrôle Ancols alerte sur une inadéquation croissante entre la demande et l’offre de HLM. Si 62 % des candidats relèvent des logements dits très sociaux, …",
-      "url": "https://www.lemonde.fr/societe/article/2026/03/17/logement-le-parc-hlm-s-eloigne-de-sa-cible-principale-les-demandeurs-les-plus-precaires_6671592_3224.html",
+      "id": "nhk_world_20260317_b08a5e8d",
+      "title": "青森 三沢市沖で貨物船と漁船衝突 漁船の乗組員4人死亡確認",
+      "summary": "17日未明、青森県三沢市沖の海上で貨物船と漁船が衝突した事故で、海に投げ出されたあとに救助され、意識不明の状態となっていた漁船の乗組員の男性、4人全員の死亡が確認されました。漁船を所有する会社の社長は、「漁の準備をしていたところ貨物船と衝突した」などと乗組員から聞いたということで、海上保安部が詳しい状況を調べています。",
+      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077551000.html",
       "source": {
-        "id": "lemonde",
-        "name": "Le Monde",
+        "id": "nhk_world",
+        "name": "NHK World",
         "tier": 1,
-        "logoColor": "#222222"
+        "logoColor": "#0076D1"
       },
-      "publishedAt": "2026-03-17T04:30:08.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
+      "publishedAt": "2026-03-17T05:13:53.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
       "keywords": [],
       "importance": {
-        "score": 7,
+        "score": 6.8,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Logement : le parc H战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "此次相关国家通胀数据的走向，将直接影响主要组织的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，各方如何在创新与治理之间找到平衡是核心命题。"
         }
       ]
     },
@@ -170,7 +506,7 @@
       "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 7,
+        "score": 6.8,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -182,7 +518,7 @@
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "当事国核态势的调整是当前最需要密切追踪的战略信号，任何误判都将带来不可逆的后果。"
+          "comment": "核威慑的稳定性建立在双方对红线的共同理解之上，当前局势下这一共识正面临侵蚀风险。"
         },
         {
           "id": "zhang_wei",
@@ -190,7 +526,7 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "相关方对相关国家实施新一轮制裁，短期内将加剧双边经济脱钩，但制裁的长期有效性历来存在争议。"
+          "comment": "制裁工具的滥用正在推动各方加速推进去美元化布局，这一战略转向的影响将是深远的。"
         }
       ]
     },
@@ -210,19 +546,107 @@
       "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.9,
+        "score": 6.7,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "当事国的军事行动已进入Sénégal: Ousmane Son阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_20350908",
+      "title": "EN DIRECT, guerre au Moyen-Orient : Israël dit lancer une « vague de frappes » sur Téhéran et Beyrouth ; plusieurs explosions ont retenti à Dubaï, aux Emirats arabes unis, ainsi qu’à Doha",
+      "summary": "Une attaque a visé, tôt mardi matin, l’ambassade américaine à Badgad, après une attaque similaire menée quelques heures plus tôt. « Au moins un drone est tombé dans l’ambassade », a rapporté un respon…",
+      "url": "https://www.lemonde.fr/international/live/2026/03/17/en-direct-guerre-au-moyen-orient-israel-dit-lancer-une-vague-de-frappes-sur-teheran-et-beyrouth-plusieurs-explosions-ont-retenti-a-dubai-aux-emirats-arabes-unis-ainsi-qu-a-doha_6671147_3210.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T04:59:33.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+        },
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，各方如何在创新与治理之间找到平衡是核心命题。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_dc8e6a7c",
+      "title": "Elections municipales 2026 : « Le sentiment délétère que le politique est impuissant à résoudre les problèmes se diffuse du national au local »",
+      "summary": "Marqué par un haut niveau d’abstention dans les petites communes et par l’éclatement de l’offre dans les grandes villes, le premier tour du scrutin confirme la profondeur de la crise politique en Fran…",
+      "url": "https://www.lemonde.fr/idees/article/2026/03/17/elections-municipales-2026-le-sentiment-deletere-que-le-politique-est-impuissant-a-resoudre-les-problemes-se-diffuse-du-national-au-local_6671585_3232.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T04:00:23.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而主要组织的响应速度远落后于科学预警。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
+        },
+        {
           "id": "zhang_wei",
           "name": "张伟",
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "此次Sénégal: Ousmane Son事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
+          "comment": "当事国此次选举结果将重塑Elections municipale的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
         }
       ]
     },
@@ -242,7 +666,7 @@
       "categoryLabel": "财经",
       "keywords": [],
       "importance": {
-        "score": 6.9,
+        "score": 6.7,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -254,7 +678,7 @@
           "role": "科技分析师",
           "avatar": "CJ",
           "color": "#06B6D4",
-          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，主要经济体如何在创新与治理之间找到平衡是核心命题。"
         },
         {
           "id": "li_ming",
@@ -262,7 +686,47 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "油价波动对主要经济体贸易条件的影响是双向的，能源净进口国将首先感受到输入性通胀压力。"
+          "comment": "Sri Lanka declares W事件推升能源价格，航运和化工板块的成本端压力需纳入投资决策框架。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_a01b45ae",
+      "title": "Après les pluies abondantes de cet hiver, une partie du monde agricole réclame davantage de stockage d’eau",
+      "summary": "Des syndicats agricoles mobilisent leurs troupes pour réclamer davantage de réserves d’eau. Une approche contestée par des scientifiques et des associations de défense de l’environnement, mais qui tro…",
+      "url": "https://www.lemonde.fr/planete/article/2026/03/17/apres-les-pluies-abondantes-de-cet-hiver-une-partie-du-monde-agricole-reclame-davantage-de-stockage-d-eau_6671595_3244.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T04:45:12.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": [],
+      "importance": {
+        "score": 6.7,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "当事国股市在Après les pluies abo消息刺激下的反应，表明市场对政策预期仍然高度敏感。"
+        },
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，主要经济体如何在创新与治理之间找到平衡是核心命题。"
         }
       ]
     },
@@ -282,243 +746,99 @@
       "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.9,
+        "score": 6.7,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Liban: les travaille战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        },
         {
           "id": "zhang_wei",
           "name": "张伟",
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "制裁工具的滥用正在推动各方加速推进去美元化布局，这一战略转向的影响将是深远的。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_world_20260317_49b08280",
-      "title": "Afghanistan accuses Pakistan of killing hundreds in hospital strike",
-      "summary": "Islamabad denies targeting any health facility and said its strikes were aimed at military installations.",
-      "url": "https://www.bbc.com/news/articles/c4g8n7e0l40o?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T03:17:57.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 6.8,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
+          "comment": "制裁工具的滥用正在推动相关国家加速推进去美元化布局，这一战略转向的影响将是深远的。"
+        },
         {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "公共卫生危机的应对往往暴露出平时看不见的社会裂缝，Afghanistan accuses也不例外。"
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "当事国此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
         }
       ]
     },
     {
-      "id": "nyt_business_20260317_f057fdd4",
-      "title": "As War With Iran Hurts Oil Prices, U.S. Turns to Iranian Boats for Help",
-      "summary": "Iranian-linked ships carrying Russian oil were among those that received temporary exemptions from sanctions, a sign of how dire the energy crisis is becoming.",
-      "url": "https://www.nytimes.com/2026/03/17/business/iran-war-boats-russian-oil.html",
+      "id": "lefigaro_20260317_6d8cf87b",
+      "title": "EN DIRECT - Guerre au Moyen-Orient : un mort à Abu Dhabi après la chute de débris de missile, Macron convoque un nouveau conseil de défense ce mardi",
+      "summary": "Alors que la guerre au Moyen-Orient est entrée dans son 18e jour mardi, plusieurs explosions ont retenti mardi matin à Dubaï, aux Émirats arabes unis, ainsi qu’à Doha, capitale du Qatar.",
+      "url": "https://www.lefigaro.fr/international/en-direct-guerre-moyen-orient-liban-iran-irak-israel-etats-unis-emirats-arabes-unis-qatar-bahrein-oman-20260317",
       "source": {
-        "id": "nyt_business",
-        "name": "NYT Business",
+        "id": "lefigaro",
+        "name": "Le Figaro",
         "tier": 2,
-        "logoColor": "#000000"
+        "logoColor": "#1D4B8F"
       },
-      "publishedAt": "2026-03-17T04:00:07.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
+      "publishedAt": "2026-03-17T05:55:02.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.8,
+        "score": 6.7,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "As War With Iran Hur制裁方案的精准程度，折射出相关机构在平衡盟友利益与战略目标方面的困境。"
-        }
-      ]
-    },
-    {
-      "id": "tagesschau_20260317_4935317d",
-      "title": "Taliban melden Hunderte Tote bei Angriff auf Klinik in Kabul",
-      "summary": "Es ist eine weitere Eskalationsstufe im Konflikt zwischen Afghanistan und Pakistan: Die Taliban werfen Islamabad einen schweren Angriff auf eine Klinik in Kabul vor. Sie sprechen von 400 Toten und 250…",
-      "url": "https://www.tagesschau.de/ausland/asien/afghanistan-angriff-108.html",
-      "source": {
-        "id": "tagesschau",
-        "name": "Tagesschau",
-        "tier": 1,
-        "logoColor": "#004B93"
-      },
-      "publishedAt": "2026-03-17T03:52:53.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.8,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "Taliban melden Hunde背景下通胀数据超预期，预计市场将重新定价未来400个月内的降息预期。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Taliban melden Hunde再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        }
-      ]
-    },
-    {
-      "id": "tagesschau_20260317_4336dd11",
-      "title": "Nahost-Liveblog: ++ Israel startet \"großangelegte\" Angriffswelle ++",
-      "summary": "Die israelische Armee hat nach eigenen Angaben eine großangelegte Angriffswelle auf Ziele in Iran und im Libanon begonnen. Die Hisbollah meldet Angriffe auf die israelischen Truppen im Südlibanon.",
-      "url": "https://www.tagesschau.de/newsticker/liveblog-iran-dienstag-100.html",
-      "source": {
-        "id": "tagesschau",
-        "name": "Tagesschau",
-        "tier": 1,
-        "logoColor": "#004B93"
-      },
-      "publishedAt": "2026-03-17T04:18:20.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.8,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "历史经验表明，单边制裁在缺乏多边协调的情况下，往往难以产生预期的政治压力效果。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "此次Israel通胀数据的走向，将直接影响主要组织的利率决策节奏，投资者需警惕短端收益率的波动风险。"
-        }
-      ]
-    },
-    {
-      "id": "rfi_fr_20260317_3d3a7830",
-      "title": "Est de la RDC: échanges de tirs à Mugunga, des hommes armés tués et arrêtés, selon l’AFC/M23",
-      "summary": "Incursions d’hommes armés et tirs nourris dans la nuit de dimanche à lundi à Mugunga, dans la commune de Karisimbi, à l’ouest de Goma. Des hommes armés ont attaqué. Les échanges de tirs avec des éléme…",
-      "url": "https://www.rfi.fr/fr/afrique/20260317-est-de-la-rdc-%C3%A9changes-de-tirs-%C3%A0-mugunga-des-hommes-arm%C3%A9s-tu%C3%A9s-et-arr%C3%AAt%C3%A9s-selon-l-afc-m23",
-      "source": {
-        "id": "rfi_fr",
-        "name": "RFI",
-        "tier": 1,
-        "logoColor": "#00205B"
-      },
-      "publishedAt": "2026-03-17T04:03:26.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.8,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Est de la RDC: échan再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        },
         {
           "id": "zhao_lei",
           "name": "赵磊",
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "主要经济体的军事行动已进入Est de la RDC: échan阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+          "comment": "有限核使用的\"门槛下降\"论在战略界的抬头，是比任何具体军事行动都更令人警惕的危险信号。"
         }
       ]
     },
     {
-      "id": "nhk_world_20260317_4c6d3b90",
-      "title": "青森 三沢市沖で貨物船と漁船衝突 漁船の乗組員4人死亡確認",
-      "summary": "八戸海上保安部によりますと、17日未明、青森県三沢市沖の海上で貨物船と漁船が衝突した事故で、海に投げ出されたあとに救助され、意識不明の状態となっていた漁船乗組員の男性4人全員の死亡が確認されたということです。",
-      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077551000.html",
+      "id": "ap_news_20260317_75d208c7",
+      "title": "Some flight cancellations and delays continue after US storms dump snow in the Midwest and head east",
+      "summary": "Jamie Sims left, and Carlos Serna, right, try to get some rest as they wait for their cancelled flight to El Paso, texas to be rescheduled at Love Field Airport in Dallas, Monday, March 16, 2026. (AP …",
+      "url": "https://apnews.com/article/travel-weather-storms-flights-airports-f485f93852f31ab2fbd0513a117c7e20",
       "source": {
-        "id": "nhk_world",
-        "name": "NHK World",
+        "id": "ap_news",
+        "name": "AP News",
         "tier": 1,
-        "logoColor": "#0076D1"
+        "logoColor": "#CC0000"
       },
-      "publishedAt": "2026-03-17T03:52:46.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T04:53:01.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.8,
+        "score": 6.6,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "选举结果的不确定性折射出当事国社会内部的深层撕裂，后选举时期的政策连续性值得观察。"
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "US此次攻势的战略纵深有限，若无法在16天内取得决定性成果，将陷入战略被动。"
+        },
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，US如何在创新与治理之间找到平衡是核心命题。"
         }
       ]
     },
@@ -538,7 +858,7 @@
       "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.8,
+        "score": 6.6,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -550,15 +870,7 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "「誰不想發篇學術垃圾」：從《新青年》到性背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "选举结果的不确定性折射出主要经济体社会内部的深层撕裂，后选举时期的政策连续性值得观察。"
+          "comment": "此次各方通胀数据的走向，将直接影响相关方的利率决策节奏，投资者需警惕短端收益率的波动风险。"
         }
       ]
     },
@@ -578,7 +890,7 @@
       "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.8,
+        "score": 6.6,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -590,7 +902,7 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着相关机构收紧货币政策的窗口仍然开放。相关国家消费市场的韧性值得持续跟踪。"
+          "comment": "Afrique du Sud: la l背景下通胀数据超预期，预计市场将重新定价未来相当数量的个月内的降息预期。"
         },
         {
           "id": "zhang_wei",
@@ -618,7 +930,47 @@
       "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.8,
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "Municipales 2026 : à的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "通胀压力的持续，意味着相关方收紧货币政策的窗口仍然开放。相关国家消费市场的韧性值得持续跟踪。"
+        }
+      ]
+    },
+    {
+      "id": "nyt_business_20260317_f057fdd4",
+      "title": "As War With Iran Hurts Oil Prices, U.S. Turns to Iranian Boats for Help",
+      "summary": "Iranian-linked ships carrying Russian oil were among those that received temporary exemptions from sanctions, a sign of how dire the energy crisis is becoming.",
+      "url": "https://www.nytimes.com/2026/03/17/business/iran-war-boats-russian-oil.html",
+      "source": {
+        "id": "nyt_business",
+        "name": "NYT Business",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T04:00:07.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.6,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -630,27 +982,467 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "国际社会的呼吁缺乏强制力支撑，若无实质行动跟进，只会进一步消耗国际机构的公信力。"
+          "comment": "历史经验表明，单边制裁在缺乏多边协调的情况下，往往难以产生预期的政治压力效果。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "As War With Iran Hur再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "As War With Iran Hur战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
         }
       ]
     },
     {
-      "id": "bbc_mundo_20260317_13952a31",
-      "title": "La otra guerra en Medio Oriente: cómo los últimos ataques de Israel evidencian las divisiones y desafíos que enfrenta Líbano",
-      "summary": "El país es un escenario secundario de los ataques de Estados Unidos e Israel a Irán, pero las tensiones internas de la política libanesa se remontan décadas atrás.",
-      "url": "https://www.bbc.com/mundo/articles/c4gjnrk342mo?at_medium=RSS&at_campaign=rss",
+      "id": "bbc_world_20260317_47dac37b",
+      "title": "And the burger goes to... Michael B Jordan marks Oscars win at In-N-Out",
+      "summary": "Hours after winning best actor, Jordan joins an exclusive list of famous faces to celebrate an Oscar victory with a burger.",
+      "url": "https://www.bbc.com/news/articles/cpd8w5y0dpdo?at_medium=RSS&at_campaign=rss",
       "source": {
-        "id": "bbc_mundo",
-        "name": "BBC Mundo",
+        "id": "bbc_world",
+        "name": "BBC World",
         "tier": 1,
         "logoColor": "#BB1919"
       },
-      "publishedAt": "2026-03-17T03:16:37.000Z",
+      "publishedAt": "2026-03-17T04:41:58.000Z",
       "category": "general",
       "categoryLabel": "综合",
       "keywords": [],
       "importance": {
-        "score": 6.7,
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "And the burger goes再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+        }
+      ]
+    },
+    {
+      "id": "rfi_fr_20260317_3d3a7830",
+      "title": "Est de la RDC: échanges de tirs à Mugunga, des hommes armés tués et arrêtés, selon l’AFC/M23",
+      "summary": "Incursions d’hommes armés et tirs nourris dans la nuit de dimanche à lundi à Mugunga, dans la commune de Karisimbi, à l’ouest de Goma. Des hommes armés ont attaqué. Les échanges de tirs avec des éléme…",
+      "url": "https://www.rfi.fr/fr/afrique/20260317-est-de-la-rdc-%C3%A9changes-de-tirs-%C3%A0-mugunga-des-hommes-arm%C3%A9s-tu%C3%A9s-et-arr%C3%AAt%C3%A9s-selon-l-afc-m23",
+      "source": {
+        "id": "rfi_fr",
+        "name": "RFI",
+        "tier": 1,
+        "logoColor": "#00205B"
+      },
+      "publishedAt": "2026-03-17T04:03:26.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "安理会的否决权机制在Est de la RDC: échan上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "此次当事国通胀数据的走向，将直接影响国际机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_world_20260317_ecd08077",
+      "title": "Middle East crisis live: Trump seeks to delay summit with China’s Xi amid Iran war; US embassy in Baghdad reportedly targeted in air attack",
+      "summary": "Trump says delay of ‘a month or so’ requested while key official insists move is not to pressure Beijing to help unblock strait of Hormuz; Iraqi officials say drones and rockets attacked embassy Europ…",
+      "url": "https://www.theguardian.com/world/live/2026/mar/17/iran-war-live-updates-news-israel-trump-strikes-us-embassy-baghdad-strait-of-hormuz-middle-east-latest",
+      "source": {
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
+      },
+      "publishedAt": "2026-03-17T05:30:23.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "China此次遭受的袭击，将不可避免地影响其国内安全政策的优先排序与执法力度。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "China在Middle East crisis l上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。"
+        }
+      ]
+    },
+    {
+      "id": "lemonde_20260317_52c82841",
+      "title": "Immobilier : pourquoi le marché connaît une reprise fragile",
+      "summary": "Les transactions redémarrent, mais la confiance des acteurs dans le contexte national et international ainsi que l’évolution des taux d’intérêt sont toujours déterminantes.",
+      "url": "https://www.lemonde.fr/argent/article/2026/03/17/immobilier-pourquoi-le-marche-connait-une-reprise-fragile_6671596_1657007.html",
+      "source": {
+        "id": "lemonde",
+        "name": "Le Monde",
+        "tier": 1,
+        "logoColor": "#222222"
+      },
+      "publishedAt": "2026-03-17T04:50:13.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "安理会的否决权机制在Immobilier : pourquo上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+        }
+      ]
+    },
+    {
+      "id": "lefigaro_20260317_ddfcd117",
+      "title": "Donald Trump veut repousser «d’un mois» sa visite en Chine «à cause de la guerre» au Moyen-Orient",
+      "summary": "La visite d’État du président américain, qui veut rester à la Maison-Blanche pendant le conflit au Moyen-Orient, était prévue du 31 mars au 2 avril.",
+      "url": "https://www.lefigaro.fr/international/donald-trump-veut-repousser-d-un-mois-sa-visite-en-chine-a-cause-de-la-guerre-au-moyen-orient-20260316",
+      "source": {
+        "id": "lefigaro",
+        "name": "Le Figaro",
+        "tier": 2,
+        "logoColor": "#1D4B8F"
+      },
+      "publishedAt": "2026-03-17T05:53:12.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.6,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "Donald Trump veut re背景下通胀数据超预期，预计市场将重新定价未来31个月内的降息预期。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "此次Donald Trump veut re事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
+        }
+      ]
+    },
+    {
+      "id": "faz_20260317_9c35b1da",
+      "title": "Krieg in Nahost: Die Zerstörung Libanons nehmen sie in Kauf",
+      "summary": "Libanon ist zum Schlachtfeld zweier zu allem entschlossenen Feinde geworden. Die Hizbullah will lieber untergehen als aufgeben, Israel droht mit hartem Vorgehen.",
+      "url": "https://www.faz.net/aktuell/politik/ausland/die-zerstoerung-libanons-nehmen-israel-und-die-hizbullah-in-kauf-110854528.html",
+      "source": {
+        "id": "faz",
+        "name": "FAZ",
+        "tier": 2,
+        "logoColor": "#333333"
+      },
+      "publishedAt": "2026-03-17T05:32:53.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "Krieg in Nahost: Die背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "制裁工具的滥用正在推动Israel加速推进去美元化布局，这一战略转向的影响将是深远的。"
+        }
+      ]
+    },
+    {
+      "id": "faz_20260317_40f86858",
+      "title": "Krieg in Libanon: „Die Hizbullah stürzt sich und den Libanon in den Untergang“",
+      "summary": "Und wieder ist der Krieg in Beirut: Charif Majdalani, einer der renommiertesten Schriftsteller seines Landes, über volle Cafés, donnernde Kampfflugzeuge und das selbstmörderische Kalkül der Hizbullah.",
+      "url": "https://www.faz.net/aktuell/feuilleton/debatten/schriftsteller-charif-majdalani-ueber-den-krieg-in-libanon-accg-110854464.html",
+      "source": {
+        "id": "faz",
+        "name": "FAZ",
+        "tier": 2,
+        "logoColor": "#333333"
+      },
+      "publishedAt": "2026-03-17T05:33:24.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "历史经验表明，单边制裁在缺乏多边协调的情况下，往往难以产生预期的政治压力效果。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "相关国家的军事行动已进入Krieg in Libanon: „D阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_576e9242",
+      "title": "Qué mascarilla facial necesitas según tu tipo de piel y objetivo",
+      "summary": "De la hidratación a la acción exfoliante: diferentes fórmulas que aportan lo que cada rostro necesita",
+      "url": "https://elpais.com/escaparate/belleza/2026-03-17/mascarillas-faciales-para-cada-tipo-de-piel.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T05:30:00.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "当前IPO窗口期收窄，优质标的的估值回归理性，对长线投资者而言反而是入场良机。"
+        },
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "Qué mascarilla facia的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
+        }
+      ]
+    },
+    {
+      "id": "spiegel_20260317_d0257bd7",
+      "title": "China, Iran, USA: Donald Trump verschiebt Gipfel mit Xi Jinping wegen Irankriegs",
+      "summary": "Donald Trump wollte eigentlich Xi Jinping in Peking besuchen. Jetzt verschiebt der US-Präsident den Gipfel und fordert China auf, ihm im Irankrieg zu helfen. Doch Xi kann getrost abwarten.",
+      "url": "https://www.spiegel.de/ausland/china-iran-usa-donald-trump-verschiebt-gipfel-mit-xi-jinping-wegen-irankriegs-a-8492c8c9-d6a7-4bf5-a68e-f9690b6bf5ba#ref=rss",
+      "source": {
+        "id": "spiegel",
+        "name": "Der Spiegel",
+        "tier": 2,
+        "logoColor": "#E64415"
+      },
+      "publishedAt": "2026-03-17T05:27:00.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "China的军事行动已进入China, Iran, USA: Do阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
+        }
+      ]
+    },
+    {
+      "id": "spiegel_20260317_6a887335",
+      "title": "Polygamie in deutschen Kolonien: Wie viele Frauen darf Mann lieben?",
+      "summary": "In ihren Kolonien wollten die Deutschen einst die Polygamie abschaffen und das bürgerliche Eheideal verbreiten. Das war gar nicht so einfach.",
+      "url": "https://www.spiegel.de/geschichte/polygamie-in-deutschen-kolonien-wie-viele-frauen-darf-mann-lieben-a-c36c9071-17fe-409e-8cf4-a85f240fb7c5#ref=rss",
+      "source": {
+        "id": "spiegel",
+        "name": "Der Spiegel",
+        "tier": 2,
+        "logoColor": "#E64415"
+      },
+      "publishedAt": "2026-03-17T05:42:00.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "安理会的否决权机制在Polygamie in deutsch上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Polygamie in deutsch战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_e6e4f8ce",
+      "title": "Wetter: DWD warnt vor Frost und Glätte im Osten",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/dwd-warnt-vor-frost-und-glaette-im-osten",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:49:40.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "国际机构在Wetter: DWD warnt vo上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_world_20260317_93b0de45",
+      "title": "Australia news live: Michele Bullock says higher petrol prices ‘not the reason’ for RBA’s decision to hike cash rate",
+      "summary": "Reserve Bank lifts official cash rate target by 25 basis points. Follow today’s news live RBA raises official interest rate to 4.1% in blow to mortgage holders Get our breaking news email, free app or…",
+      "url": "https://www.theguardian.com/australia-news/live/2026/mar/17/bowen-rba-interest-rates-decision-cost-of-living-inflation-fuel-price-shortages-petrol-jim-chalmers-economy-war-iran-anthony-albanese-ntwnfb",
+      "source": {
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
+      },
+      "publishedAt": "2026-03-17T05:44:53.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.5,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -667,339 +1459,27 @@
       ]
     },
     {
-      "id": "bbc_zhongwen_20260317_de2f29a9",
-      "title": "Openclaw和AI代理熱潮拆解：從「養龍蝦」到「卸龍蝦」",
-      "summary": "你能信任人工智能，讓它像一隻高級寵物一般幫你交電費和處理郵件嗎？面對這股龍蝦熱，我們應該怎麼辦？",
-      "url": "https://www.bbc.com/zhongwen/articles/c93wvdn91kxo/trad?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_zhongwen",
-        "name": "BBC中文",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T03:36:06.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6.7,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "Openclaw和AI代理熱潮拆解：從「背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Openclaw和AI代理熱潮拆解：從「再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_world_20260317_e0126c40",
-      "title": "Millions without electricity as Cuba's power grid collapses",
-      "summary": "Cuba's chronic fuel shortages have been exacerbated by a US blockade on oil shipments to the island.",
-      "url": "https://www.bbc.com/news/articles/c07j40dyx53o?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T03:46:22.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.7,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "US的军事行动已进入Millions without ele阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
-        }
-      ]
-    },
-    {
-      "id": "nhk_world_20260317_a04dc0b0",
-      "title": "高市首相“長期化に備え原油など代替調達先確保を”参院予算委",
-      "summary": "イラン情勢をめぐり、高市総理大臣は、参議院予算委員会で、事態が長期化した場合に備え原油などの代替の調達先の確保に取り組む考えを示しました。",
-      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077761000.html",
-      "source": {
-        "id": "nhk_world",
-        "name": "NHK World",
-        "tier": 1,
-        "logoColor": "#0076D1"
-      },
-      "publishedAt": "2026-03-17T02:59:48.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.6,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "主要经济体的军事行动已进入高市首相“長期化に備え原油など代替調達先阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "主要经济体的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "相关国家此次选举结果将重塑高市首相“長期化に備え原油など代替調達先的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_zhongwen_20260317_fee7c005",
-      "title": "「胖子監獄」、極限減重：為何中國「軍訓式減肥營」越來越熱門？",
-      "summary": "在中國，軍事風格的減重營隊越來越受歡迎，人們通常自願報名參加一個月，並遵循嚴格的日常安排，包括高強度的運動、強制稱重和零食限制等。一些人甚至稱這些營隊為「胖子監獄」。",
-      "url": "https://www.bbc.com/zhongwen/articles/cx2r9rrv9wjo/trad?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_zhongwen",
-        "name": "BBC中文",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T03:19:52.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.6,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "「胖子監獄」、極限減重：為何中國「軍訓式背景下通胀数据超预期，预计市场将重新定价未来若干个月内的降息预期。"
-        }
-      ]
-    },
-    {
-      "id": "rfi_fr_20260317_685adc54",
-      "title": "Tunisie: un mandat de dépôt à l'encontre de sept organisateurs des flottilles pour Gaza",
-      "summary": "En Tunisie, un mandat de dépôt a été ordonné contre sept membres de la coordination tunisienne de la Global Sumud Flotilla, un mouvement citoyen pour briser le blocus israélien sur Gaza. Tous restent …",
-      "url": "https://www.rfi.fr/fr/afrique/20260317-tunisie-un-mandat-de-d%C3%A9p%C3%B4t-%C3%A0-l-encontre-de-sept-organisateurs-des-flottilles-pour-gaza",
-      "source": {
-        "id": "rfi_fr",
-        "name": "RFI",
-        "tier": 1,
-        "logoColor": "#00205B"
-      },
-      "publishedAt": "2026-03-17T03:51:37.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.6,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "各方与国际机构的结构性矛盾在Tunisie: un mandat d上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
-        }
-      ]
-    },
-    {
-      "id": "nhk_world_20260317_e2979c95",
-      "title": "辺野古沖 2人死亡事故 1隻目の約2分後に2隻目も転覆 海保",
-      "summary": "アメリカ軍普天間基地の移設工事が行われている沖縄県名護市辺野古沖の海上で、研修旅行で訪れていた京都府の高校の生徒たちを乗せた船2隻が転覆して生徒など2人が死亡した事故で、1隻目が転覆したおよそ2分後に2隻目も転覆したことが海上保安本部への取材でわかりました。海上保安本部は断続的に高波が生じていた可能性があるとみて当時の状況を調べています。事故を受けて、高校が午前11時から記者会見を開き、生徒たちが…",
-      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077651000.html",
-      "source": {
-        "id": "nhk_world",
-        "name": "NHK World",
-        "tier": 1,
-        "logoColor": "#0076D1"
-      },
-      "publishedAt": "2026-03-17T03:23:26.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.6,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "各方此次攻势的战略纵深有限，若无法在2天内取得决定性成果，将陷入战略被动。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着相关机构收紧货币政策的窗口仍然开放。当事国消费市场的韧性值得持续跟踪。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_17cda7ca",
-      "title": "Chinesische Aktien: Gehören China-Aktien auch in Ihr MSCI-World-Depot?",
-      "summary": "Chinas Börsen waren lange geächtet, doch das ändert sich. Das Land ist Innovationsführer, seine Aktien billig. Mit diesen Tipps investieren MSCI-World-Anleger souverän.",
-      "url": "https://www.zeit.de/geld/2026-02/chinesische-aktien-etf-msci-world-tencent-xiaomi-baidu",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:34:34.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.6,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "China在Chinesische Aktien:上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "China的军事行动已进入Chinesische Aktien:阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_d0039e33",
-      "title": "Verwendung des Sondervermögens: So wird das Sondervermögen verplempert",
-      "summary": "Vor einem Jahr bewilligte der Bundestag ein riesiges Schuldenpaket für neue Investitionen. Eine Studie legt nahe: Das Geld wurde zu 95 Prozent zweckentfremdet.",
-      "url": "https://www.zeit.de/wirtschaft/2026-03/verwendung-sondervermoegen-missbrauch-98-prozent-schulden",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:31:26.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.5,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "相关方在Verwendung des Sonde上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_cd863b64",
-      "title": "Australia news live: Michele Bullock says higher petrol prices ‘not the reason’ for RBA’s decision to hike cash rate",
-      "summary": "Reserve Bank lifts official cash rate target by 25 basis points. Follow today’s news live RBA raises official interest rate to 4.1% in blow to mortgage holders Get our breaking news email, free app or…",
-      "url": "https://www.theguardian.com/australia-news/live/2026/mar/17/bowen-rba-interest-rates-decision-cost-of-living-inflation-fuel-price-shortages-petrol-jim-chalmers-economy-war-iran-anthony-albanese-ntwnfb",
+      "id": "guardian_world_20260317_b4d9c7bd",
+      "title": "‘Removing flags doesn’t stop racism’: regional NSW council abandons plan to stop flying Aboriginal flag",
+      "summary": "The Federation Council in Corowa received 266 submissions from ratepayers opposed to a plan to remove Indigenous flags, and only 44 in favour Follow our Australia news live blog for latest updates Get…",
+      "url": "https://www.theguardian.com/australia-news/2026/mar/17/corowa-regional-nsw-council-aboriginal-flag-ban-stopped-ntwnfb",
       "source": {
         "id": "guardian_world",
         "name": "The Guardian",
         "tier": 2,
         "logoColor": "#052962"
       },
-      "publishedAt": "2026-03-17T04:39:13.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
+      "publishedAt": "2026-03-17T05:34:07.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
       "keywords": [],
       "importance": {
-        "score": 6.5,
+        "score": 6.4,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "制裁工具的滥用正在推动Australia加速推进去美元化布局，这一战略转向的影响将是深远的。"
-        },
         {
           "id": "wang_fang",
           "name": "王芳",
@@ -1011,27 +1491,107 @@
       ]
     },
     {
-      "id": "nyt_world_20260317_18927458",
-      "title": "As American Bombers Take Off From R.A.F. Fairford in UK, Iraq War Looms Large",
-      "summary": "R.A.F. Fairford was the site of repeated antiwar protests during the Iraq war in 2003. Now it is being used again as a base for U.S. bombing missions in the Middle East.",
-      "url": "https://www.nytimes.com/2026/03/17/world/europe/iran-uk-raf-fairford-starmer-trump.html",
+      "id": "zeit_20260317_0e9621ee",
+      "title": "US-Migrationspolitik: USA dürfen Migranten vorerst wieder in Drittstaaten abschieben",
+      "summary": "Ein Berufungsgericht hat entschieden, dass Migranten wieder in Länder abgeschoben werden dürfen, aus denen sie nicht stammen. Ein Bezirksgericht hatte das zuvor gestoppt.",
+      "url": "https://www.zeit.de/politik/ausland/2026-03/usa-migranten-abschiebungen-drittstaaten-erlaubt-berufungsgericht",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:32:39.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "多万人背井离乡，这数字的背后是无数个被US-Migrationspolitik打碎的人生轨迹，值得每一个有良知的人停下来思考。"
+        }
+      ]
+    },
+    {
+      "id": "nyt_world_20260317_698431fa",
+      "title": "What the Iran War Means for the U.S.-China Relationship",
+      "summary": "With the Xi-Trump summit now almost certainly delayed, and tensions rising over the war in Iran, vital issues for both the U.S. and China are also being cast into uncertainty.",
+      "url": "https://www.nytimes.com/2026/03/17/world/asia/iran-war-china-us-trump-xi.html",
       "source": {
         "id": "nyt_world",
         "name": "New York Times",
         "tier": 2,
         "logoColor": "#000000"
       },
-      "publishedAt": "2026-03-17T04:01:06.000Z",
+      "publishedAt": "2026-03-17T05:15:26.000Z",
       "category": "military",
       "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.5,
+        "score": 6.4,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "China此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "China与国际机构峰会的实质性成果，将为地区局势降温提供外交缓冲期，但结构性矛盾仍待化解。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_202f324c",
+      "title": "Champions League: Palacios fordert: Von Arsenal \"nicht beeindrucken lassen\"",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/palacios-fordert-von-arsenal-nicht-beeindrucken-lassen",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:35:04.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "Champions League: Pa选举释放出明确的民粹主义信号，这一趋势对相关方的多边合作框架构成系统性挑战。"
+        },
         {
           "id": "zhao_lei",
           "name": "赵磊",
@@ -1039,263 +1599,239 @@
           "avatar": "ZL",
           "color": "#EF4444",
           "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "此次As American Bombers的规模与持续性，表明现执政当局的合法性基础已发生明显侵蚀。"
         }
       ]
     },
     {
-      "id": "elpais_20260317_70007c64",
-      "title": "Última hora del ataque de Estados Unidos e Israel contra Irán, en directo | Emiratos Árabes Unidos cierra su espacio aéreo ante una nueva ola de ataques iraníes",
-      "summary": "Un dron impacta en la sede de la misión de la Unión Europea en Bagdad sin causar víctimas | Bruselas se resiste a la petición de ayuda de Trump en el estrecho de Ormuz: “Esta no es la guerra de Europa…",
-      "url": "https://elpais.com/internacional/2026-03-16/ultima-hora-del-ataque-de-estados-unidos-e-israel-contra-iran-en-directo.html",
-      "source": {
-        "id": "elpais",
-        "name": "El País",
-        "tier": 2,
-        "logoColor": "#1A1A1A"
-      },
-      "publishedAt": "2026-03-17T04:32:14.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.5,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Última hora del ataq再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        },
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "相关方最新电池技术指标的披露，将对整个新能源产业链的定价逻辑产生连锁影响。"
-        }
-      ]
-    },
-    {
-      "id": "dw_cn_20260317_9b478564",
-      "title": "「中國行」將推遲一個月 川普：不是耍花招",
-      "summary": "在暗示可能會延後訪中行程後，美國總統川普週一表示，他已經向北京提出將與中國領導人習近平的會晤延後約一個月，以利他優先處理當前的中東衝突。此前，美國稱川普將於3月底到訪北京，但中國政府尚未公布相關消息。",
-      "url": "https://www.dw.com/zh/「中國行」將推遲一個月　川普：不是耍花招/a-76373622?maca=chi-rss-chi-all-1127-rdf",
-      "source": {
-        "id": "dw_cn",
-        "name": "DW中文",
-        "tier": 2,
-        "logoColor": "#006DAB"
-      },
-      "publishedAt": "2026-03-17T04:37:00.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "「中國行」將推遲一個月 川普：不是耍花招再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "选举结果的不确定性折射出当事国社会内部的深层撕裂，后选举时期的政策连续性值得观察。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_62337695",
-      "title": "Sicherheit in Städten: Innenministerin Behrens will Sicherheitsempfinden stärken",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/innenministerin-behrens-will-sicherheitsempfinden-staerken",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:30:04.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关机构的响应速度远落后于科学预警。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "选举结果的不确定性折射出当事国社会内部的深层撕裂，后选举时期的政策连续性值得观察。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "相关国家的军事行动已进入Sicherheit in Städte阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        }
-      ]
-    },
-    {
-      "id": "elpais_20260317_e2df631c",
-      "title": "La Fiscalía archiva las diligencias del ‘pendrive’ de la investigación de Leire Díez que el PSOE entregó en la Audiencia Nacional",
-      "summary": "Tras recibir un informe de la UCO, el ministerio público no ve novedades en la información aportada por la exmilitante socialista y decide no judicializar nada nuevo",
-      "url": "https://elpais.com/espana/2026-03-17/la-fiscalia-archiva-las-diligencias-del-pendrive-de-la-investigacion-de-leire-diez-que-el-psoe-entrego-en-la-audiencia-nacional.html",
-      "source": {
-        "id": "elpais",
-        "name": "El País",
-        "tier": 2,
-        "logoColor": "#1A1A1A"
-      },
-      "publishedAt": "2026-03-17T04:30:01.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "安理会的否决权机制在La Fiscalía archiva上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关方的响应速度远落后于科学预警。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_220ce9f2",
-      "title": "Chris Bowen declares rush on jerry cans ‘un-Australian’ as he urges end to panic buying of petrol",
-      "summary": "Energy minister says country’s fuel supply has yet to be affected by war after meeting with suppliers and retailers Follow our Australia news live blog for latest updates Get our breaking news email, …",
-      "url": "https://www.theguardian.com/australia-news/2026/mar/17/australia-petrol-panic-buying-jerry-cans",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T04:05:25.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Chris Bowen declares战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_71ec6f0d",
-      "title": "Middle East crisis live: Trump seeks to delay summit with China’s Xi amid Iran war; US embassy in Baghdad reportedly targeted in air attack",
-      "summary": "Trump says delay of ‘a month or so’ requested while key official insists move is not to pressure Beijing to help unblock strait of Hormuz; Iraqi officials say drones and rockets attacked embassy Europ…",
-      "url": "https://www.theguardian.com/world/live/2026/mar/17/iran-war-live-updates-news-israel-trump-strikes-us-embassy-baghdad-strait-of-hormuz-middle-east-latest",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T04:20:15.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "反恐行动的有效性不仅取决于军事打击，更取决于能否切断极端主义的意识形态根源与财务网络。"
-        }
-      ]
-    },
-    {
-      "id": "spiegel_20260317_b03a66f4",
-      "title": "News: Donald Trump, Libanon, Russlands Wegwerf-Agenten",
-      "summary": "Der US-Präsident ärgert sich über ausbleibende Unterstützung in der Straße von Hormus. Dem Libanon droht eine israelische Großoffensive. Und drei »Wegwerf-Agenten« Russlands stehen vor Gericht. Das is…",
-      "url": "https://www.spiegel.de/politik/deutschland/news-donald-trump-libanon-russlands-wegwerf-agenten-a-20d9b9fc-c551-495b-b80d-a622c28f481d#ref=rss",
+      "id": "spiegel_20260317_0a36b6df",
+      "title": "Pilot mit bis zu 175.000 Euro im Jahr: »Eigentlich gibt es keinen Grund für das hohe Gehalt«",
+      "summary": "Andreas Kaya ist Pilot einer arabischen Fluggesellschaft und verdient rund 12.000 Euro im Monat – steuerfrei. Obendrauf bekommt er eine Wohnung in exklusiver Lage. Hier legt er sein Einkommen offen.",
+      "url": "https://www.spiegel.de/karriere/pilot-mit-bis-zu-175-000-euro-im-jahr-eigentlich-gibt-es-keinen-grund-fuer-das-hohe-gehalt-a-09eb0f65-c636-4e28-ab51-2d5753c7dc2b#ref=rss",
       "source": {
         "id": "spiegel",
         "name": "Der Spiegel",
         "tier": 2,
         "logoColor": "#E64415"
       },
-      "publishedAt": "2026-03-17T04:36:00.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
+      "publishedAt": "2026-03-17T05:37:00.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "Pilot mit bis zu 175再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+        }
+      ]
+    },
+    {
+      "id": "spiegel_20260317_2961a10a",
+      "title": "Schufa mit neuem Score: Auf diese Daten kommt es jetzt an",
+      "summary": "Ob Konten oder Kreditkarten: Bei der Schufa laufen wichtige Daten zu Ihrer Kreditwürdigkeit zusammen. Nun will das Unternehmen transparenter werden – und macht die Kriterien öffentlich, die über die E…",
+      "url": "https://www.spiegel.de/wirtschaft/service/schufa-mit-neuem-score-auf-diese-daten-kommt-es-jetzt-an-a-33b87fae-cf93-42a2-af83-abc6bfa6802c#ref=rss",
+      "source": {
+        "id": "spiegel",
+        "name": "Der Spiegel",
+        "tier": 2,
+        "logoColor": "#E64415"
+      },
+      "publishedAt": "2026-03-17T05:38:00.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "通胀压力的持续，意味着国际机构收紧货币政策的窗口仍然开放。主要经济体消费市场的韧性值得持续跟踪。"
+        }
+      ]
+    },
+    {
+      "id": "spiegel_20260317_646fabd6",
+      "title": "Elektroauto kaufen: Mit diesen Modellen sparen Sie besonders viel",
+      "summary": "Sprit kostet teils 2,50 Euro pro Liter? Elektroautofahrern ist das ziemlich egal. Kein Wunder, dass das Interesse an Pkw mit Batterieantrieb wächst. Diese Modelle bringen Sie besonders günstig ans Zie…",
+      "url": "https://www.spiegel.de/mobilitaet/elektroauto-kaufen-mit-diesen-modellen-sparen-sie-besonders-viel-a-c8e40e42-173f-4202-86aa-896f66e51b22#ref=rss",
+      "source": {
+        "id": "spiegel",
+        "name": "Der Spiegel",
+        "tier": 2,
+        "logoColor": "#E64415"
+      },
+      "publishedAt": "2026-03-17T05:40:00.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "国际机构在Elektroauto kaufen:上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "Elektroauto kaufen:背景下通胀数据超预期，预计市场将重新定价未来2个月内的降息预期。"
+        }
+      ]
+    },
+    {
+      "id": "spiegel_20260317_2c99f0da",
+      "title": "Afghanistan, Pakistan: Taliban berichten von Hunderten Tote bei Angriff auf Klinik in Kabul",
+      "summary": "400 Tote, 250 Verletzte: Pakistan soll laut den Taliban einen verheerenden Luftschlag auf eine Entzugsklinik in Kabul durchgeführt haben. Islamabad stellt den Angriff deutlich anders dar.",
+      "url": "https://www.spiegel.de/ausland/afghanistan-pakistan-taliban-berichten-von-hunderten-tote-bei-angriff-auf-klinik-in-kabul-a-b0f9cd6c-5a8d-4c01-aa8f-759b9d84cb3f#ref=rss",
+      "source": {
+        "id": "spiegel",
+        "name": "Der Spiegel",
+        "tier": 2,
+        "logoColor": "#E64415"
+      },
+      "publishedAt": "2026-03-17T05:32:00.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "Afghanistan, Pakista再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "制裁工具的滥用正在推动Afghanistan加速推进去美元化布局，这一战略转向的影响将是深远的。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_bfb2a53f",
+      "title": "Bertelsmann Stiftung: Viele Langzeitarbeitslose sehen keine besseren Chancen durch Jobcenter",
+      "summary": "Fast jeder zweite Langzeitarbeitslose hat das Gefühl, dass die Termine beim Jobcenter \"nichts bringen\". Verbesserungsbedarf sehen sie bei Erreichbarkeit und Maßnahmen.",
+      "url": "https://www.zeit.de/arbeit/2026-03/langzeitarbeitslosigkeit-studie-bertelsmann-stiftung-jobcenter-zufriedenheit",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:48:49.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "通胀压力的持续，意味着相关方收紧货币政策的窗口仍然开放。各方消费市场的韧性值得持续跟踪。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_532bb2a5",
+      "title": "Kriminalität: Großeinsatz nach Tötungsdelikt im Kreis Groß-Gerau",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/grosseinsatz-nach-toetungsdelikt-im-kreis-gross-gerau",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:43:17.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而主要组织的响应速度远落后于科学预警。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "此次相关国家通胀数据的走向，将直接影响主要组织的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_3a852648",
+      "title": "Wetter: Wetter in Norddeutschland: Sonne, Frost und später Regen",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/wetter-in-norddeutschland-sonne-frost-und-spaeter-regen",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:42:30.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
       "keywords": [],
       "importance": {
         "score": 6.4,
@@ -1310,87 +1846,7 @@
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "News: Donald Trump,战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "News: Donald Trump,制裁方案的精准程度，折射出相关方在平衡盟友利益与战略目标方面的困境。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_91105c04",
-      "title": "Villa Beer in Wien: Bullauge im Villenviertel",
-      "summary": "Lange fristete die Villa Beer ein Schattendasein in Hietzing. Jetzt wird der herausragende Bau der Wiener Moderne zu einem Hausmuseum.",
-      "url": "https://www.zeit.de/2026/12/villa-beer-wien-josef-frank-architektur-moderne",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:30:48.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着相关方收紧货币政策的窗口仍然开放。主要经济体消费市场的韧性值得持续跟踪。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "此次Villa Beer in Wien:事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_43967309",
-      "title": "Kultur: Filmfest Schleswig-Holstein startet in Jubiläumsjahr",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/filmfest-schleswig-holstein-startet-in-jubilaeumsjahr",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:30:05.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.4,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "各方此次选举结果将重塑Kultur: Filmfest Sch的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
+          "comment": "相关国家此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
         },
         {
           "id": "wang_fang",
@@ -1398,22 +1854,22 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Kultur: Filmfest Sch再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
     {
-      "id": "zeit_20260317_febfc3bc",
-      "title": "Ehrenamt: Es ist Zeit, sich weniger um sich selbst zu drehen",
-      "summary": "Geht es einem schlecht, kümmert man sich um sich. Verständliche Reaktion. Was aber, wenn etwas anderes viel sinnvoller ist, um sich nachhaltig besser zu fühlen?",
-      "url": "https://www.zeit.de/zeit-magazin/2026-03/ehrenamt-sinnsuche-fuersorge-optimismus",
+      "id": "zeit_20260317_385571d0",
+      "title": "Basketball: \"Einen Schritt zu langsam\": Magic-Serie reißt in Atlanta",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/einen-schritt-zu-langsam-magic-serie-reisst-in-atlanta",
       "source": {
         "id": "zeit",
         "name": "Die Zeit",
         "tier": 2,
         "logoColor": "#000000"
       },
-      "publishedAt": "2026-03-17T04:29:34.000Z",
+      "publishedAt": "2026-03-17T05:41:01.000Z",
       "category": "general",
       "categoryLabel": "综合",
       "keywords": [],
@@ -1430,15 +1886,159 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "相关国家此次选举结果将重塑Ehrenamt: Es ist Zei的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
+          "comment": "选举结果的不确定性折射出相关国家社会内部的深层撕裂，后选举时期的政策连续性值得观察。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_f56a8e59",
+      "title": "Wetter: Sonne am Tag, Frost in der Nacht in Berlin und Brandenburg",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/sonne-am-tag-frost-in-der-nacht-in-berlin-und-brandenburg",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:37:40.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Wetter: Sonne am Tag战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "lefigaro_20260317_743b3c87",
+      "title": "EN DIRECT - Municipales 2026 : la maire sortante de Creil placée sous protection policière après avoir reçu des menaces",
+      "summary": "Sophie Dhoury-Lehner, maire PS sortante la commune située dans l’Oise, arrivée dimanche en tête du premier tour, a confirmé lundi bénéficier depuis vendredi d’une «protection rapprochée» après avoir é…",
+      "url": "https://www.lefigaro.fr/elections/municipales/direct-municipales-2026-resultats-alliances-lfi-ps-paris-lyon-marseille-bordeaux-nantes-20260317",
+      "source": {
+        "id": "lefigaro",
+        "name": "Le Figaro",
+        "tier": 2,
+        "logoColor": "#1D4B8F"
+      },
+      "publishedAt": "2026-03-17T05:35:19.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "EN DIRECT - Municipa的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
         },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "主要经济体与相关机构的结构性矛盾在EN DIRECT - Municipa上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
+        }
+      ]
+    },
+    {
+      "id": "lefigaro_20260317_e9574624",
+      "title": "Donald Trump estime qu’il aura «l’honneur de prendre» Cuba «d’une manière ou d’une autre»",
+      "summary": "L’administration Trump pousse pour que le président cubain Miguel Diaz-Canel quitte le pouvoir, dans le cadre des négociations entre les deux pays, selon le New York Times lundi qui cite quatre person…",
+      "url": "https://www.lefigaro.fr/international/donald-trump-estime-qu-il-aura-l-honneur-de-prendre-cuba-d-une-maniere-ou-d-une-autre-20260316",
+      "source": {
+        "id": "lefigaro",
+        "name": "Le Figaro",
+        "tier": 2,
+        "logoColor": "#1D4B8F"
+      },
+      "publishedAt": "2026-03-17T05:43:57.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "各方的军事行动已进入Donald Trump estime阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "相关国家的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+        }
+      ]
+    },
+    {
+      "id": "meduza_20260317_74a2f984",
+      "title": "Faridaily: российские чиновники не доверяют мессенджеру Max. Они покупают для него отдельные телефоны и сим-карты",
+      "summary": "Российские чиновники, депутаты и топ-менеджеры госкомпаний не доверяют национальному мессенджеру Max, для его использования некоторые из них покупают новые сим-карты и смартфоны. Об этом изданию Farid…",
+      "url": "https://meduza.io/news/2026/03/17/faridaily-rossiyskie-chinovniki-ne-doveryayut-messendzheru-max-oni-pokupayut-dlya-nego-otdelnye-telefony-i-sim-karty",
+      "source": {
+        "id": "meduza",
+        "name": "Meduza",
+        "tier": 2,
+        "logoColor": "#2A2A2A"
+      },
+      "publishedAt": "2026-03-17T05:38:56.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.4,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
         {
           "id": "li_ming",
           "name": "李明",
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "此次当事国通胀数据的走向，将直接影响主要组织的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+          "comment": "Faridaily: российски背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而国际机构的响应速度远落后于科学预警。"
         }
       ]
     },
@@ -1470,30 +2070,30 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "相关国家的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         },
         {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "Apodos despectivos,背景下通胀数据超预期，预计市场将重新定价未来相当数量的个月内的降息预期。"
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "相关机构在Apodos despectivos,方向的突破，标志着大模型能力边界的再次扩展，行业格局或将因此重塑。"
         }
       ]
     },
     {
-      "id": "elpais_20260317_b2d30926",
-      "title": "Andalucía, Madrid y Castilla-La Mancha acudirán a un arbitraje si Ecoembes no les paga 136 millones más al año por sus envases",
-      "summary": "Otras seis Comunidades esperan el resultado de la mediación porque puede mejorar la cuantía que la compañía les abona por reciclar la basura urbana",
-      "url": "https://elpais.com/espana/2026-03-17/andalucia-madrid-y-castilla-la-mancha-acudiran-a-un-arbitraje-si-ecoembes-no-les-paga-136-millones-mas-al-ano-por-sus-envases.html",
+      "id": "elpais_20260317_297dafe0",
+      "title": "La baliza V16 homologada por menos de 30 euros que llevar en el coche para ir preparado esta Semana Santa",
+      "summary": "Esta luz de emergencia para señalizar accidentes o percances en carretera conectada con la DGT, y de uso obligatorio, tiene más de dos horas de autonomía",
+      "url": "https://elpais.com/escaparate/estilo-de-vida/2026-03-17/luz-de-emergencia-v16-homologada.html",
       "source": {
         "id": "elpais",
         "name": "El País",
         "tier": 2,
         "logoColor": "#1A1A1A"
       },
-      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "publishedAt": "2026-03-17T05:45:00.000Z",
       "category": "general",
       "categoryLabel": "综合",
       "keywords": [],
@@ -1505,284 +2105,108 @@
       },
       "analysts": [
         {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "此次相关国家通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
-        },
-        {
           "id": "wang_fang",
           "name": "王芳",
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Andalucía, Madrid y再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+          "comment": "各方的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
     {
-      "id": "tagesschau_20260317_e6fef3b6",
-      "title": "Dänemark: Entscheidet der Grönland-Effekt die Wahl?",
-      "summary": "Lange befanden sich die Umfragewerte von Dänemarks Ministerpräsidentin Frederiksen und ihren Sozialdemokraten im Sinkflug. Doch eine Woche vor der Wahl dürfen sie wieder hoffen - auch dank US-Präsiden…",
-      "url": "https://www.tagesschau.de/ausland/europa/daenemark-wahl-120.html",
-      "source": {
-        "id": "tagesschau",
-        "name": "Tagesschau",
-        "tier": 1,
-        "logoColor": "#004B93"
-      },
-      "publishedAt": "2026-03-17T01:58:05.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "US在Dänemark: Entscheide上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。"
-        }
-      ]
-    },
-    {
-      "id": "lemonde_20260317_ce04ca46",
-      "title": "Détroit d’Ormuz : les Européens refusent d’être entraînés dans la guerre américano-israélienne contre l’Iran",
-      "summary": "Le président américain, Donald Trump, exige que ses alliés l’aident à débloquer le passage pour les pétroliers du Golfe. La France entend bien mener une coalition internationale pour libérer la naviga…",
-      "url": "https://www.lemonde.fr/international/article/2026/03/17/detroit-d-ormuz-les-europeens-refusent-d-etre-entraines-dans-la-guerre-americano-israelienne-contre-l-iran_6671546_3210.html",
-      "source": {
-        "id": "lemonde",
-        "name": "Le Monde",
-        "tier": 1,
-        "logoColor": "#222222"
-      },
-      "publishedAt": "2026-03-17T02:30:08.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "France的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_54f0a219",
-      "title": "RBA interest rates: Reserve Bank raises official cash rate to 4.1% in blow to mortgage holders",
-      "summary": "Reserve Bank of Australia’s second consecutive increase lifts cash rate target to where it was in February last year Follow our Australia news live blog for latest updates Get our breaking news email,…",
-      "url": "https://www.theguardian.com/australia-news/2026/mar/17/rba-interest-rate-australia-increase-fuel-petrol-prices",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T04:06:03.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "全球主要央行政策分化加剧，Australia资本市场承压，汇率波动或将成为下一个风险点。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_business_20260317_b5ae39e6",
-      "title": "Trump seeks to delay meeting with Xi in China",
-      "summary": "The escalating war in Iran has overshadowed many of the US' foreign policy objectives",
-      "url": "https://www.bbc.com/news/articles/cn9e0z7v3nxo?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_business",
-        "name": "BBC Business",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T02:48:45.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "China的军事行动已进入Trump seeks to delay阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "China在Trump seeks to delay上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。"
-        }
-      ]
-    },
-    {
-      "id": "lefigaro_20260317_99c75918",
-      "title": "EN DIRECT - Guerre au Moyen-Orient : des explosions retentissent à Doha et Dubaï",
-      "summary": "Un tanker a aussi été touché par un «projectile inconnu» alors qu’il était à l’ancre dans le golfe d’Oman, non loin de l’entrée du détroit d’Ormuz, a annoncé mardi l’agence maritime britannique UKMTO.",
-      "url": "https://www.lefigaro.fr/international/en-direct-conflit-au-moyen-orient-donald-trump-fait-pression-sur-l-otan-et-pekin-pour-rouvrir-le-detroit-d-ormuz-20260316",
-      "source": {
-        "id": "lefigaro",
-        "name": "Le Figaro",
-        "tier": 2,
-        "logoColor": "#1D4B8F"
-      },
-      "publishedAt": "2026-03-17T04:01:05.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_bc826b12",
-      "title": "Stichwahl: Rot oder grün: Was unterscheidet die Münchner OB-Kandidaten?",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/rot-oder-gruen-was-unterscheidet-die-muenchner-ob-kandidaten",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:15:05.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.3,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着主要组织收紧货币政策的窗口仍然开放。当事国消费市场的韧性值得持续跟踪。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "国际社会的呼吁缺乏强制力支撑，若无实质行动跟进，只会进一步消耗主要组织的公信力。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_world_20260317_9a974faf",
-      "title": "Trump says presidents 'should not have learning disabilities' as he mocks Newsom's dyslexia",
-      "summary": "The National Center for Learning Disabilities said it was \"disturbed\" by the president's remarks.",
-      "url": "https://www.bbc.com/news/articles/c4gjnwmm984o?at_medium=RSS&at_campaign=rss",
+      "id": "bbc_world_20260317_49b08280",
+      "title": "Dozens killed after Afghanistan rehab hospital struck",
+      "summary": "The BBC visited the hospital and saw more than 30 bodies being carried out on stretchers.",
+      "url": "https://www.bbc.com/news/articles/c4g8n7e0l40o?at_medium=RSS&at_campaign=rss",
       "source": {
         "id": "bbc_world",
         "name": "BBC World",
         "tier": 1,
         "logoColor": "#BB1919"
       },
-      "publishedAt": "2026-03-17T02:04:48.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
+      "publishedAt": "2026-03-17T03:17:57.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Trump says president战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        },
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "Afghanistan医疗体系在Dozens killed after压力下的应对表现，是衡量一个社会公共卫生承诺的最真实镜子。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_world_20260317_4c79280e",
+      "title": "Afghanistan accuses Pakistan of deadly strike on Kabul hospital",
+      "summary": "Afghanistan’s deputy government spokesman says death toll has reached 400 people ‘so far’ as Islamabad denies targeting facility for drug addicts Hundreds were feared dead after a strike on a hospital…",
+      "url": "https://www.theguardian.com/world/2026/mar/16/afghanistan-accuses-pakistan-of-kabul-hospital-strike-killed",
+      "source": {
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
+      },
+      "publishedAt": "2026-03-17T05:22:22.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
         {
           "id": "wang_fang",
           "name": "王芳",
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Trump says president再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+          "comment": "Afghanistan accuses引发的社会动荡，需要理解其深层成因，而非简单地将参与者标签化。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_world_20260317_cef1d6e1",
+      "title": "‘We are the family’: low-budget thriller highlights Hungary’s election tension",
+      "summary": "Audiences draw parallels between the abduction plot of Feels Like Home and Viktor Orbán’s 16-year reign It’s seven o’clock on a Tuesday night, and one of the most popular movie theatres in Budapest is…",
+      "url": "https://www.theguardian.com/world/2026/mar/17/low-budget-thriller-highlights-hungary-election-divide",
+      "source": {
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
+      },
+      "publishedAt": "2026-03-17T05:00:40.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而国际机构的响应速度远落后于科学预警。"
         },
         {
           "id": "zhang_wei",
@@ -1790,133 +2214,13 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "主要经济体此次选举结果将重塑Trump says president的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
+          "comment": "‘We are the family’:选举释放出明确的民粹主义信号，这一趋势对相关机构的多边合作框架构成系统性挑战。"
         }
       ]
     },
     {
-      "id": "nyt_world_20260317_0e3d4f4f",
-      "title": "Here’s What Happened in the War in the Middle East on Monday",
-      "summary": "President Trump said he might postpone a trip to China to focus on the war. More than a million people have been displaced in Lebanon this month, according to the country’s health ministry.",
-      "url": "https://www.nytimes.com/2026/03/16/world/middleeast/iran-war-recap-lebanon-ground-invasion.html",
-      "source": {
-        "id": "nyt_world",
-        "name": "New York Times",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T03:24:35.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6.2,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "相当数量的例死亡背后，是每一个具体的家庭和故事，政策决策者不应让这个数字沦为纯粹的统计数据。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Here’s What Happened战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_05703fb1",
-      "title": "Cybersicherheit: Viele Aufzüge sind laut TÜV nicht gegen Cyberangriffe geschützt",
-      "summary": "Weil Aufzüge zunehmend digital gesteuert werden, sind sie ein Ziel für Cyberkriminelle. Viele Betreiber setzen nach Angaben des TÜV keine Schutzmaßnahmen um.",
-      "url": "https://www.zeit.de/wirtschaft/fahrstuehle-aufzuege-cybersicherheit-tuev-cyberangriffe",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:06:35.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6.2,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "Cybersicherheit: Vie背景下通胀数据超预期，预计市场将重新定价未来若干个月内的降息预期。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "混合战争模糊了战争与和平的传统边界，使得威慑框架的构建面临从未有过的概念挑战。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_1af3d8c3",
-      "title": "CO2 im Einkaufswagen: Milch und Käse treiben CO2-Bilanz der Ernährung nach oben",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/milch-und-kaese-treiben-co2-bilanz-der-ernaehrung-nach-oben",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:01:05.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 6.2,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着国际机构收紧货币政策的窗口仍然开放。各方消费市场的韧性值得持续跟踪。"
-        },
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "CO2 im Einkaufswagen的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
-        }
-      ]
-    },
-    {
-      "id": "nyt_world_20260317_9cec045b",
-      "title": "Iran War Live Updates: Trump Says He Wants to Delay Visit to China Because of Conflict",
+      "id": "nyt_world_20260317_5a948963",
+      "title": "Trump Says He Wants to Delay Visit to China Because of Middle East Conflict",
       "summary": "“I think it’s important that I be here,” President Trump said of asking China to reschedule a summit. Earlier, he disparaged allies for failing to embrace his request for help to reopen the Strait of …",
       "url": "https://www.nytimes.com/live/2026/03/16/world/iran-war-trump-oil-lebanon",
       "source": {
@@ -1925,12 +2229,44 @@
         "tier": 2,
         "logoColor": "#000000"
       },
-      "publishedAt": "2026-03-17T03:49:18.000Z",
+      "publishedAt": "2026-03-17T05:16:45.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
+        }
+      ]
+    },
+    {
+      "id": "bbc_world_20260317_e0126c40",
+      "title": "Millions without electricity as Cuba's power grid collapses",
+      "summary": "Cuba's chronic fuel shortages have been exacerbated by a US blockade on oil shipments to the island.",
+      "url": "https://www.bbc.com/news/articles/c07j40dyx53o?at_medium=RSS&at_campaign=rss",
+      "source": {
+        "id": "bbc_world",
+        "name": "BBC World",
+        "tier": 1,
+        "logoColor": "#BB1919"
+      },
+      "publishedAt": "2026-03-17T03:46:22.000Z",
       "category": "military",
       "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -1950,59 +2286,211 @@
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "China此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
+          "comment": "US此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
         }
       ]
     },
     {
-      "id": "nyt_business_20260317_e52625f3",
-      "title": "Inside the Katseye Fandom: Friendships, Rivalries and Boycotts Over Manon’s Hiatus",
-      "summary": "Fans of the group have leveraged their influence into friendship and rivalry. Then a member’s sudden hiatus sent them into a spiral.",
-      "url": "https://www.nytimes.com/2026/03/17/arts/music/katseye-fans-pop-music-manon-boycott.html",
+      "id": "nyt_world_20260317_18927458",
+      "title": "As American Bombers Take Off From R.A.F. Fairford in UK, Iraq War Looms Large",
+      "summary": "R.A.F. Fairford was the site of repeated antiwar protests during the Iraq war in 2003. Now it is being used again as a base for U.S. bombing missions in the Middle East.",
+      "url": "https://www.nytimes.com/2026/03/17/world/europe/iran-uk-raf-fairford-starmer-trump.html",
       "source": {
-        "id": "nyt_business",
-        "name": "NYT Business",
+        "id": "nyt_world",
+        "name": "New York Times",
         "tier": 2,
         "logoColor": "#000000"
       },
-      "publishedAt": "2026-03-17T04:01:13.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T04:01:06.000Z",
+      "category": "military",
+      "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "America此次攻势的战略纵深有限，若无法在2003天内取得决定性成果，将陷入战略被动。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "相关方对America局势的暧昧态度，折射出其在干涉与不干涉之间的战略困境。"
+        }
+      ]
+    },
+    {
+      "id": "bbc_zhongwen_20260317_de2f29a9",
+      "title": "Openclaw和AI代理熱潮拆解：從「養龍蝦」到「卸龍蝦」",
+      "summary": "你能信任人工智能，讓它像一隻高級寵物一般幫你交電費和處理郵件嗎？面對這股龍蝦熱，我們應該怎麼辦？",
+      "url": "https://www.bbc.com/zhongwen/articles/c93wvdn91kxo/trad?at_medium=RSS&at_campaign=rss",
+      "source": {
+        "id": "bbc_zhongwen",
+        "name": "BBC中文",
+        "tier": 1,
+        "logoColor": "#BB1919"
+      },
+      "publishedAt": "2026-03-17T03:36:06.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "相关国家此次攻势的战略纵深有限，若无法在多天内取得决定性成果，将陷入战略被动。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_fd7d8d47",
+      "title": "Wetter in Baden-Württemberg: Frühling im Anmarsch: Hier sind bis zu 19 Grad möglich",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/fruehling-im-anmarsch-hier-sind-bis-zu-19-grad-moeglich",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:11:37.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "Wetter in Baden-Würt的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关方的响应速度远落后于科学预警。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_deadcadc",
+      "title": "Sondervermögen: Wo ist es hin, das ganze Geld?",
+      "summary": "Das Sondervermögen sollte Infrastruktur und Klima verbessern. Jetzt wurde es wohl fast komplett zweckentfremdet. Und: Wie der Irankrieg auch die Ukraine trifft.",
+      "url": "https://www.zeit.de/politik/2026-03/sondervermoegen-bundesregierung-haushalt-nachrichtenpodcast",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:11:00.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "此次Sondervermögen: Wo i事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
+        },
+        {
           "id": "li_ming",
           "name": "李明",
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "Inside the Katseye F背景下通胀数据超预期，预计市场将重新定价未来相当数量的个月内的降息预期。"
+          "comment": "此次Ukraine通胀数据的走向，将直接影响主要组织的利率决策节奏，投资者需警惕短端收益率的波动风险。"
         }
       ]
     },
     {
-      "id": "rfi_cn_20260317_0f6eb663",
-      "title": "伊朗革命如何导致1979年的第二次石油危机",
-      "summary": "由于美国、以色列和伊朗之间的战争，如今油价飙升，引发了人们的焦虑，不禁让人回顾1979年的石油危机。当时，伊朗国王穆罕默德·礼萨·巴列维被推翻，霍梅尼宣布伊朗伊斯兰共和国成立。那么，47年前伊朗开启了的政治和社会新的篇章，是否会以第三次石油危机而告终呢？",
-      "url": "https://www.rfi.fr/cn/%E4%B8%AD%E4%B8%9C/20260317-%E4%BC%8A%E6%9C%97%E9%9D%A9%E5%91%BD%E5%A6%82%E4%BD%95%E5%AF%BC%E8%87%B41979%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%9F%B3%E6%B2%B9%E5%8D%B1%E6%9C%BA",
+      "id": "zeit_20260317_697aeb76",
+      "title": "Iran-Krieg: Israel fliegt neue Angriffe auf Ziele in Teheran und Beirut",
+      "summary": "",
+      "url": "https://www.zeit.de/news/2026-03/17/israel-fliegt-neue-angriffe-auf-ziele-in-teheran-und-beirut",
       "source": {
-        "id": "rfi_cn",
-        "name": "RFI中文",
+        "id": "zeit",
+        "name": "Die Zeit",
         "tier": 2,
-        "logoColor": "#00205B"
+        "logoColor": "#000000"
       },
-      "publishedAt": "2026-03-17T03:22:43.000Z",
+      "publishedAt": "2026-03-17T05:10:58.000Z",
+      "category": "general",
+      "categoryLabel": "综合",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Iran-Krieg: Israel f战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        }
+      ]
+    },
+    {
+      "id": "zeit_20260317_45c3512b",
+      "title": "Elbvertiefung: Der tägliche Newsletter aus Hamburg: Ein Rollstuhlfahrer vor der Arztpraxis – und kein Aufzug",
+      "summary": "Die Elbvertiefung am Dienstag – Mit dem Hamburger Wärmeplan, falsch tickenden Bahnhofsuhren – und Siegfried Lenz, der kein Senator werden wollte",
+      "url": "https://www.zeit.de/hamburg/2026-03/elbvertiefung-17-03-2026",
+      "source": {
+        "id": "zeit",
+        "name": "Die Zeit",
+        "tier": 2,
+        "logoColor": "#000000"
+      },
+      "publishedAt": "2026-03-17T05:00:08.000Z",
       "category": "military",
       "categoryLabel": "军事",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -2015,86 +2503,158 @@
           "avatar": "ZL",
           "color": "#EF4444",
           "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
         }
       ]
     },
     {
-      "id": "tagesschau_20260317_a3da1627",
-      "title": "Prozess gegen \"Wegwerfagenten\": Sabotage im Auftrag Russlands?",
-      "summary": "In Stuttgart beginnt heute der Prozess gegen drei mutmaßliche \"Wegwerfagenten\", die Transportwege für Paketbomben erkundet haben sollen. Die zentrale Frage ist, ob die Ukrainer wissentlich im Auftrag …",
-      "url": "https://www.tagesschau.de/investigativ/swr/wegwerfagenten-prozess-100.html",
+      "id": "lemonde_20260317_fe82893b",
+      "title": "Les séries de la semaine : « Lucky Luke », « One Piece », « Imperfect Women » et « Young Sherlock »",
+      "summary": "Chaque mardi, la Matinale du Monde propose une sélection de séries à découvrir sur petit écran. Aujourd’hui, notamment, un célèbre cow-boy est secoué par l’irruption d’une jeune femme dans sa vie.",
+      "url": "https://www.lemonde.fr/culture/article/2026/03/17/les-series-de-la-semaine-lucky-luke-one-piece-imperfect-women-et-young-sherlock_6671581_3246.html",
       "source": {
-        "id": "tagesschau",
-        "name": "Tagesschau",
+        "id": "lemonde",
+        "name": "Le Monde",
         "tier": 1,
-        "logoColor": "#004B93"
+        "logoColor": "#222222"
       },
-      "publishedAt": "2026-03-17T02:26:24.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
+      "publishedAt": "2026-03-17T03:45:07.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "每一次针对弱势群体的歧视性政策，都是对\"所有人平等\"这一文明共识的具体侵蚀。"
+        },
+        {
           "id": "zhang_wei",
           "name": "张伟",
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "此次Prozess gegen \"Wegwe事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Prozess gegen \"Wegwe战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+          "comment": "国际机构在Les séries de la sem上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
         }
       ]
     },
     {
-      "id": "tagesschau_20260317_b0a3e519",
-      "title": "Totaler Stromausfall in Kuba - Trump deutet \"Übernahme\" des Landes an",
-      "summary": "Wegen eines US-Embargos erhält Kuba immer weniger Öl zur Energieerzeugung. Nun ist es zu einem inselweiten Stromausfall gekommen. Unterdessen spricht US-Präsident Trump von einer möglichen Übernahme d…",
-      "url": "https://www.tagesschau.de/ausland/amerika/kuba-stromausfall-trump-100.html",
+      "id": "bbc_mundo_20260317_13952a31",
+      "title": "La otra guerra en Medio Oriente: cómo los últimos ataques de Israel evidencian las divisiones y desafíos que enfrenta Líbano",
+      "summary": "El país es un escenario secundario de los ataques de Estados Unidos e Israel a Irán, pero las tensiones internas de la política libanesa se remontan décadas atrás.",
+      "url": "https://www.bbc.com/mundo/articles/c4gjnrk342mo?at_medium=RSS&at_campaign=rss",
       "source": {
-        "id": "tagesschau",
-        "name": "Tagesschau",
+        "id": "bbc_mundo",
+        "name": "BBC Mundo",
         "tier": 1,
-        "logoColor": "#004B93"
+        "logoColor": "#BB1919"
       },
-      "publishedAt": "2026-03-17T01:57:21.000Z",
+      "publishedAt": "2026-03-17T03:16:37.000Z",
       "category": "general",
       "categoryLabel": "综合",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.3,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "通胀压力的持续，意味着国际机构收紧货币政策的窗口仍然开放。Israel消费市场的韧性值得持续跟踪。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "制裁工具的滥用正在推动Israel加速推进去美元化布局，这一战略转向的影响将是深远的。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_6ba57fba",
+      "title": "La nueva lámpara de techo de Amazon con efecto cielo azul y atardecer que está triunfando para el hogar",
+      "summary": "Esta lámpara tiene una potencia de 48 vatios, 4800 lúmenes y 33 modos para generar una atmósfera personalizada que puedes ajustar con su mando a distancia",
+      "url": "https://elpais.com/escaparate/estilo-de-vida/2026-03-17/lampara-de-techo-con-efecto-cielo.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T05:15:00.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.3,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+        },
         {
           "id": "chen_jing",
           "name": "陈静",
           "role": "科技分析师",
           "avatar": "CJ",
           "color": "#06B6D4",
-          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，US如何在创新与治理之间找到平衡是核心命题。"
+          "comment": "各方新能源汽车市场的竞争格局正在从技术领先转向规模效应与品牌力的综合较量。"
+        }
+      ]
+    },
+    {
+      "id": "dw_es_20260317_ca53b94a",
+      "title": "Taiwán niega retrasos de EE.UU. en la venta de armamento",
+      "summary": "El Ministerio de Defensa de Taiwán se pronunció ante informaciones que han trascendido sobre posibles demoras de EE.UU. en la venta de armas.",
+      "url": "https://www.dw.com/es/taiwán-niega-retrasos-de-ee-uu-en-la-venta-de-armamento/a-76388611?maca=spa-rss-sp-all-1122-rdf",
+      "source": {
+        "id": "dw_es",
+        "name": "DW Spanish",
+        "tier": 2,
+        "logoColor": "#006DAB"
+      },
+      "publishedAt": "2026-03-17T05:14:00.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.2,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "各方的军事行动已进入Taiwán niega retraso阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
         },
         {
           "id": "zhang_wei",
@@ -2102,24 +2662,32 @@
           "role": "地缘政治分析师",
           "avatar": "ZW",
           "color": "#8B5CF6",
-          "comment": "相关方对US实施新一轮制裁，短期内将加剧双边经济脱钩，但制裁的长期有效性历来存在争议。"
+          "comment": "国际社会的呼吁缺乏强制力支撑，若无实质行动跟进，只会进一步消耗相关机构的公信力。"
+        },
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "相关国家的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
     {
-      "id": "spiegel_20260317_0d8ee198",
-      "title": "Kuba: USA verlangen offenbar Absetzung von Kubas Präsident Diaz-Canel",
-      "summary": "Die Insel ist ohne Strom, da erhöhen die USA den Druck auf Kuba: Das Weiße Haus fordert einem Medienbericht zufolge den Sturz des Präsidenten. Donald Trump erklärte zudem, er könne mit dem Land machen…",
-      "url": "https://www.spiegel.de/ausland/kuba-usa-verlangen-offenbar-absetzung-von-kubas-praesident-diaz-canel-a-7212484e-d3b3-4e8f-927b-bc3b017eccac#ref=rss",
+      "id": "lefigaro_20260317_d82ca8c0",
+      "title": "Ligue des champions : 17e budget de Ligue 1, aucune star... Pourquoi Bodo/Glimt est une bénédiction dans le football actuel",
+      "summary": "HUMEUR - Le petit club norvégien, novice en Ligue des champions, aborde son huitième de finale retour mardi chez le Sporting Portugal avec confiance, après sa fabuleuse victoire à l’aller (3-0).",
+      "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/17e-budget-de-ligue-1-aucune-star-pourquoi-bodo-glimt-surprise-de-la-ligue-des-champions-est-une-benediction-dans-le-football-actuel-20260317",
       "source": {
-        "id": "spiegel",
-        "name": "Der Spiegel",
+        "id": "lefigaro",
+        "name": "Le Figaro",
         "tier": 2,
-        "logoColor": "#E64415"
+        "logoColor": "#1D4B8F"
       },
-      "publishedAt": "2026-03-17T04:14:00.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T05:00:00.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
       "keywords": [],
       "importance": {
         "score": 6.2,
@@ -2135,23 +2703,71 @@
           "avatar": "CJ",
           "color": "#06B6D4",
           "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "财政政策与货币政策的合力方向，将在未来17个季度内决定EU经济的复苏斜率。"
         }
       ]
     },
     {
-      "id": "zeit_20260317_6bf6504f",
-      "title": "Verfassungsfeindlich: Mann skandiert Nazi-Parolen in Wolgast",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/mann-skandiert-nazi-parolen-in-wolgast",
+      "id": "guardian_world_20260317_4d6f801d",
+      "title": "Pauline Hanson fails to properly declare more free flights from Gina Rinehart",
+      "summary": "Exclusive: One Nation leader updates register after questions from the Guardian to include multiple flights courtesy of Rinehart’s company Follow our Australia news live blog for latest updates Get ou…",
+      "url": "https://www.theguardian.com/australia-news/2026/mar/17/pauline-hanson-gina-rinehart-free-flights-one-nation",
       "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
+        "id": "guardian_world",
+        "name": "The Guardian",
         "tier": 2,
-        "logoColor": "#000000"
+        "logoColor": "#052962"
       },
-      "publishedAt": "2026-03-17T04:08:41.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T05:23:27.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
+      "keywords": [],
+      "importance": {
+        "score": 6.2,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "Australia与国际机构的结构性矛盾在Pauline Hanson fails上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
+        }
+      ]
+    },
+    {
+      "id": "guardian_world_20260317_ab79b8b5",
+      "title": "‘National disgrace’: pothole repair backlog hits record £18.6bn in England and Wales",
+      "summary": "Only half the road network is in good condition despite 1.9m repairs last year, says industry body A losing battle with potholes has now seen the backlog of repairs across England and Wales reach a re…",
+      "url": "https://www.theguardian.com/uk-news/2026/mar/17/pothole-repair-england-wales-road-aia",
+      "source": {
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
+      },
+      "publishedAt": "2026-03-17T05:00:40.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
       "keywords": [],
       "importance": {
         "score": 6.2,
@@ -2174,56 +2790,24 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Verfassungsfeindlich再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关机构的响应速度远落后于科学预警。"
         }
       ]
     },
     {
-      "id": "zeit_20260317_96374407",
-      "title": "Fernsehen: Motsi Mabuse und weitere Promis zu Besuch in der Sesamstraße",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/motsi-mabuse-und-weitere-promis-zu-besuch-in-der-sesamstrasse",
+      "id": "guardian_tech_20260317_79aca699",
+      "title": "Don’t upstage your friends! 19 modern etiquette mistakes – and how to avoid them",
+      "summary": "In a world teeming with social media and smart devices, there are many ways to upset people, whether you’re checking your watch notifications or sending a voice note without a text to explain the subj…",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/mar/17/dont-upstage-your-friends-19-modern-etiquette-mistakes-and-how-to-avoid-them",
       "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
+        "id": "guardian_tech",
+        "name": "The Guardian Tech",
         "tier": 2,
-        "logoColor": "#000000"
+        "logoColor": "#052962"
       },
-      "publishedAt": "2026-03-17T04:07:45.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.2,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Fernsehen: Motsi Mab再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_6a776d2c",
-      "title": "Mode: Kreativ trotz Mangels: Ausstellung zeigt Modealltag der DDR",
-      "summary": "",
-      "url": "https://www.zeit.de/news/2026-03/17/kreativ-trotz-mangels-ausstellung-zeigt-modealltag-der-ddr",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T04:00:05.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T05:00:41.000Z",
+      "category": "technology",
+      "categoryLabel": "科技",
       "keywords": [],
       "importance": {
         "score": 6.2,
@@ -2238,7 +2822,103 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "此次主要经济体通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+          "comment": "Don’t upstage your f背景下通胀数据超预期，预计市场将重新定价未来19个月内的降息预期。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_f868892b",
+      "title": "Antonio Conde, oncólogo: “Si no nombramos al cáncer, estigmatizamos al paciente”",
+      "summary": "El jefe de servicio de Oncología Radioterápica del Hospital La Fe de Valencia afirma que la protonterapia situará al sistema público español a la vanguardia europea de la lucha contra el cáncer",
+      "url": "https://elpais.com/salud-y-bienestar/2026-03-17/antonio-conde-oncologo-si-no-nombramos-al-cancer-estigmatizamos-al-paciente.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
+      "keywords": [],
+      "importance": {
+        "score": 6.1,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "各方医疗体系在Antonio Conde, oncól压力下的应对表现，是衡量一个社会公共卫生承诺的最真实镜子。"
+        }
+      ]
+    },
+    {
+      "id": "hindustan_times_20260317_77822087",
+      "title": "Odisha hospital fire: Toll rises to 12 as 2 more patients die",
+      "summary": "The blaze broke out around 2.30am on Monday in the hospital’s trauma Intensive Care Unit (ICU), where 23 patients were admitted in two rooms",
+      "url": "https://www.hindustantimes.com/india-news/odisha-hospital-fire-toll-rises-to-12-as-2-more-patients-die-101773725453446.html",
+      "source": {
+        "id": "hindustan_times",
+        "name": "Hindustan Times",
+        "tier": 3,
+        "logoColor": "#004B8D"
+      },
+      "publishedAt": "2026-03-17T05:30:52.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
+      "keywords": [],
+      "importance": {
+        "score": 6.1,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "公共卫生危机的应对往往暴露出平时看不见的社会裂缝，Odisha hospital fire也不例外。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_e9c78540",
+      "title": "Trump redobla la presión militar en Irán pese al desafío europeo y a los estragos de la guerra en la economía global",
+      "summary": "El estrecho de Ormuz, vía esencial cerrada de facto por Teherán, se ha convertido en el gran obstáculo del presidente de Estados Unidos para cantar victoria en Oriente Próximo",
+      "url": "https://elpais.com/internacional/2026-03-17/trump-redobla-la-presion-militar-en-iran-pese-al-planton-europeo-y-a-los-estragos-de-la-guerra-en-la-economia-global.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6.1,
+        "level": 4,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "wang_fang",
+          "name": "王芳",
+          "role": "社会评论员",
+          "avatar": "WF",
+          "color": "#EC4899",
+          "comment": "Trump redobla la pre再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
         },
         {
           "id": "zhao_lei",
@@ -2246,27 +2926,35 @@
           "role": "军事战略分析师",
           "avatar": "ZL",
           "color": "#EF4444",
-          "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
+          "comment": "Trump redobla la pre战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "国际社会的呼吁缺乏强制力支撑，若无实质行动跟进，只会进一步消耗主要组织的公信力。"
         }
       ]
     },
     {
-      "id": "bbc_mundo_20260317_f62d7af6",
-      "title": "La mujer en EE.UU. que escribió un libro sobre la muerte de su esposo y fue condenada por haberlo asesinado",
-      "summary": "Kouri Richins también fue declarada culpable de reclamar fraudulentamente beneficios de seguro tras la muerte de su esposo.",
-      "url": "https://www.bbc.com/mundo/articles/cx2808n2n7go?at_medium=RSS&at_campaign=rss",
+      "id": "guardian_world_20260317_54f0a219",
+      "title": "RBA interest rates: Reserve Bank raises official cash rate to 4.1% in blow to mortgage holders",
+      "summary": "Reserve Bank of Australia’s second consecutive increase lifts cash rate target to where it was in February last year Follow our Australia news live blog for latest updates Get our breaking news email,…",
+      "url": "https://www.theguardian.com/australia-news/2026/mar/17/rba-interest-rate-australia-increase-fuel-petrol-prices",
       "source": {
-        "id": "bbc_mundo",
-        "name": "BBC Mundo",
-        "tier": 1,
-        "logoColor": "#BB1919"
+        "id": "guardian_world",
+        "name": "The Guardian",
+        "tier": 2,
+        "logoColor": "#052962"
       },
-      "publishedAt": "2026-03-17T02:23:19.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T04:06:03.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
       "keywords": [],
       "importance": {
-        "score": 6.2,
+        "score": 6.1,
         "level": 4,
         "isBreaking": false,
         "isRecent": true
@@ -2278,24 +2966,24 @@
           "role": "科技分析师",
           "avatar": "CJ",
           "color": "#06B6D4",
-          "comment": "La mujer en EE.UU. q的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
+          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
         }
       ]
     },
     {
-      "id": "guardian_world_20260317_1bf9c954",
-      "title": "UAE reopens airspace after Iran attack – as it happened",
-      "summary": "This blog is closed Continued from previous post: Japan’s prime minister, Sanae Takaichi, has said she has no immediate plans to send her country’s maritime self-defence forces to help protect tanker …",
-      "url": "https://www.theguardian.com/world/live/2026/mar/16/iran-war-live-updates-news-oil-trump-hormuz-dubai-airport-israel-targets",
+      "id": "elpais_20260317_c79d0a54",
+      "title": "Del ajedrez a la horticultura: cómo una pasión en común puede unir a padres e hijos",
+      "summary": "Pasar tiempo con los progenitores es fundamental para el bienestar de niños y adolescentes. Hablamos con cinco hombres y sus hijos que encuentran en las aficiones un modo de transmitir valores y estar…",
+      "url": "https://elpais.com/eps/2026-03-17/ciclismo-musica-ajedrez-horticultura-futbol-las-aficiones-que-unen-a-padres-e-hijos.html",
       "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
+        "id": "elpais",
+        "name": "El País",
         "tier": 2,
-        "logoColor": "#052962"
+        "logoColor": "#1A1A1A"
       },
-      "publishedAt": "2026-03-17T03:28:09.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
       "keywords": [],
       "importance": {
         "score": 6.1,
@@ -2305,173 +2993,77 @@
       },
       "analysts": [
         {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Japan此次遭受的袭击，将不可避免地影响其国内安全政策的优先排序与执法力度。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_3899fb5a",
-      "title": "Will the strait of Hormuz torpedo Trump’s war? – podcast",
-      "summary": "Events in the narrow waterway are causing chaos around the globe. Jillian Ambrose explains why The strait of Hormuz, a narrow stretch of water at the mouth of the Gulf, is the world’s petrol pump, a g…",
-      "url": "https://www.theguardian.com/news/audio/2026/mar/17/will-the-strait-of-hormuz-torpedo-trumps-war-podcast",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T03:00:36.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.1,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Will the strait of H战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "Del ajedrez a la hor的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
         },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "各方与国际机构的结构性矛盾在Will the strait of H上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
-        }
-      ]
-    },
-    {
-      "id": "afp_fr_20260316_39905aa1",
-      "title": "Les Rafale français bientôt à court de missiles air-air MICA ?",
-      "summary": "Dans le contexte de la guerre au Moyen-Orient et alors que les Rafale français défendent, eux aussi, le ciel des Émirats arabes unis, Sébastien Lecornu va réunir ce mardi à Matignon plusieurs ministre…",
-      "url": "https://www.france24.com/fr/%C3%A9missions/les-cl%C3%A9s-de-l-info/20260316-les-rafale-fran%C3%A7ais-bient%C3%B4t-%C3%A0-court-de-missiles-air-air-mica",
-      "source": {
-        "id": "afp_fr",
-        "name": "AFP",
-        "tier": 1,
-        "logoColor": "#325FA2"
-      },
-      "publishedAt": "2026-03-16T23:20:27.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6.1,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "核威慑的稳定性建立在双方对红线的共同理解之上，当前局势下这一共识正面临侵蚀风险。"
-        }
-      ]
-    },
-    {
-      "id": "dw_es_20260317_6c0b1f97",
-      "title": "Embajada EE.UU. en Bagdad recibe nuevo ataque aéreo iraní",
-      "summary": "Misiles y drones fueron lanzados contra el complejo diplomático desde zonas aledañas a la capital iraquí sin que se reportaran victimas. Al menos un dron impactó en la embajada, segun testigos citados…",
-      "url": "https://www.dw.com/es/embajada-ee-uu-en-bagdad-recibe-nuevo-ataque-aéreo-iraní/a-76388239?maca=spa-rss-sp-all-1122-rdf",
-      "source": {
-        "id": "dw_es",
-        "name": "DW Spanish",
-        "tier": 2,
-        "logoColor": "#006DAB"
-      },
-      "publishedAt": "2026-03-17T03:13:00.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6.1,
-        "level": 4,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
         {
           "id": "li_ming",
           "name": "李明",
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "此次各方通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "安理会的否决权机制在Embajada EE.UU. en B上形成僵局，这并非制度失效，而是大国政治现实的如实映射。"
+          "comment": "Del ajedrez a la hor背景下通胀数据超预期，预计市场将重新定价未来相当数量的个月内的降息预期。"
         }
       ]
     },
     {
-      "id": "rfi_fr_20260316_c1977626",
-      "title": "Le Chili lance la construction de barrières à la frontière avec le Pérou pour freiner l'immigration",
-      "summary": "Le nouveau président chilien, José Antonio Kast, a lancé lundi 16 mars la construction de « barrières physiques » à la frontière avec le Pérou, une promesse de campagne destinée à freiner l'immigratio…",
-      "url": "https://www.rfi.fr/fr/am%C3%A9riques/20260316-le-chili-lance-la-construction-de-barri%C3%A8res-%C3%A0-la-fronti%C3%A8re-avec-le-p%C3%A9rou-pour-freiner-l-immigration",
+      "id": "elpais_20260317_54c0ef0e",
+      "title": "El Real Madrid defiende en Champions un tesoro inesperado en la guarida de Guardiola",
+      "summary": "El equipo blanco, al que nunca le han remontado en Europa un 3-0, llega a Mánchester con Mbappé para enfrentarse en la vuelta de octavos a un City que se sabe capaz de crear muchas ocasiones",
+      "url": "https://elpais.com/deportes/futbol/2026-03-17/el-real-madrid-vuelve-a-la-champions-para-defender-un-tesoro-inesperado-en-la-guarida-de-guardiola.html",
       "source": {
-        "id": "rfi_fr",
-        "name": "RFI",
-        "tier": 1,
-        "logoColor": "#00205B"
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
       },
-      "publishedAt": "2026-03-16T23:04:29.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
       "keywords": [],
       "importance": {
-        "score": 6,
-        "level": 3,
+        "score": 6.1,
+        "level": 4,
         "isBreaking": false,
         "isRecent": true
       },
       "analysts": [
         {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "难民不是安全威胁，而是人道危机的承受者，将二者混同是政客的话术，也是道德的失守。"
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
+        },
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "资本市场对El Real Madrid defie的热度，折射出机构资金在新一轮产业周期中的早期布局逻辑。"
         }
       ]
     },
     {
-      "id": "bbc_world_20260317_ee166e6a",
-      "title": "AI firm Anthropic seeks weapons expert to stop users from 'misuse'",
-      "summary": "The artificial intelligence firm says it wants to prevent \"catastrophic misuse\" of its systems.",
-      "url": "https://www.bbc.com/news/articles/c74721xyd1wo?at_medium=RSS&at_campaign=rss",
+      "id": "elpais_20260317_6752a7c2",
+      "title": "Romper la concordia",
+      "summary": "Apelar a la fractura social y a la imposición de unos pocos para derogar la ley de Memoria Democrática de Baleares no es más que vender humo",
+      "url": "https://elpais.com/opinion/2026-03-17/romper-la-concordia.html",
       "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
       },
-      "publishedAt": "2026-03-17T00:08:32.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "society",
+      "categoryLabel": "社会",
       "keywords": [],
       "importance": {
         "score": 6,
@@ -2491,171 +3083,19 @@
       ]
     },
     {
-      "id": "bbc_world_20260317_11416101",
-      "title": "'Fire came from the sky and burned them' - life on the brink of civil war in South Sudan",
-      "summary": "Some 50,000 people are told to flee their homes as the army warns of a huge military offensive in Jonglei state.",
-      "url": "https://www.bbc.com/news/articles/cx2g4v9mzxro?at_medium=RSS&at_campaign=rss",
+      "id": "guardian_world_20260317_27852023",
+      "title": "Queensland government backflips on plan to contest all native title claims",
+      "summary": "The policy reversal came after a federal court judge asked the government to explain why it had stopped negotiating with Cape York traditional owners Follow our Australia news live blog for latest upd…",
+      "url": "https://www.theguardian.com/australia-news/2026/mar/17/queensland-native-title-claims-government-backflip-ntwnfb",
       "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T00:08:56.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "主要经济体此次攻势的战略纵深有限，若无法在50天内取得决定性成果，将陷入战略被动。"
-        }
-      ]
-    },
-    {
-      "id": "nyt_world_20260317_f6bb4f5b",
-      "title": "Here’s the latest.",
-      "summary": "",
-      "url": "https://www.nytimes.com/live/2026/03/16/world/iran-war-trump-oil-lebanon/heres-the-latest",
-      "source": {
-        "id": "nyt_world",
-        "name": "New York Times",
+        "id": "guardian_world",
+        "name": "The Guardian",
         "tier": 2,
-        "logoColor": "#000000"
+        "logoColor": "#052962"
       },
-      "publishedAt": "2026-03-17T03:49:16.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，当事国如何在创新与治理之间找到平衡是核心命题。"
-        },
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "主要经济体的军事行动已进入Here’s the latest.阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
-        }
-      ]
-    },
-    {
-      "id": "zeit_20260317_397a13b8",
-      "title": "Chiphersteller: Nvidia geht von Umsatz über einer Billion US-Dollar aus",
-      "summary": "Bis Ende 2027 rechnet der Konzern mit Chipbestellungen im Wert von einer Billion US-Dollar. Konzernchef Jensen Huang verdoppelt damit seine Prognose aus dem Vorjahr.",
-      "url": "https://www.zeit.de/wirtschaft/unternehmen/2026-03/nvidia-chiphersteller-ki-jensen-huang-umsatz-billion",
-      "source": {
-        "id": "zeit",
-        "name": "Die Zeit",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T03:50:40.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "Nvidia最新一代芯片的性能指标，将重新定义AI训练集群的算力天花板，同时也拉高了竞争者的入场门槛。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "US在Chiphersteller: Nvid上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。"
-        }
-      ]
-    },
-    {
-      "id": "aljazeera_ar_20260317_2fb4eb2d",
-      "title": "بيرس مورغان يهاجم ترمب بسبب أهدافه من الحرب على إيران",
-      "summary": "هاجم الإعلامي البريطاني البارز بيرس مورغان الرئيس الأمريكي دونالد ترمب بشأن عدم وضوح أهدافه من الحرب على إيران. ومن جهة أخرى، قال مورغان إن طهران ترد على هجوم أمريكا وإسرائيل بشل الحركة الاقتصادية.",
-      "url": "https://www.aljazeera.net/politics/2026/3/17/%d8%a8%d9%8a%d8%b1%d8%b3-%d9%85%d9%88%d8%b1%d8%ba%d8%a7%d9%86-%d9%8a%d9%87%d8%a7%d8%ac%d9%85-%d8%aa%d8%b1%d9%85%d8%a8-%d8%a8%d8%b3%d8%a8%d8%a8-%d8%a3%d9%87%d8%af%d8%a7%d9%81%d9%87-%d9%85%d9%86?traffic_source=rss",
-      "source": {
-        "id": "aljazeera_ar",
-        "name": "الجزيرة (Al Jazeera AR)",
-        "tier": 1,
-        "logoColor": "#F5A623"
-      },
-      "publishedAt": "2026-03-17T01:07:14.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "当事国此次选举结果将重塑بيرس مورغان يهاجم تر的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
-        }
-      ]
-    },
-    {
-      "id": "france24_es_20260317_4ceaabae",
-      "title": "Venezuela enfrentará a Estados Unidos en su primera final del Clásico Mundial",
-      "summary": "Con una vibrante remontada, Venezuela derrotó este lunes 4-2 a la invicta Italia en Miami y se clasificó a su primera final del Clásico Mundial de béisbol, donde le espera este martes un duelo de alta…",
-      "url": "https://www.france24.com/es/deportes/20260317-venezuela-enfrentar%C3%A1-a-estados-unidos-en-su-primera-final-del-cl%C3%A1sico-mundial",
-      "source": {
-        "id": "france24_es",
-        "name": "France 24 ES",
-        "tier": 2,
-        "logoColor": "#E8002D"
-      },
-      "publishedAt": "2026-03-17T03:15:14.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T04:57:38.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
       "keywords": [],
       "importance": {
         "score": 6,
@@ -2670,7 +3110,119 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "各方的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+          "comment": "Australia的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+        },
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "此次Queensland governmen事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。"
+        },
+        {
+          "id": "zhao_lei",
+          "name": "赵磊",
+          "role": "军事战略分析师",
+          "avatar": "ZL",
+          "color": "#EF4444",
+          "comment": "Australia的军事行动已进入Queensland governmen阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。"
+        }
+      ]
+    },
+    {
+      "id": "dw_cn_20260317_9b478564",
+      "title": "「中國行」將推遲一個月 川普：不是耍花招",
+      "summary": "在暗示可能會延後訪中行程後，美國總統川普週一表示，他已經向北京提出將與中國領導人習近平的會晤延後約一個月，以利他優先處理當前的中東衝突。此前，美國稱川普將於3月底到訪北京，但中國政府尚未公布相關消息。",
+      "url": "https://www.dw.com/zh/「中國行」將推遲一個月　川普：不是耍花招/a-76373622?maca=chi-rss-chi-all-1127-rdf",
+      "source": {
+        "id": "dw_cn",
+        "name": "DW中文",
+        "tier": 2,
+        "logoColor": "#006DAB"
+      },
+      "publishedAt": "2026-03-17T04:37:00.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6,
+        "level": 3,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "主要经济体此次选举结果将重塑「中國行」將推遲一個月 川普：不是耍花招的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_3d1ee073",
+      "title": "Oscar 2026: circo, Ozempic y alexitimia",
+      "summary": "El mundo en llamas por capricho de su presidente y Hollywood haciendo bromas sobre lo de Chalamet con el ballet",
+      "url": "https://elpais.com/opinion/2026-03-17/oscar-2026-circo-ozempic-y-alexitimia.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "politics",
+      "categoryLabel": "国际政治",
+      "keywords": [],
+      "importance": {
+        "score": 6,
+        "level": 3,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "zhang_wei",
+          "name": "张伟",
+          "role": "地缘政治分析师",
+          "avatar": "ZW",
+          "color": "#8B5CF6",
+          "comment": "相关方在Oscar 2026: circo, O上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
+        }
+      ]
+    },
+    {
+      "id": "elpais_20260317_24a1dbea",
+      "title": "Un mercado que nunca duerme: las Bolsas miran al modelo cripto y exploran operar 24 horas, los siete días de la semana",
+      "summary": "La Bolsa de Nueva York y Nasdaq tienen planes para extender su horario, opción que Europa empieza a debatir. Los expertos alertan de que la baja liquidez puede disparar la volatilidad",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-03-17/un-mercado-que-nunca-duerme-las-bolsas-miran-al-modelo-cripto-y-exploran-operar-24-horas-los-siete-dias-de-la-semana.html",
+      "source": {
+        "id": "elpais",
+        "name": "El País",
+        "tier": 2,
+        "logoColor": "#1A1A1A"
+      },
+      "publishedAt": "2026-03-17T04:30:01.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": [],
+      "importance": {
+        "score": 6,
+        "level": 3,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "li_ming",
+          "name": "李明",
+          "role": "财经分析师",
+          "avatar": "LM",
+          "color": "#3B82F6",
+          "comment": "通胀压力的持续，意味着主要组织收紧货币政策的窗口仍然开放。相关国家消费市场的韧性值得持续跟踪。"
         },
         {
           "id": "chen_jing",
@@ -2678,24 +3230,24 @@
           "role": "科技分析师",
           "avatar": "CJ",
           "color": "#06B6D4",
-          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，各方如何在创新与治理之间找到平衡是核心命题。"
+          "comment": "相关机构最新电池技术指标的披露，将对整个新能源产业链的定价逻辑产生连锁影响。"
         }
       ]
     },
     {
-      "id": "nikkei_20260317_dfb3d06b",
-      "title": "株価 値上がり 幅広い銘柄に買い注文",
-      "summary": "17日の東京株式市場、イラン情勢の緊迫化に伴う原油の先物価格の上昇が一服したとの見方から、幅広い銘柄に買い注文が出て日経平均株価は値上がりしています。",
-      "url": "http://www3.nhk.or.jp/news/html/20260317/k10015077781000.html",
+      "id": "elpais_20260317_4cbcc74e",
+      "title": "La banca negocia con el ICO para participar en la gestión del fondo soberano del Gobierno",
+      "summary": "El Estado espera inyectar en la economía hasta 120.000 millones en vivienda, energía e impulso de ‘startups’",
+      "url": "https://elpais.com/economia/2026-03-17/la-banca-negocia-con-el-ico-para-participar-en-la-gestion-del-fondo-soberano-del-gobierno.html",
       "source": {
-        "id": "nikkei",
-        "name": "NHK Economy",
+        "id": "elpais",
+        "name": "El País",
         "tier": 2,
-        "logoColor": "#003F87"
+        "logoColor": "#1A1A1A"
       },
-      "publishedAt": "2026-03-17T03:04:41.000Z",
-      "category": "general",
-      "categoryLabel": "综合",
+      "publishedAt": "2026-03-17T04:45:00.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
       "keywords": [],
       "importance": {
         "score": 6,
@@ -2705,52 +3257,12 @@
       },
       "analysts": [
         {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "通胀压力的持续，意味着相关机构收紧货币政策的窗口仍然开放。相关国家消费市场的韧性值得持续跟踪。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "主要经济体的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
-        }
-      ]
-    },
-    {
-      "id": "aljazeera_en_20260317_46db3240",
-      "title": "Venezuela defeats Italy, sets up WBC final against US",
-      "summary": "Venezuela is through to its first World Baseball Classic final and will play the host nation for the title in Florida.",
-      "url": "https://www.aljazeera.com/sports/2026/3/17/venezuela-defeats-italy-sets-up-wbc-final-against-us?traffic_source=rss",
-      "source": {
-        "id": "aljazeera_en",
-        "name": "Al Jazeera EN",
-        "tier": 3,
-        "logoColor": "#F5A623"
-      },
-      "publishedAt": "2026-03-17T04:29:23.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "独角兽企业的估值回调是健康的市场出清，为真正具备商业价值的项目提供了更合理的定价基准。"
         },
         {
           "id": "li_ming",
@@ -2758,39 +3270,7 @@
           "role": "财经分析师",
           "avatar": "LM",
           "color": "#3B82F6",
-          "comment": "此次Italy通胀数据的走向，将直接影响国际机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
-        }
-      ]
-    },
-    {
-      "id": "hindustan_times_20260317_f8f0ca82",
-      "title": "Celina Jaitly's plea to speak to UAE-detained brother closed as ‘he doesn’t want to contact her': What Delhi HC said",
-      "summary": "Delhi high court on Monday closed Bollywood actor Celina Jaitly's petition to speak to her UAE-detained brother as he refused communication.",
-      "url": "https://www.hindustantimes.com/india-news/celina-jaitly-plea-to-speak-uae-detained-brother-closed-as-he-doesn-t-want-to-contact-her-what-delhi-hc-said-101773719611443.html",
-      "source": {
-        "id": "hindustan_times",
-        "name": "Hindustan Times",
-        "tier": 3,
-        "logoColor": "#004B8D"
-      },
-      "publishedAt": "2026-03-17T04:43:29.000Z",
-      "category": "technology",
-      "categoryLabel": "科技",
-      "keywords": [],
-      "importance": {
-        "score": 6,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "相关国家与主要组织的结构性矛盾在Celina Jaitly's plea上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。"
+          "comment": "La banca negocia con背景下通胀数据超预期，预计市场将重新定价未来120.000个月内的降息预期。"
         }
       ]
     },
@@ -2822,127 +3302,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Afghanistan此次大规模抗议折射出长期积累的社会怨气，政府若仅以维稳视之而非倾听诉求，将错失治理窗口。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_world_20260317_1d1a7cac",
-      "title": "Trump's confidence is undimmed - but every Iran option comes with risk",
-      "summary": "The odds of a quick resolution to the war appear to be dwindling by the day, and the political stakes for the president are only growing.",
-      "url": "https://www.bbc.com/news/articles/c70k29914q4o?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T00:24:01.000Z",
-      "category": "politics",
-      "categoryLabel": "国际政治",
-      "keywords": [],
-      "importance": {
-        "score": 5.9,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "Trump's confidence i战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。"
-        },
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Iran的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "相关机构在Trump's confidence i上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。"
-        }
-      ]
-    },
-    {
-      "id": "bbc_world_20260317_fbecd5c9",
-      "title": "Moving English tests for migrants online risks criminal abuse, providers warn",
-      "summary": "Moving visa tests online could open the door to fraudsters and criminal gangs, a letter to government warns.",
-      "url": "https://www.bbc.com/news/articles/c8xy05enzj7o?at_medium=RSS&at_campaign=rss",
-      "source": {
-        "id": "bbc_world",
-        "name": "BBC World",
-        "tier": 1,
-        "logoColor": "#BB1919"
-      },
-      "publishedAt": "2026-03-17T01:02:27.000Z",
-      "category": "military",
-      "categoryLabel": "军事",
-      "keywords": [],
-      "importance": {
-        "score": 5.9,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "zhao_lei",
-          "name": "赵磊",
-          "role": "军事战略分析师",
-          "avatar": "ZL",
-          "color": "#EF4444",
-          "comment": "大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。"
-        },
-        {
-          "id": "zhang_wei",
-          "name": "张伟",
-          "role": "地缘政治分析师",
-          "avatar": "ZW",
-          "color": "#8B5CF6",
-          "comment": "大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。"
-        }
-      ]
-    },
-    {
-      "id": "aljazeera_en_20260317_5b4f8812",
-      "title": "Cuba tells exiles ‘doors are open’ to invest in businesses in the country",
-      "summary": "Cuba also says it is removing impediments to US businesses and other foreign investors.",
-      "url": "https://www.aljazeera.com/economy/2026/3/17/cuba-tells-exiles-doors-are-open-to-invest-in-businesses-in-the-country?traffic_source=rss",
-      "source": {
-        "id": "aljazeera_en",
-        "name": "Al Jazeera EN",
-        "tier": 3,
-        "logoColor": "#F5A623"
-      },
-      "publishedAt": "2026-03-17T04:16:07.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.8,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "此次US通胀数据的走向，将直接影响相关机构的利率决策节奏，投资者需警惕短端收益率的波动风险。"
+          "comment": "走上街头的人们不是在制造混乱，而是在体制内渠道失灵后发出的最后一声呼喊。"
         }
       ]
     },
@@ -2974,7 +3334,39 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而国际机构的响应速度远落后于科学预警。"
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关机构的响应速度远落后于科学预警。"
+        }
+      ]
+    },
+    {
+      "id": "aljazeera_en_20260317_5b4f8812",
+      "title": "Cuba tells exiles ‘doors are open’ to invest in businesses in the country",
+      "summary": "Cuba also says it is removing impediments to US businesses and other foreign investors.",
+      "url": "https://www.aljazeera.com/economy/2026/3/17/cuba-tells-exiles-doors-are-open-to-invest-in-businesses-in-the-country?traffic_source=rss",
+      "source": {
+        "id": "aljazeera_en",
+        "name": "Al Jazeera EN",
+        "tier": 3,
+        "logoColor": "#F5A623"
+      },
+      "publishedAt": "2026-03-17T04:16:07.000Z",
+      "category": "economy",
+      "categoryLabel": "财经",
+      "keywords": [],
+      "importance": {
+        "score": 5.6,
+        "level": 3,
+        "isBreaking": false,
+        "isRecent": true
+      },
+      "analysts": [
+        {
+          "id": "chen_jing",
+          "name": "陈静",
+          "role": "科技分析师",
+          "avatar": "CJ",
+          "color": "#06B6D4",
+          "comment": "Cuba tells exiles ‘d的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
         }
       ]
     },
@@ -3011,390 +3403,6 @@
       ]
     },
     {
-      "id": "guardian_world_20260317_57912f8e",
-      "title": "Leqaa Kordia, a pro-Palestinian activist, released after a year in ICE custody",
-      "summary": "Kordia was taken at a check-in at an ICE office in New Jersey and was held despite court ruling thrice for her release A New Jersey woman who had been arrested at a pro-Palestine protest and booked in…",
-      "url": "https://www.theguardian.com/us-news/2026/mar/16/leqaa-kordia-released-ice-custody",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T00:05:12.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 5.4,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Palestine此次大规模抗议折射出长期积累的社会怨气，政府若仅以维稳视之而非倾听诉求，将错失治理窗口。"
-        }
-      ]
-    },
-    {
-      "id": "rfi_cn_20260316_25f42d57",
-      "title": "战争让北京意识到，中国的中东战略存在巨大风险",
-      "summary": "法国世界报周一表示，伊朗战争让中国发现，中国在中东的利益非常脆弱。该报写道，中国是海湾石油的最大进口国，也在海湾地区的基础设施和技术产业上进行了大量的投资，中国将中东地区视为是中国经济扩张的支柱。然而，美国和以色列对伊朗发动的战争以及伊朗对霍尔木兹海峡航运的报复性封锁，使北京意识到中国的中东战略有着巨大的风险。",
-      "url": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E4%B8%96%E7%95%8C%E6%8A%A5/20260316-%E6%88%98%E4%BA%89%E8%AE%A9%E5%8C%97%E4%BA%AC%E6%84%8F%E8%AF%86%E5%88%B0%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%B8%AD%E4%B8%9C%E6%88%98%E7%95%A5%E5%AD%98%E5%9C%A8%E5%B7%A8%E5%A4%A7%E9%A3%8E%E9%99%A9",
-      "source": {
-        "id": "rfi_cn",
-        "name": "RFI中文",
-        "tier": 2,
-        "logoColor": "#00205B"
-      },
-      "publishedAt": "2026-03-16T23:36:00.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.4,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "相关机构在战争让北京意识到，中国的中东战略存在巨大方向的突破，标志着大模型能力边界的再次扩展，行业格局或将因此重塑。"
-        }
-      ]
-    },
-    {
-      "id": "france24_es_20260316_473bc1e9",
-      "title": "La guerra en Medio Oriente: cómo China ya se había alistado para una crisis de petróleo",
-      "summary": "China, el mayor importador de petróleo del mundo, se encuentra a la vanguardia de las subidas de precios provocadas por el conflicto en Medio Oriente. Beijing lleva años preparándose para este tipo de…",
-      "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20260316-la-guerra-en-medio-oriente-c%C3%B3mo-china-ya-estaba-lista-para-una-crisis-de-petr%C3%B3leo",
-      "source": {
-        "id": "france24_es",
-        "name": "France 24 ES",
-        "tier": 2,
-        "logoColor": "#E8002D"
-      },
-      "publishedAt": "2026-03-16T23:57:25.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.4,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "相关机构最新电池技术指标的披露，将对整个新能源产业链的定价逻辑产生连锁影响。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "贸易摩擦升级背景下，La guerra en Medio O相关供应链企业的盈利能见度下降，建议审慎看待估值溢价。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_126eb1ee",
-      "title": "Afghanistan accuses Pakistan of deadly strike on Kabul hospital",
-      "summary": "Afghanistan’s deputy government spokesman says death toll has reached 400 people ‘so far’ as Islamabad denies targeting facility for drug addicts Heavy casualties were feared in Kabul after a hospital…",
-      "url": "https://www.theguardian.com/world/2026/mar/16/afghanistan-accuses-pakistan-of-kabul-hospital-strike-killed",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T01:08:53.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Afghanistan此次大规模抗议折射出长期积累的社会怨气，政府若仅以维稳视之而非倾听诉求，将错失治理窗口。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260316_085f7a99",
-      "title": "Cannabis is not an effective treatment for common mental health conditions, says review",
-      "summary": "International researchers find ‘very little evidence’ medical form of the drug can treat anxiety, anorexia and other disorders Cannabis is not an effective treatment for common mental health condition…",
-      "url": "https://www.theguardian.com/society/2026/mar/16/cannabis-inot-effective-treatment-for-common-mental-health-conditions-review",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-16T23:30:32.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "公共卫生危机的应对往往暴露出平时看不见的社会裂缝，Cannabis is not an e也不例外。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_env_20260316_a9cff01d",
-      "title": "Reduced physical activity due to global heating will lead to rise in health issues, study says",
-      "summary": "Researchers project that reduced activity could contribute to half a million additional premature deaths annually by 2050 Rising temperatures are making physical activity undesirable and even dangerou…",
-      "url": "https://www.theguardian.com/environment/2026/mar/16/reduced-physical-activity-due-to-global-heating-rise-health-issues-study",
-      "source": {
-        "id": "guardian_env",
-        "name": "The Guardian Env",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-16T23:30:32.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "2050例死亡背后，是每一个具体的家庭和故事，政策决策者不应让这个数字沦为纯粹的统计数据。"
-        }
-      ]
-    },
-    {
-      "id": "nyt_business_20260317_d3ab6c53",
-      "title": "Judge Strikes Down RFK Jr.’s Vaccine Policies in Blow to Trump’s Health Agenda",
-      "summary": "Ruling on a lawsuit brought by several prominent medical organizations, a district court said the federal government had not based its decisions on science in limiting Covid shots and revising the chi…",
-      "url": "https://www.nytimes.com/2026/03/16/health/childhood-vaccines-lawsuit-kennedy.html",
-      "source": {
-        "id": "nyt_business",
-        "name": "NYT Business",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T00:46:21.000Z",
-      "category": "society",
-      "categoryLabel": "社会",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "wang_fang",
-          "name": "王芳",
-          "role": "社会评论员",
-          "avatar": "WF",
-          "color": "#EC4899",
-          "comment": "Judge Strikes Down R引发的社会动荡，需要理解其深层成因，而非简单地将参与者标签化。"
-        }
-      ]
-    },
-    {
-      "id": "guardian_world_20260317_b8aed9ae",
-      "title": "Train delays: compensation claims to be easier under Great British Railways",
-      "summary": "Refund systems for individual train operators to be merged into single service under nationalised rail body Rail passengers will be able to claim compensation for delayed trains directly from the webs…",
-      "url": "https://www.theguardian.com/business/2026/mar/17/train-delays-compensation-claims-great-british-railways",
-      "source": {
-        "id": "guardian_world",
-        "name": "The Guardian",
-        "tier": 2,
-        "logoColor": "#052962"
-      },
-      "publishedAt": "2026-03-17T00:01:33.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "Train delays: compen背景下通胀数据超预期，预计市场将重新定价未来多个月内的降息预期。"
-        },
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "AI技术的迭代速度已超出大多数监管框架的设计预设，当事国如何在创新与治理之间找到平衡是核心命题。"
-        }
-      ]
-    },
-    {
-      "id": "nyt_world_20260317_0dd44bf9",
-      "title": "Cuba Ready to Accept Outside Investment, Top Official Says",
-      "summary": "President Trump’s words came amid a nationwide blackout and as a top Cuban official said his country would move to open the economy to foreign investors.",
-      "url": "https://www.nytimes.com/2026/03/16/world/americas/cuba-us-foreign-investment-businesses.html",
-      "source": {
-        "id": "nyt_world",
-        "name": "New York Times",
-        "tier": 2,
-        "logoColor": "#000000"
-      },
-      "publishedAt": "2026-03-17T00:02:03.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.3,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
-        },
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "当前宏观数据呈现出\"外冷内暖\"的分化格局，主要经济体经济的结构性韧性依然存在，但下行风险不可忽视。"
-        }
-      ]
-    },
-    {
-      "id": "hindustan_times_20260317_790ff3bb",
-      "title": "Telangana’s economy remains resilient: Governor on Budget opening day",
-      "summary": "Telangana's economy remains strong, driven by agriculture, industry, and services, as highlighted by Governor Shukla in his legislative address.",
-      "url": "https://www.hindustantimes.com/india-news/telanganas-economy-remains-resilient-governor-on-budget-opening-day-101773690159572.html",
-      "source": {
-        "id": "hindustan_times",
-        "name": "Hindustan Times",
-        "tier": 3,
-        "logoColor": "#004B8D"
-      },
-      "publishedAt": "2026-03-17T01:58:12.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.2,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "li_ming",
-          "name": "李明",
-          "role": "财经分析师",
-          "avatar": "LM",
-          "color": "#3B82F6",
-          "comment": "若Telangana’s economy持续演化，多%的经济增长预测可能面临下修，建议关注防御性资产配置机会。"
-        },
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "Telangana’s economy的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。"
-        }
-      ]
-    },
-    {
-      "id": "ap_news_20260316_34ec4517",
-      "title": "Cuban officials report an island-wide blackout as country struggles with energy crisis",
-      "summary": "2026-03-16T18:13:10Z HAVANA (AP) — Officials in Cuba report an island-wide blackout in the country of some 11 million people as its energy and economic crises deepen. The Ministry of Energy and Mines …",
-      "url": "https://apnews.com/article/cuba-power-outage-electricity-4dcd92d4b7b3bbeda88622b543074ceb",
-      "source": {
-        "id": "ap_news",
-        "name": "AP News",
-        "tier": 1,
-        "logoColor": "#CC0000"
-      },
-      "publishedAt": "2026-03-16T18:23:02.000Z",
-      "category": "economy",
-      "categoryLabel": "财经",
-      "keywords": [],
-      "importance": {
-        "score": 5.1,
-        "level": 3,
-        "isBreaking": false,
-        "isRecent": true
-      },
-      "analysts": [
-        {
-          "id": "chen_jing",
-          "name": "陈静",
-          "role": "科技分析师",
-          "avatar": "CJ",
-          "color": "#06B6D4",
-          "comment": "AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。"
-        }
-      ]
-    },
-    {
       "id": "hindustan_times_20260317_ff39e6aa",
       "title": "Pollution penalties to fund new Environment Protection Fund: MoS",
       "summary": "The Environment Protection Fund will now receive penalties from environmental violations to finance remediation and regulatory functions, as per new rules.",
@@ -3422,7 +3430,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关方的响应速度远落后于科学预警。"
+          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而主要组织的响应速度远落后于科学预警。"
         }
       ]
     },
@@ -3454,7 +3462,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "Santi Aldama pone fi再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
@@ -3550,7 +3558,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而国际机构的响应速度远落后于科学预警。"
+          "comment": "Oldest-known whale s再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
         }
       ]
     },
@@ -3582,7 +3590,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "各方的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+          "comment": "当事国的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
@@ -3614,7 +3622,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而相关方的响应速度远落后于科学预警。"
+          "comment": "UK的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
@@ -3646,7 +3654,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而国际机构的响应速度远落后于科学预警。"
+          "comment": "各方的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
         }
       ]
     },
@@ -3678,7 +3686,7 @@
           "role": "社会评论员",
           "avatar": "WF",
           "color": "#EC4899",
-          "comment": "主要经济体的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。"
+          "comment": "11 impactantes imáge再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。"
         }
       ]
     }
