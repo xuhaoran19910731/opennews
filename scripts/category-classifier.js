@@ -147,6 +147,23 @@ const CATEGORY_KEYWORDS = {
       '宗教', '性别', '种族歧视', '多样性', '社会', '社区', '福利', '住房',
     ],
   },
+
+  domestic: {
+    en: [
+      'china domestic', 'beijing', 'shanghai', 'guangdong', 'shenzhen',
+      'state council', 'npc', 'national people congress', 'cppcc',
+      'cpc', 'chinese government', 'two sessions', 'reform',
+      'provinces', 'mainland china', 'chinese economy',
+    ],
+    zh: [
+      '国务院', '全国人大', '两会', '政协', '中央', '改革', '民生',
+      '扶贫', '乡村振兴', '医保', '社保', '公积金', '户口', '城镇化',
+      '高考', '春运', '发改委', '住建部', '国内', '中国经济', 'A股',
+      '北京', '上海', '广东', '深圳', '双减', '三中全会', '中纪委',
+      '反腐', '一带一路', '脱贫攻坚', '内循环', '双循环', '共同富裕',
+      '房地产', '楼市', '户籍', '新基建', '自贸区',
+    ],
+  },
 };
 
 /**

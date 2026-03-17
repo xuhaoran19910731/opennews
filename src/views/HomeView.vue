@@ -46,6 +46,7 @@ onMounted(() => {
 
 const categoryLabels = {
   all: '全部',
+  domestic: '国内',
   economy: '财经',
   politics: '政治',
   technology: '科技',

@@ -31,6 +31,7 @@ const ULTRA_HIGH_KEYWORDS = [
   'GDP', '经济衰退', '金融危机', '股市崩溃',
   '人工智能', '疫情', '爆发', '病毒',
   '政变', '暗杀', '恐袭', '停火', '和平协议', '战争罪行',
+  '两会', '全国人大', '国务院', '中央经济工作会议', '三中全会', '反腐', '重大改革',
   // 德语
   'Krieg', 'Wahl', 'Bundestagswahl', 'Zentralbank', 'Rezession',
   'Finanzkrise', 'Atomangriff', 'Terroranschlag', 'Putsch',
@@ -81,6 +82,8 @@ const HIGH_KEYWORDS = [
   '油价', '能源危机', '网络安全', '芯片短缺',
   '比特币', '加密货币', '失业率', '就业报告',
   '地震', '飓风', '台风', '海啸', '洪水',
+  '发改委', 'A股', '社保', '医保', '乡村振兴', '双减',
+  '户籍改革', '房地产', '楼市', '内循环', '共同富裕',
   // 德语
   'Sanktionen', 'Gipfel', 'Inflation', 'Klimawandel',
   'Rakete', 'Protest', 'Flüchtling', 'Erdbeben',

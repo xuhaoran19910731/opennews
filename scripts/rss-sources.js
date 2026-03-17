@@ -178,6 +178,66 @@ export const RSS_SOURCES = [
   },
 
   // ═════════════════════════════════════════
+  // 中国国内媒体
+  // ═════════════════════════════════════════
+  {
+    id: 'xinhua',
+    name: '新华社',
+    url: 'http://www.news.cn/rss/politics.xml',
+    tier: 1, baseScore: 10,
+    categories: ['domestic', 'politics'],
+    language: 'zh', logoColor: '#D71920',
+  },
+  {
+    id: 'people_daily',
+    name: '人民日报',
+    url: 'https://www.people.com.cn/rss/politics.xml',
+    tier: 1, baseScore: 10,
+    categories: ['domestic', 'politics'],
+    language: 'zh', logoColor: '#CC0000',
+  },
+  {
+    id: 'cctv',
+    name: '央视新闻',
+    url: 'https://news.cctv.com/rss/china.xml',
+    tier: 1, baseScore: 10,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#1A6FB4',
+  },
+  {
+    id: 'caixin',
+    name: '财新网',
+    url: 'https://rsshub.app/caixin/latest',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'economy'],
+    language: 'zh', logoColor: '#0066CC',
+  },
+  {
+    id: 'thepaper',
+    name: '澎湃新闻',
+    url: 'https://rsshub.app/thepaper/featured',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'society'],
+    language: 'zh', logoColor: '#1A1A1A',
+  },
+  {
+    id: 'chinadaily',
+    name: '中国日报',
+    url: 'https://www.chinadaily.com.cn/rss/china_rss.xml',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#003366',
+  },
+  {
+    id: 'globaltimes',
+    name: '环球时报',
+    url: 'https://rsshub.app/huanqiu/world',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'politics'],
+    language: 'zh', logoColor: '#BD0000',
+  },
+
+  // ═════════════════════════════════════════
   // 德语 (Deutsch) 媒体
   // ═════════════════════════════════════════
   {

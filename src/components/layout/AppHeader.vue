@@ -75,6 +75,7 @@ const activeCategory = computed(() => store.activeCategory)
 
 const categories = [
   { value: 'all', label: '全部' },
+  { value: 'domestic', label: '国内' },
   { value: 'economy', label: '财经' },
   { value: 'politics', label: '政治' },
   { value: 'technology', label: '科技' },

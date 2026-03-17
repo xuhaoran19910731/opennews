@@ -30,6 +30,7 @@ import { scoreArticle } from './news-scorer.js';
 import { deduplicateArticles } from './deduplicator.js';
 import analysts from './analyst-templates.js';
 import { generateCommentsForAll } from './analyst-engine.js';
+import { translateArticles } from './translator.js';
 
 // ─────────────────────────────────────────
 // 路径常量
@@ -301,6 +302,10 @@ async function main() {
   for (const [cat, count] of Object.entries(catCounts).sort((a, b) => b[1] - a[1])) {
     console.log(`   ${cat}: ${count} 条`);
   }
+
+  // Step 6.5: 翻译非中文文章为中文
+  console.log('\n🌐 翻译非中文文章...');
+  await translateArticles(topArticles);
 
   // Step 7: 生成分析师评论
   console.log('\n💬 生成分析师评论...');
