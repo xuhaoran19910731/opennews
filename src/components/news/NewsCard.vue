@@ -23,12 +23,15 @@
       </span>
 
       <!-- Publish time: absolute + relative -->
-      <span class="text-xs text-gray-400 dark:text-gray-500 ml-auto shrink-0 text-right">
+      <span v-if="absoluteTime" class="text-xs text-gray-400 dark:text-gray-500 ml-auto shrink-0 text-right">
         <time :datetime="article.publishedAt" :title="fullDateTime">
           {{ absoluteTime }}
           <span class="text-gray-300 dark:text-gray-600 mx-0.5">·</span>
           {{ relativeTime }}
         </time>
+      </span>
+      <span v-else class="text-xs text-gray-300 dark:text-gray-600 ml-auto shrink-0">
+        时间未知
       </span>
     </div>
 
@@ -64,19 +67,22 @@
 
       <!-- Expand / collapse button -->
       <button
-        v-if="article.analysts && article.analysts.length > 0"
+        v-if="hasRelatedContent"
         @click.stop="toggleExpand"
         class="flex items-center gap-1 text-xs font-medium text-primary hover:text-primary-dark transition-colors duration-200"
       >
-        <span>{{ expanded ? '收起' : '查看立场解读' }}</span>
+        <span>{{ expanded ? '收起' : '扩展阅读' }}</span>
         <span class="transition-transform duration-200" :class="expanded ? 'rotate-180' : ''">▼</span>
       </button>
     </div>
 
-    <!-- Expand section: analyst panel + original link -->
+    <!-- Expand section: related reading + original link -->
     <Transition name="expand">
       <div v-if="expanded" class="mt-3">
-        <AnalystPanel :analysts="article.analysts" />
+        <RelatedReading
+          :related-articles="article.relatedArticles || []"
+          :wiki-links="article.wikiLinks || []"
+        />
 
         <div class="mt-3 flex items-center justify-between">
           <a
@@ -110,7 +116,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import ImportanceBadge from './ImportanceBadge.vue'
-import AnalystPanel from '../analyst/AnalystPanel.vue'
+import RelatedReading from './RelatedReading.vue'
 import { useNewsStore } from '../../stores/newsStore.js'
 
 const store = useNewsStore()
@@ -133,8 +139,7 @@ function toggleExpand() {
 }
 
 function handleCardClick() {
-  // Clicking the card body also toggles expand if there are analysts
-  if (props.article.analysts && props.article.analysts.length > 0) {
+  if (hasRelatedContent.value) {
     toggleExpand()
   }
 }
@@ -143,6 +148,13 @@ function handleSourceClick() {
   const name = props.article.source?.name
   if (name) store.setSource(name)
 }
+
+// Whether this article has related content to show
+const hasRelatedContent = computed(() => {
+  const ra = props.article.relatedArticles
+  const wl = props.article.wikiLinks
+  return (ra && ra.length > 0) || (wl && wl.length > 0)
+})
 
 // Source badge class based on tier
 const sourceBadgeClass = computed(() => {

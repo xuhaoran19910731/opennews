@@ -4,10 +4,10 @@
  * 流程：
  * 1. 并行获取所有 RSS feed（15s 超时，单个失败不影响整体）
  * 2. 若有 NEWS_API_KEY，同时调用 NewsAPI
- * 3. 合并所有文章 → 规范化格式
+ * 3. 过滤无日期和过时文章（>72h）
  * 4. 聚类（URL去重 + 标题聚类）→ 双维分类(地理+主题) → 评分(含sourceCount) → 选取
  * 5. 翻译非中文文章
- * 6. 生成立场解读评论
+ * 6. 计算扩展阅读（相关文章 + 维基百科链接）
  * 7. 写入 data/news.json 和 data/meta.json
  */
 
@@ -27,9 +27,8 @@ const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 import RSS_SOURCES, { getSourceById } from './rss-sources.js';
 import { classifyArticle } from './category-classifier.js';
 import { scoreArticle } from './news-scorer.js';
-import { deduplicateArticles } from './deduplicator.js';
-import analysts from './analyst-templates.js';
-import { generateCommentsForAll } from './analyst-engine.js';
+import { deduplicateArticles, tokenize, jaccardSimilarity } from './deduplicator.js';
+import { extractEntities } from './analyst-engine.js';
 import { translateArticles } from './translator.js';
 
 // ─────────────────────────────────────────
@@ -67,12 +66,68 @@ function truncate(text, maxLen = 2000) {
 
 /**
  * 从 RSS 条目中提取发布时间（ISO 字符串）
+ * 如果 RSS 条目没有有效日期，返回 null 而非伪造当前时间
  */
 function parseDate(item) {
   const raw = item.pubDate || item.isoDate || item.date || '';
-  if (!raw) return new Date().toISOString();
+  if (!raw) return null;
   const d = new Date(raw);
-  return isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+  return isNaN(d.getTime()) ? null : d.toISOString();
+}
+
+/**
+ * 过滤掉过时文章（无日期或超过 72 小时）
+ */
+const MAX_AGE_HOURS = 72;
+
+function filterStaleArticles(articles) {
+  const now = Date.now();
+  return articles.filter(a => {
+    if (!a.publishedAt) return false;
+    const age = (now - new Date(a.publishedAt).getTime()) / (1000 * 60 * 60);
+    return age >= 0 && age <= MAX_AGE_HOURS;
+  });
+}
+
+/**
+ * 为每篇文章计算扩展阅读（相关文章 + 维基百科链接）
+ */
+function computeRelatedArticles(articles) {
+  const tokenCache = articles.map(a => tokenize(a.title || ''));
+
+  return articles.map((article, i) => {
+    const candidates = [];
+    for (let j = 0; j < articles.length; j++) {
+      if (i === j) continue;
+      let score = 0;
+      if (article.topic && article.topic === articles[j].topic) score += 3;
+      if (article.category === articles[j].category) score += 1;
+      const sim = jaccardSimilarity(tokenCache[i], tokenCache[j]);
+      score += sim * 5;
+      if (score > 2) candidates.push({ idx: j, score });
+    }
+    candidates.sort((a, b) => b.score - a.score);
+
+    const relatedArticles = candidates.slice(0, 3).map(r => ({
+      title: articles[r.idx].title,
+      source: articles[r.idx].source?.name,
+      url: articles[r.idx].url,
+      publishedAt: articles[r.idx].publishedAt,
+    }));
+
+    const text = `${article.title || ''} ${article.summary || ''}`;
+    const entities = extractEntities(text);
+    const wikiTerms = [...new Set([
+      ...entities.countries.slice(0, 2),
+      ...entities.orgs.slice(0, 2),
+    ])];
+    const wikiLinks = wikiTerms.slice(0, 3).map(term => ({
+      term,
+      url: `https://zh.wikipedia.org/wiki/${encodeURIComponent(term)}`,
+    }));
+
+    return { ...article, relatedArticles, wikiLinks, analysts: [] };
+  });
 }
 
 // ─────────────────────────────────────────
@@ -185,7 +240,7 @@ async function fetchNewsAPI(apiKey) {
     const articles = (resp.data?.articles || [])
       .filter((a) => a.url && a.title)
       .map((a) => {
-        const publishedAt = a.publishedAt || new Date().toISOString();
+        const publishedAt = a.publishedAt || null;
         const sourceId = a.source?.name
           ? a.source.name.toLowerCase().replace(/\s+/g, '_')
           : 'newsapi';
@@ -240,6 +295,12 @@ async function main() {
 
   let allArticles = [...rssArticles, ...newsApiArticles];
   console.log(`\n📊 合并后总计: ${allArticles.length} 条`);
+
+  // Step 2.5: 过滤无日期和过时文章
+  console.log('\n🕐 过滤过时文章（无日期或超过 72 小时）...');
+  const beforeFilter = allArticles.length;
+  allArticles = filterStaleArticles(allArticles);
+  console.log(`   过滤前: ${beforeFilter} 条 → 过滤后: ${allArticles.length} 条（移除 ${beforeFilter - allArticles.length} 条）`);
 
   // Step 3: 聚类（URL去重 + 标题相似度聚类）
   console.log('\n🔍 执行聚类去重...');
@@ -311,9 +372,9 @@ async function main() {
   console.log('\n🌐 翻译非中文文章...');
   await translateArticles(topArticles);
 
-  // Step 7: 生成分析师评论
-  console.log('\n💬 生成分析师评论...');
-  const finalArticles = generateCommentsForAll(topArticles, analysts);
+  // Step 7: 计算扩展阅读（相关文章 + 维基百科链接）
+  console.log('\n📖 计算扩展阅读...');
+  const finalArticles = computeRelatedArticles(topArticles);
 
   // ─────────────────────────────────────────
   // 写入 data/news.json
