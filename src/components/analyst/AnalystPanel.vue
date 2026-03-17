@@ -8,8 +8,8 @@
         <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
-      <span class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide">专家解读</span>
-      <span class="text-xs text-gray-400 dark:text-gray-500 ml-auto">{{ analysts.length }} 位</span>
+      <span class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide">立场解读</span>
+      <span class="text-xs text-gray-400 dark:text-gray-500 ml-auto">{{ analysts.length }} 个立场</span>
     </div>
 
     <!-- Comments list -->

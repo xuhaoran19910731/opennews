@@ -59,7 +59,7 @@ function generateArticleId(source, publishedAt, url) {
 /**
  * 截断文本到指定字符数
  */
-function truncate(text, maxLen = 200) {
+function truncate(text, maxLen = 2000) {
   if (!text) return '';
   const stripped = text.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
   return stripped.length > maxLen ? stripped.slice(0, maxLen) + '…' : stripped;

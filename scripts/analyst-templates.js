@@ -1,622 +1,411 @@
 /**
- * 虚拟分析师角色定义 & 评论模板库
+ * 政治光谱立场解读模板库
  *
- * 每个分析师包含：id, name, role, avatar, color, triggerCategories, templates[]
+ * 5 个光谱位置：极左、左、中、右、极右
+ * 每个位置包含：id, name, role, avatar, color, triggerCategories, templates[]
  * 每个模板包含：triggerKeywords[], variants[], tone
  * 槽位占位符：{TOPIC} {COUNTRY} {ORG} {NUMBER}
  */
 
 export const analysts = [
-  // ─────────────────────────────────────────
-  // 1. 李明 — 财经分析师
-  // ─────────────────────────────────────────
+  // ═════════════════════════════════════════
+  // 1. 极左 — 激进左翼
+  // ═════════════════════════════════════════
   {
-    id: 'li_ming',
-    name: '李明',
-    role: '财经分析师',
-    avatar: 'LM',
-    color: '#3B82F6',
-    triggerCategories: ['economy', 'tech'],
+    id: 'far_left',
+    name: '极左',
+    role: '激进左翼',
+    avatar: '极左',
+    color: '#DC2626',
+    triggerCategories: ['all'],
     templates: [
       {
-        triggerKeywords: ['inflation', 'cpi', '通胀', '通货膨胀', 'price'],
-        tone: 'analytical',
-        variants: [
-          '此次{COUNTRY}通胀数据的走向，将直接影响{ORG}的利率决策节奏，投资者需警惕短端收益率的波动风险。',
-          '通胀压力的持续，意味着{ORG}收紧货币政策的窗口仍然开放。{COUNTRY}消费市场的韧性值得持续跟踪。',
-          '{TOPIC}背景下通胀数据超预期，预计市场将重新定价未来{NUMBER}个月内的降息预期。',
-        ],
-      },
-      {
-        triggerKeywords: ['interest rate', 'federal reserve', 'central bank', '利率', '央行', '美联储'],
-        tone: 'authoritative',
-        variants: [
-          '{ORG}此番政策信号明确，短期内市场流动性将维持偏紧格局，成长股估值面临重估压力。',
-          '从历史规律看，{ORG}每次转向前都有{NUMBER}至{NUMBER}次的预期铺垫，当前节奏与以往高度吻合。',
-          '全球主要央行政策分化加剧，{COUNTRY}资本市场承压，汇率波动或将成为下一个风险点。',
-          '{ORG}加息周期接近尾声的信号释放，有助于修复风险资产估值，但"更高更久"的叙事尚未结束。',
-        ],
-      },
-      {
-        triggerKeywords: ['gdp', 'growth', 'recession', '经济增长', '衰退', 'economy'],
-        tone: 'cautious',
-        variants: [
-          '{COUNTRY}GDP数据低于预期，软着陆叙事受到挑战。接下来的就业数据将是关键验证窗口。',
-          '当前宏观数据呈现出"外冷内暖"的分化格局，{COUNTRY}经济的结构性韧性依然存在，但下行风险不可忽视。',
-          '若{TOPIC}持续演化，{NUMBER}%的经济增长预测可能面临下修，建议关注防御性资产配置机会。',
-        ],
-      },
-      {
-        triggerKeywords: ['trade', 'tariff', 'export', 'import', '贸易', '关税', '出口'],
-        tone: 'analytical',
-        variants: [
-          '{COUNTRY}对{ORG}加征关税的举措，将进一步重塑全球供应链版图，亚洲制造业替代效应值得关注。',
-          '贸易摩擦升级背景下，{TOPIC}相关供应链企业的盈利能见度下降，建议审慎看待估值溢价。',
-          '若{COUNTRY}关税措施落地，短期内进口通胀压力将向消费端传导，幅度预计在{NUMBER}%左右。',
-        ],
-      },
-      {
-        triggerKeywords: ['ipo', 'merger', 'acquisition', 'stock', '上市', '并购', '股市'],
-        tone: 'optimistic',
-        variants: [
-          '{ORG}此次并购彰显了{TOPIC}领域的战略价值，溢价率{NUMBER}%在行业横向对比中属于合理区间。',
-          '当前IPO窗口期收窄，优质标的的估值回归理性，对长线投资者而言反而是入场良机。',
-          '资本市场对{TOPIC}的热度，折射出机构资金在新一轮产业周期中的早期布局逻辑。',
-          '{COUNTRY}股市在{TOPIC}消息刺激下的反应，表明市场对政策预期仍然高度敏感。',
-        ],
-      },
-      {
-        triggerKeywords: ['oil', 'energy', 'opec', '石油', '能源', '油价', 'fuel'],
-        tone: 'analytical',
-        variants: [
-          '{ORG}减产协议的延续，将在未来{NUMBER}个季度内维持能源价格的中枢上移。',
-          '油价波动对{COUNTRY}贸易条件的影响是双向的，能源净进口国将首先感受到输入性通胀压力。',
-          '{TOPIC}事件推升能源价格，航运和化工板块的成本端压力需纳入投资决策框架。',
-        ],
-      },
-      {
-        triggerKeywords: ['cryptocurrency', 'bitcoin', 'digital currency', '比特币', '加密货币', 'crypto'],
-        tone: 'cautious',
-        variants: [
-          '{TOPIC}再度引发市场对监管落地时间线的讨论，加密资产的短期波动率将维持高位。',
-          '机构资金对{TOPIC}的态度分化，折射出数字资产在传统投资组合中定位的本质分歧尚未解决。',
-          '比特币在{NUMBER}美元关口的攻防，背后是宏观流动性预期与避险情绪的博弈。',
-        ],
-      },
-      {
-        triggerKeywords: ['semiconductor', 'chip', 'supply chain', '芯片', '半导体', '供应链'],
-        tone: 'strategic',
-        variants: [
-          '半导体供应链的地缘政治化趋势不可逆，{COUNTRY}本土化产能建设将在未来{NUMBER}年内持续获得政策支撑。',
-          '{ORG}在{TOPIC}方向的资本开支扩张，预示着新一轮科技产业周期的启动信号正在形成。',
-          '芯片产能的区域再平衡，将深刻改变全球电子制造业的成本结构与定价权分布。',
-        ],
-      },
-      {
-        triggerKeywords: ['unemployment', 'jobs', 'labor', '失业', '就业', '劳动力'],
-        tone: 'analytical',
-        variants: [
-          '{COUNTRY}就业市场的韧性超出预期，这为{ORG}维持偏紧货币政策提供了空间。',
-          '劳动力市场的降温是{ORG}期待看到的软着陆迹象，但{NUMBER}万的新增就业仍高于趋势水平。',
-          '工资增速黏性是当前通胀最顽固的分项，{COUNTRY}劳动力市场结构性变化将制约降息节奏。',
-        ],
-      },
-      {
-        triggerKeywords: ['budget', 'deficit', 'debt', 'fiscal', '预算', '赤字', '债务', '财政'],
-        tone: 'cautious',
-        variants: [
-          '{COUNTRY}财政赤字扩张路径若持续，主权信用评级面临下调压力，长端利率或将被动上行。',
-          '债务上限谈判的不确定性是市场的尾部风险，短期内{ORG}相关资产的避险溢价将有所体现。',
-          '财政政策与货币政策的合力方向，将在未来{NUMBER}个季度内决定{COUNTRY}经济的复苏斜率。',
-        ],
-      },
-    ],
-  },
-
-  // ─────────────────────────────────────────
-  // 2. 张伟 — 地缘政治分析师
-  // ─────────────────────────────────────────
-  {
-    id: 'zhang_wei',
-    name: '张伟',
-    role: '地缘政治分析师',
-    avatar: 'ZW',
-    color: '#8B5CF6',
-    triggerCategories: ['politics', 'military'],
-    templates: [
-      {
-        triggerKeywords: ['election', 'vote', '选举', '投票', '大选'],
-        tone: 'insightful',
-        variants: [
-          '{COUNTRY}此次选举结果将重塑{TOPIC}的政策走向，执政党能否兑现经济承诺是未来执政合法性的核心变量。',
-          '选举结果的不确定性折射出{COUNTRY}社会内部的深层撕裂，后选举时期的政策连续性值得观察。',
-          '{TOPIC}选举释放出明确的民粹主义信号，这一趋势对{ORG}的多边合作框架构成系统性挑战。',
-        ],
-      },
-      {
-        triggerKeywords: ['sanction', 'sanctions', '制裁', 'embargo', 'ban'],
-        tone: 'authoritative',
-        variants: [
-          '{ORG}对{COUNTRY}实施新一轮制裁，短期内将加剧双边经济脱钩，但制裁的长期有效性历来存在争议。',
-          '制裁工具的滥用正在推动{COUNTRY}加速推进去美元化布局，这一战略转向的影响将是深远的。',
-          '{TOPIC}制裁方案的精准程度，折射出{ORG}在平衡盟友利益与战略目标方面的困境。',
-          '历史经验表明，单边制裁在缺乏多边协调的情况下，往往难以产生预期的政治压力效果。',
-        ],
-      },
-      {
-        triggerKeywords: ['summit', 'diplomatic', 'treaty', 'agreement', '峰会', '外交', '条约', '协议'],
-        tone: 'diplomatic',
-        variants: [
-          '{COUNTRY}与{ORG}峰会的实质性成果，将为地区局势降温提供外交缓冲期，但结构性矛盾仍待化解。',
-          '此次外交接触的时间节点耐人寻味，双方都有意在关键议题上留有余地，真正的博弈在幕后。',
-          '{TOPIC}协议的签署标志着双边关系正常化迈出关键一步，但执行层面的细节分歧或将引发后续摩擦。',
-        ],
-      },
-      {
-        triggerKeywords: ['nato', 'alliance', 'security', '北约', '联盟', '安全'],
-        tone: 'strategic',
-        variants: [
-          '{ORG}在{TOPIC}上的集体表态，强化了盟友间的战略协调，但内部的能力差异仍将制约实际行动能力。',
-          '安全架构的重塑是一个长期进程，{COUNTRY}的加入将深刻改变地区安全博弈的力量对比。',
-          '{TOPIC}再次验证了集体安全机制在应对非传统威胁时的内在局限性。',
-          '盟友扩大的战略价值，需要与由此带来的战略纵深收缩风险相互权衡。',
-        ],
-      },
-      {
-        triggerKeywords: ['coup', 'protest', 'opposition', 'democracy', '政变', '抗议', '民主', '反对派'],
-        tone: 'analytical',
-        variants: [
-          '{COUNTRY}政治动荡的根源在于长期积累的治理赤字，单纯的政权更迭难以从根本上化解社会矛盾。',
-          '此次{TOPIC}的规模与持续性，表明现执政当局的合法性基础已发生明显侵蚀。',
-          '{ORG}对{COUNTRY}局势的暧昧态度，折射出其在干涉与不干涉之间的战略困境。',
-        ],
-      },
-      {
-        triggerKeywords: ['china', 'us', 'russia', 'ukraine', 'taiwan', '中国', '美国', '俄罗斯', '乌克兰', '台湾'],
-        tone: 'geopolitical',
-        variants: [
-          '{COUNTRY}在{TOPIC}上的战略意图越来越清晰，大国博弈的焦点已从意识形态转向规则与标准之争。',
-          '此次{TOPIC}事件是大国战略竞争格局下的一个缩影，任何单一事件都难以孤立解读。',
-          '{COUNTRY}与{ORG}的结构性矛盾在{TOPIC}上再次浮出水面，短期管控有助于防止误判，但根本分歧依然存在。',
-          '大国关系的稳定需要双方都具备战略克制，当前信号表明这一共识正面临空前压力。',
-        ],
-      },
-      {
-        triggerKeywords: ['immigration', 'refugee', 'border', '移民', '难民', '边境'],
-        tone: 'empathetic',
-        variants: [
-          '{COUNTRY}边境危机的人道主义维度，正在与国家安全考量形成复杂的政策张力。',
-          '{NUMBER}万难民的涌入，将对{COUNTRY}社会凝聚力和福利体系构成多维度压力测试。',
-          '{TOPIC}折射出国际难民保护机制在应对大规模人口流动时的系统性不足。',
-        ],
-      },
-      {
-        triggerKeywords: ['sovereignty', 'territorial', 'independence', '主权', '领土', '独立'],
-        tone: 'authoritative',
-        variants: [
-          '{COUNTRY}领土主张的背后，是国内政治合法性需求与国际规范之间的持续角力。',
-          '领土问题的历史遗产难以在短期内化解，任何试图以武力单方面改变现状的举动都将付出高昂代价。',
-          '{TOPIC}的走向将检验{ORG}是否有意愿维护以规则为基础的国际秩序。',
-        ],
-      },
-      {
-        triggerKeywords: ['united nations', 'un', 'security council', '联合国', '安理会', '国际社会'],
+        triggerKeywords: ['economy', 'gdp', 'market', 'stock', 'trade', 'inflation', 'recession', 'bank', '经济', 'GDP', '股市', '通胀', '贸易', '央行', '利率', 'A股', '楼市'],
         tone: 'critical',
         variants: [
-          '{ORG}在{TOPIC}上的分裂，再次暴露了多边主义在大国博弈面前的脆弱性。',
-          '安理会的否决权机制在{TOPIC}上形成僵局，这并非制度失效，而是大国政治现实的如实映射。',
-          '国际社会的呼吁缺乏强制力支撑，若无实质行动跟进，只会进一步消耗{ORG}的公信力。',
+          '{TOPIC}再次证明，资本主义体制下的经济增长只会让财富进一步集中到少数人手中，普通劳动者的实际购买力持续被侵蚀。',
+          '所谓的{COUNTRY}经济复苏不过是资本市场的狂欢，真正创造价值的工人阶级并未从中获得应有的回报。',
+          '{ORG}的政策本质上是在维护资本利益集团的超额利润，而将通胀等系统性风险转嫁给底层民众。',
         ],
       },
       {
-        triggerKeywords: ['espionage', 'intelligence', 'spy', 'surveillance', '间谍', '情报', '监控', '网络间谍'],
-        tone: 'measured',
-        variants: [
-          '情报战的升温是大国战略竞争的常态延伸，此次{TOPIC}的公开化处理本身即是一种外交信号。',
-          '{COUNTRY}对{ORG}情报渗透指控的公开，折射出双边信任赤字已下降至新的低点。',
-          '网络空间的主权博弈日趋激烈，{TOPIC}为相关国家加速推进数字主权立法提供了新的动因。',
-        ],
-      },
-    ],
-  },
-
-  // ─────────────────────────────────────────
-  // 3. 陈静 — 科技分析师
-  // ─────────────────────────────────────────
-  {
-    id: 'chen_jing',
-    name: '陈静',
-    role: '科技分析师',
-    avatar: 'CJ',
-    color: '#06B6D4',
-    triggerCategories: ['tech', 'economy'],
-    templates: [
-      {
-        triggerKeywords: ['artificial intelligence', 'ai', 'machine learning', '人工智能', 'AI', '机器学习'],
-        tone: 'excited',
-        variants: [
-          '{ORG}在{TOPIC}方向的突破，标志着大模型能力边界的再次扩展，行业格局或将因此重塑。',
-          'AI技术的迭代速度已超出大多数监管框架的设计预设，{COUNTRY}如何在创新与治理之间找到平衡是核心命题。',
-          '{TOPIC}的落地应用展示了AI从实验室走向产业化的加速路径，但数据与算力的门槛依然高企。',
-          'AI能力的跃升正在倒逼各行业的商业模式重构，率先完成认知升级的企业将获得不对称竞争优势。',
-        ],
-      },
-      {
-        triggerKeywords: ['semiconductor', 'chip', 'nvidia', 'tsmc', '芯片', '半导体', '台积电'],
-        tone: 'strategic',
-        variants: [
-          '{ORG}最新一代芯片的性能指标，将重新定义AI训练集群的算力天花板，同时也拉高了竞争者的入场门槛。',
-          '半导体产业链的地缘政治化已从供应链风险演变为技术主权竞争，{COUNTRY}的本土化路径选择至关重要。',
-          '{NUMBER}nm制程的突破，对{ORG}巩固其工艺技术领先地位具有重要战略意义。',
-        ],
-      },
-      {
-        triggerKeywords: ['cybersecurity', 'hacking', 'data breach', 'cyberattack', '网络安全', '黑客', '数据泄露'],
-        tone: 'cautious',
-        variants: [
-          '此次{TOPIC}暴露了关键基础设施在网络威胁面前的系统性脆弱点，零信任架构的推广已刻不容缓。',
-          '{ORG}遭受大规模数据泄露，涉及{NUMBER}条用户记录，折射出企业数据治理与安全投入之间的结构性失衡。',
-          '国家级网络攻击的归因难题，持续制约着国际社会建立有效网络空间规则的努力。',
-        ],
-      },
-      {
-        triggerKeywords: ['space', 'satellite', 'rocket', 'launch', '太空', '卫星', '火箭', '发射'],
-        tone: 'enthusiastic',
-        variants: [
-          '{ORG}本次发射任务成功，标志着商业航天进入规模化降本的新阶段，低轨卫星互联网的全球覆盖进程加速。',
-          '太空经济的竞争已从国家项目演变为多主体博弈，{COUNTRY}的政策激励机制将决定本土企业的竞争起点。',
-          '{TOPIC}的技术验证，为深空探测的下一步布局铺垫了关键节点。',
-        ],
-      },
-      {
-        triggerKeywords: ['social media', 'platform', 'regulation', 'antitrust', '社交媒体', '平台', '监管', '反垄断'],
-        tone: 'critical',
-        variants: [
-          '{ORG}面临的反垄断调查，折射出超大型平台在创新激励与市场竞争之间日益突出的结构性张力。',
-          '平台经济的监管趋严是全球性趋势，{COUNTRY}的立法进展将对{ORG}的商业模式产生深远影响。',
-          '算法推荐机制的社会影响已远超平台的技术边界，相关治理框架的建立迫在眉睫。',
-        ],
-      },
-      {
-        triggerKeywords: ['quantum', 'computing', '量子', '量子计算'],
-        tone: 'forward-looking',
-        variants: [
-          '量子计算的突破将对现有加密体系构成根本性挑战，各国在后量子密码学标准上的竞争正在白热化。',
-          '{ORG}量子处理器{NUMBER}量子比特的里程碑，让商用量子计算的时间线提前进入现实讨论范畴。',
-          '{TOPIC}领域的技术竞争，本质上是下一代算力主权的争夺，战略意义远超短期商业价值。',
-        ],
-      },
-      {
-        triggerKeywords: ['electric vehicle', 'ev', 'tesla', 'battery', '电动汽车', '新能源汽车', '电池'],
-        tone: 'analytical',
-        variants: [
-          '{ORG}最新电池技术指标的披露，将对整个新能源产业链的定价逻辑产生连锁影响。',
-          '{COUNTRY}新能源汽车市场的竞争格局正在从技术领先转向规模效应与品牌力的综合较量。',
-          '固态电池技术的商业化进程将是重塑{TOPIC}产业价值链分配的关键变量。',
-        ],
-      },
-      {
-        triggerKeywords: ['biotech', 'gene', 'drug', 'vaccine', 'pharmaceutical', '生物技术', '基因', '药物', '制药'],
-        tone: 'scientific',
-        variants: [
-          '{ORG}的{TOPIC}临床试验数据，将为该适应症的治疗方案带来新的循证依据，市场前景值得期待。',
-          '基因编辑技术的监管框架尚不完善，{COUNTRY}在推动{TOPIC}产业化的同时，伦理边界的划定同样关键。',
-          '生物科技领域的研发周期长、风险高，但{TOPIC}方向的突破有望为患者带来根本性的治疗范式转变。',
-        ],
-      },
-      {
-        triggerKeywords: ['cloud', 'data center', 'aws', 'azure', '云计算', '数据中心', '算力'],
-        tone: 'analytical',
-        variants: [
-          '{ORG}大规模数据中心的布局，折射出AI算力军备竞赛的资本密集度已进入全新量级。',
-          '云计算基础设施的地缘政治化趋势，将深刻改变跨国数据流通的合规成本结构。',
-          '{COUNTRY}算力基础设施的战略投资，是数字经济竞争力的重要底座，其回报周期将以十年计。',
-        ],
-      },
-      {
-        triggerKeywords: ['startup', 'venture', 'funding', 'unicorn', '创业', '融资', '独角兽', '风投'],
-        tone: 'optimistic',
-        variants: [
-          '{ORG}完成{NUMBER}亿融资，估值的上调反映了资本市场对{TOPIC}赛道长期成长逻辑的认可。',
-          '在宏观流动性收紧的背景下，{TOPIC}领域仍能吸引优质资本，这本身就是一个强烈的产业信号。',
-          '独角兽企业的估值回调是健康的市场出清，为真正具备商业价值的项目提供了更合理的定价基准。',
-        ],
-      },
-    ],
-  },
-
-  // ─────────────────────────────────────────
-  // 4. 王芳 — 社会评论员
-  // ─────────────────────────────────────────
-  {
-    id: 'wang_fang',
-    name: '王芳',
-    role: '社会评论员',
-    avatar: 'WF',
-    color: '#EC4899',
-    triggerCategories: ['society', 'environment', 'politics'],
-    templates: [
-      {
-        triggerKeywords: ['climate', 'global warming', 'carbon', '气候', '全球变暖', '碳排放'],
+        triggerKeywords: ['war', 'military', 'weapon', 'army', 'missile', 'conflict', 'troops', 'nato', '战争', '军事', '武器', '导弹', '冲突', '军队', '北约'],
         tone: 'urgent',
         variants: [
-          '{TOPIC}再次提醒我们，气候承诺与实际政策行动之间的鸿沟，需要的不是更多宣言，而是可核查的执行机制。',
-          '{COUNTRY}的碳减排路径能否兑现，不仅取决于技术与资本，更取决于政治意愿在选举周期内的连贯性。',
-          '极端气候事件的高频化，是大自然对人类治理失灵最直白的反馈，而{ORG}的响应速度远落后于科学预警。',
+          '{TOPIC}的根源在于帝国主义对资源和市场的争夺——战争从来不是人民的选择，而是军工复合体和金融资本的盛宴。',
+          '{COUNTRY}的军事扩张背后是资本对全球剩余价值的无止境攫取，受苦的永远是两国的普通民众和士兵。',
+          '反战不是软弱，而是对全体劳动者命运的捍卫。{ORG}的军事冒险必须被国际工人运动所制止。',
         ],
       },
       {
-        triggerKeywords: ['human rights', 'freedom', 'civil rights', '人权', '自由', '公民权利'],
+        triggerKeywords: ['politics', 'election', 'government', 'policy', 'reform', 'parliament', '政治', '选举', '政府', '政策', '改革', '议会', '两会', '国务院'],
+        tone: 'radical',
+        variants: [
+          '{TOPIC}的改良措施治标不治本，只有彻底变革生产关系，才能从根本上解决不平等的结构性问题。',
+          '{COUNTRY}的选举政治不过是不同资本集团之间的权力交接，真正的民主应该是劳动者对生产资料的直接控制。',
+          '对{ORG}的改革不应抱有幻想——现有体制框架内的任何调整，都无法撼动资本对劳动的系统性剥削。',
+        ],
+      },
+      {
+        triggerKeywords: ['technology', 'ai', 'tech', 'semiconductor', 'digital', 'robot', '科技', '人工智能', '芯片', '数字', '机器人', '自动化'],
+        tone: 'analytical',
+        variants: [
+          '{TOPIC}的技术进步本应解放劳动者，但在资本逻辑下反而成为裁员和压低工资的工具，技术红利被少数股东独吞。',
+          '{ORG}垄断{TOPIC}技术的结果是加剧全球数字鸿沟，发展中国家的劳动者沦为数据殖民的对象。',
+          '自动化和AI不应成为资本替代劳动的武器，而应成为缩短工时、实现全民共享的公共资源。',
+        ],
+      },
+      {
+        triggerKeywords: ['society', 'health', 'education', 'housing', 'welfare', 'poverty', 'inequality', '社会', '医疗', '教育', '住房', '福利', '贫困', '不平等', '民生'],
         tone: 'passionate',
         variants: [
-          '{COUNTRY}在{TOPIC}上的立场，再次引发国际社会对其人权承诺兑现能力的质疑。',
-          '人权不是西方专利，也不是国家主权可以随意遮蔽的议题，{TOPIC}中受难者的声音理应被听见。',
-          '{ORG}发布的{TOPIC}报告，为国际社会施压提供了新的依据，但施压本身需要配套问责机制才有意义。',
+          '{TOPIC}暴露的社会危机根源在于公共服务的市场化——医疗、教育和住房不应是商品，而是基本人权。',
+          '{NUMBER}的数据背后是无数被系统性边缘化的家庭，{COUNTRY}必须将社会再生产的成本从个体转移到集体。',
+          '只有将{TOPIC}领域的核心资源收归公有，才能打破贫困的代际传递，实现实质性的社会平等。',
         ],
       },
       {
-        triggerKeywords: ['poverty', 'inequality', 'hunger', '贫困', '不平等', '饥饿'],
-        tone: 'compassionate',
-        variants: [
-          '{NUMBER}亿人仍生活在极端贫困线以下，全球化的收益分配从未如其倡导者描述的那般公平。',
-          '{COUNTRY}在{TOPIC}问题上的政策滞后，折射出政治精英与底层民众在认知与利益上的结构性断裂。',
-          '减贫不仅是道德使命，也是社会稳定的基础设施，忽视这一点的政策迟早将以其他社会代价偿还。',
-        ],
-      },
-      {
-        triggerKeywords: ['protest', 'demonstration', 'riot', 'strike', '抗议', '示威', '罢工', '骚乱'],
-        tone: 'empathetic',
-        variants: [
-          '走上街头的人们不是在制造混乱，而是在体制内渠道失灵后发出的最后一声呼喊。',
-          '{COUNTRY}此次大规模抗议折射出长期积累的社会怨气，政府若仅以维稳视之而非倾听诉求，将错失治理窗口。',
-          '{TOPIC}引发的社会动荡，需要理解其深层成因，而非简单地将参与者标签化。',
-        ],
-      },
-      {
-        triggerKeywords: ['health', 'pandemic', 'disease', 'hospital', '健康', '疫情', '医疗', '医院'],
-        tone: 'concerned',
-        variants: [
-          '{COUNTRY}医疗体系在{TOPIC}压力下的应对表现，是衡量一个社会公共卫生承诺的最真实镜子。',
-          '公共卫生危机的应对往往暴露出平时看不见的社会裂缝，{TOPIC}也不例外。',
-          '{NUMBER}例死亡背后，是每一个具体的家庭和故事，政策决策者不应让这个数字沦为纯粹的统计数据。',
-        ],
-      },
-      {
-        triggerKeywords: ['education', 'school', 'university', 'student', '教育', '学校', '大学', '学生'],
-        tone: 'hopeful',
-        variants: [
-          '教育机会的不平等是所有不平等中最难以被接受的一种，它在出生的那一刻就开始累积。',
-          '{COUNTRY}对{TOPIC}的教育投入，将在未来{NUMBER}年以人力资本的方式得到回报，但前提是投入必须到达真正需要的地方。',
-          '当年轻人开始用脚投票选择离开，{COUNTRY}应当认真思考其教育与就业生态出了什么问题。',
-        ],
-      },
-      {
-        triggerKeywords: ['gender', 'women', 'lgbtq', 'discrimination', '性别', '女性', '歧视'],
-        tone: 'committed',
-        variants: [
-          '{TOPIC}再次证明，性别平等不是自然而然实现的，它需要持续的制度设计与文化变革来支撑。',
-          '在{COUNTRY}，{TOPIC}相关立法的推进阻力，折射出传统性别观念在公共政策领域的顽固延伸。',
-          '每一次针对弱势群体的歧视性政策，都是对"所有人平等"这一文明共识的具体侵蚀。',
-        ],
-      },
-      {
-        triggerKeywords: ['flood', 'drought', 'wildfire', 'disaster', '洪水', '干旱', '野火', '灾害'],
+        triggerKeywords: ['environment', 'climate', 'carbon', 'pollution', 'energy', '环境', '气候', '碳排放', '污染', '能源', '生态'],
         tone: 'alarmed',
         variants: [
-          '{COUNTRY}遭遇的{TOPIC}，是气候变化从统计数字变为人间悲剧的又一次残酷验证。',
-          '极端天气事件的常态化，迫使我们重新审视城市规划、基础设施投资和社区韧性建设的优先级。',
-          '{NUMBER}人受灾的背后，是一个长期政策不作为的账单——现在，是自然在替它们买单。',
+          '{TOPIC}危机的罪魁祸首是追逐无限增长的资本主义生产方式——不终结利润至上的逻辑，任何绿色转型都是空谈。',
+          '碳交易和绿色金融不过是资本为生态危机找到的新一轮盈利机会，{COUNTRY}的生态债务远非市场机制能够偿还。',
+          '真正的环保必须与反资本主义斗争结合——{ORG}推动的渐进方案根本跟不上生态崩溃的速度。',
         ],
       },
       {
-        triggerKeywords: ['immigration', 'refugee', 'migrant', '移民', '难民', '流亡'],
-        tone: 'humanistic',
+        triggerKeywords: ['domestic', '反腐', '乡村', '扶贫', '改革', '房地产', '社保', '医保', '就业', '城镇化', '国内'],
+        tone: 'structural',
         variants: [
-          '难民不是安全威胁，而是人道危机的承受者，将二者混同是政客的话术，也是道德的失守。',
-          '{COUNTRY}的边境政策选择，是其如何定义"文明"与"人道"的一面镜子。',
-          '{NUMBER}万人背井离乡，这数字的背后是无数个被{TOPIC}打碎的人生轨迹，值得每一个有良知的人停下来思考。',
-        ],
-      },
-      {
-        triggerKeywords: ['religion', 'church', 'mosque', 'faith', '宗教', '信仰', '教堂', '清真寺'],
-        tone: 'reflective',
-        variants: [
-          '{TOPIC}事件折射出宗教认同与国家世俗权力之间的长期张力，这一关系的处理方式将影响社会凝聚力的底色。',
-          '宗教自由是基本人权，但当信仰被工具化为政治动员手段时，社会包容性将面临严峻考验。',
-          '{COUNTRY}在处理{TOPIC}方面的做法，将成为其宗教少数群体权利保障承诺的试金石。',
+          '{TOPIC}反映了城乡二元结构下劳动者的深层困境，仅靠转移支付无法改变剩余价值分配的根本不公。',
+          '基层劳动者在{TOPIC}中承受的代价最大，必须建立由工人和农民直接参与的民主决策机制。',
+          '{ORG}推动的{TOPIC}改革如果不触动核心利益格局，只会沦为缓解矛盾的权宜之计。',
         ],
       },
     ],
   },
 
-  // ─────────────────────────────────────────
-  // 5. 赵磊 — 军事战略分析师
-  // ─────────────────────────────────────────
+  // ═════════════════════════════════════════
+  // 2. 左 — 自由派 / 进步派
+  // ═════════════════════════════════════════
   {
-    id: 'zhao_lei',
-    name: '赵磊',
-    role: '军事战略分析师',
-    avatar: 'ZL',
-    color: '#EF4444',
-    triggerCategories: ['military', 'politics'],
+    id: 'left',
+    name: '左',
+    role: '自由派',
+    avatar: '左',
+    color: '#3B82F6',
+    triggerCategories: ['all'],
     templates: [
       {
-        triggerKeywords: ['war', 'warfare', 'invasion', 'offensive', '战争', '入侵', '进攻', '战役'],
-        tone: 'strategic',
+        triggerKeywords: ['economy', 'gdp', 'market', 'stock', 'trade', 'inflation', 'recession', 'bank', '经济', 'GDP', '股市', '通胀', '贸易', '央行', '利率', 'A股', '楼市'],
+        tone: 'reformist',
         variants: [
-          '{COUNTRY}的军事行动已进入{TOPIC}阶段，从战场态势看，速决战的条件并不成熟，持久消耗的可能性正在上升。',
-          '{TOPIC}战局的走向，将在很大程度上取决于后勤供应链的持续性与外部支援力度的博弈结果。',
-          '大规模地面战争在21世纪的重现，迫使战略界重新审视诸多被视为过时的军事理论。',
-          '{COUNTRY}此次攻势的战略纵深有限，若无法在{NUMBER}天内取得决定性成果，将陷入战略被动。',
+          '{TOPIC}表明经济增长必须与分配正义并行——{COUNTRY}需要更有力的累进税制和社会安全网来确保增长成果惠及全民。',
+          '单纯追求GDP数字没有意义，{ORG}应当将就业质量、收入中位数和基尼系数纳入核心政策目标。',
+          '{TOPIC}需要政府积极发挥调控作用，通过强化劳动保护和反垄断措施，遏制资本的无序扩张。',
         ],
       },
       {
-        triggerKeywords: ['nuclear', 'missile', 'icbm', '核武器', '弹道导弹', '洲际导弹', '核威慑'],
-        tone: 'grave',
+        triggerKeywords: ['war', 'military', 'weapon', 'army', 'missile', 'conflict', 'troops', 'nato', '战争', '军事', '武器', '导弹', '冲突', '军队', '北约'],
+        tone: 'diplomatic',
         variants: [
-          '{COUNTRY}核态势的调整是当前最需要密切追踪的战略信号，任何误判都将带来不可逆的后果。',
-          '核威慑的稳定性建立在双方对红线的共同理解之上，当前局势下这一共识正面临侵蚀风险。',
-          '{TOPIC}的发展打破了{NUMBER}年来核不扩散努力的既有框架，国际社会的响应将决定新的底线在哪里。',
-          '有限核使用的"门槛下降"论在战略界的抬头，是比任何具体军事行动都更令人警惕的危险信号。',
+          '{TOPIC}应通过多边外交和国际法框架来解决，而非诉诸军事手段——{COUNTRY}需要展现对和平谈判的诚意。',
+          '军费开支每增加{NUMBER}，就意味着同等规模的教育和医疗投入被挤压，这种优先级需要被重新审视。',
+          '{ORG}应以人道主义为优先考量，推动停火和平民保护，而非继续向冲突地区输送武器。',
         ],
       },
       {
-        triggerKeywords: ['drone', 'uav', 'unmanned', '无人机', '无人系统'],
-        tone: 'technical',
+        triggerKeywords: ['politics', 'election', 'government', 'policy', 'reform', 'parliament', '政治', '选举', '政府', '政策', '改革', '议会', '两会', '国务院'],
+        tone: 'progressive',
         variants: [
-          '无人系统在{TOPIC}冲突中的规模化运用，标志着战争形态正经历自机械化时代以来最深刻的范式转变。',
-          '{ORG}无人机战术的成熟，使低成本消耗战成为新的战略选项，这对传统军事优势的有效性提出了严峻挑战。',
-          '{COUNTRY}在无人系统领域的技术积累，已形成显著的不对称优势，将深刻影响未来地区安全格局。',
+          '{TOPIC}体现了民主制度自我完善的能力，但改革必须确保少数群体和弱势声音不被多数决压制。',
+          '{COUNTRY}的政策制定需要更多透明度和公众参与，让普通公民而非利益集团主导公共议程。',
+          '对{ORG}的制度改革方向值得肯定，但落实中必须防止官僚惰性和既得利益者的阻挠。',
         ],
       },
       {
-        triggerKeywords: ['ceasefire', 'peace', 'negotiation', '停火', '和谈', '谈判'],
-        tone: 'measured',
+        triggerKeywords: ['technology', 'ai', 'tech', 'semiconductor', 'digital', 'robot', '科技', '人工智能', '芯片', '数字', '机器人', '自动化'],
+        tone: 'cautious-optimistic',
         variants: [
-          '{TOPIC}停火协议若能落地，其持久性取决于各方是否愿意接受政治解决，而非仅仅将其作为重整旗鼓的喘息窗口。',
-          '历史上，在军事均势格局下达成的停火协议，往往比建立在胜负之上的结果更具可持续性。',
-          '{COUNTRY}与{ORG}之间的停火谈判，能否触及根本政治分歧，将是决定和平能否持久的核心变量。',
+          '{TOPIC}带来巨大机遇的同时也需要强有力的监管框架——{ORG}必须确保技术进步不以牺牲隐私和就业为代价。',
+          '科技创新应当服务于公共利益，{COUNTRY}需要投资数字素养教育和再就业培训，让技术红利普惠化。',
+          'AI治理不能交给科技巨头自我监管，政府必须在算法透明、数据保护和劳动权益方面设立明确底线。',
         ],
       },
       {
-        triggerKeywords: ['sanction', 'arms', 'weapons supply', 'military aid', '武器', '军援', '军火'],
-        tone: 'analytical',
+        triggerKeywords: ['society', 'health', 'education', 'housing', 'welfare', 'poverty', 'inequality', '社会', '医疗', '教育', '住房', '福利', '贫困', '不平等', '民生'],
+        tone: 'empathetic',
         variants: [
-          '{ORG}向{COUNTRY}提供的{TOPIC}武器系统，将在一定程度上改变战场力量对比，但能否扭转战略态势取决于交付时机与操作培训。',
-          '武器供应的升级是对交战方能力的赋能，但同时也需要评估其是否可能触发对方的升级响应。',
-          '军事援助的质量与数量差异，正在成为区分{TOPIC}冲突各外部参与方战略意图的重要维度。',
+          '{TOPIC}要求我们重新审视社会契约——公共医疗、可负担住房和优质教育不应是特权，而应是每个公民的基本权利。',
+          '{COUNTRY}在{TOPIC}领域的进步令人鼓舞，但仍需扩大覆盖面，确保最脆弱的群体不被落下。',
+          '解决{TOPIC}问题不能仅靠慈善和市场自发调节，{ORG}必须承担起制度性兜底的责任。',
         ],
       },
       {
-        triggerKeywords: ['cyber', 'information warfare', 'hybrid war', '网络战', '信息战', '混合战'],
-        tone: 'technical',
+        triggerKeywords: ['environment', 'climate', 'carbon', 'pollution', 'energy', '环境', '气候', '碳排放', '污染', '能源', '生态'],
+        tone: 'urgent',
         variants: [
-          '{TOPIC}中的网络攻击已超出纯技术范畴，演变为影响战场信息优势与后方民心士气的复合型武器。',
-          '混合战争模糊了战争与和平的传统边界，使得威慑框架的构建面临从未有过的概念挑战。',
-          '{COUNTRY}的信息战能力已成为其整体军事力量的重要倍增器，这一维度在传统战力评估中往往被低估。',
+          '{TOPIC}是我们这代人面临的最大挑战——{COUNTRY}必须加快绿色转型，通过碳税和清洁能源补贴引导市场行为。',
+          '环境正义要求富裕国家和高排放企业承担更大责任，{ORG}不能让发展中国家独自承受气候变化的代价。',
+          '投资可再生能源不仅是环保需要，更是创造绿色就业机会的经济战略，{COUNTRY}不应错失这一转型窗口。',
         ],
       },
       {
-        triggerKeywords: ['military exercise', 'navy', 'fleet', 'aircraft carrier', '军演', '海军', '航母', '舰队'],
-        tone: 'observational',
+        triggerKeywords: ['domestic', '反腐', '乡村', '扶贫', '改革', '房地产', '社保', '医保', '就业', '城镇化', '国内'],
+        tone: 'constructive',
         variants: [
-          '{COUNTRY}此次大规模军演的规模与科目设计，明显超出例行训练的范畴，释放出清晰的威慑信号。',
-          '航母战斗群的部署，是一种无需言语的战略声明，其政治意涵往往大于实际军事意图。',
-          '{ORG}在{TOPIC}海域的军事存在升级，将对地区海上安全架构产生持续性的结构压力。',
-        ],
-      },
-      {
-        triggerKeywords: ['terrorism', 'attack', 'isis', 'extremism', '恐怖主义', '恐袭', '极端主义'],
-        tone: 'grave',
-        variants: [
-          '{TOPIC}袭击事件造成{NUMBER}人伤亡，再次揭示了非国家武装力量对全球安全秩序的非对称威胁属性。',
-          '反恐行动的有效性不仅取决于军事打击，更取决于能否切断极端主义的意识形态根源与财务网络。',
-          '{COUNTRY}此次遭受的袭击，将不可避免地影响其国内安全政策的优先排序与执法力度。',
-        ],
-      },
-      {
-        triggerKeywords: ['defense', 'military budget', 'spending', '国防', '军费', '国防预算'],
-        tone: 'analytical',
-        variants: [
-          '{COUNTRY}将国防预算提升至GDP的{NUMBER}%，是一个重要的政策信号，也将引发盟友与对手对其战略意图的重新解读。',
-          '军费增长的背后是战略威胁认知的升级，但军备竞赛的螺旋效应本身也是一种系统性安全风险。',
-          '{ORG}成员国在国防开支上的持续分化，将在未来{NUMBER}年内成为制约其集体防御能力的主要瓶颈。',
-        ],
-      },
-      {
-        triggerKeywords: ['space', 'military satellite', 'space weapon', '军事卫星', '太空武器', '太空战'],
-        tone: 'forward-looking',
-        variants: [
-          '太空正在成为大国战略博弈的新前沿，{COUNTRY}军事卫星体系的扩展将深刻改变战场感知与精确打击能力。',
-          '{TOPIC}表明太空武器化的进程远超国际社会的治理准备，相关规则的缺失将使冲突风险难以管控。',
-          '侦察卫星与通信卫星的战略重要性，意味着其在未来冲突中将首先成为打击目标，这是各方都需认真对待的现实。',
+          '{TOPIC}的改革方向正确，但关键在于执行中能否真正倾听基层声音，将政策红利传导到最需要的群体。',
+          '{ORG}推动的{TOPIC}改革需要配套完善的社会保障体系，确保转型期间不会产生新的弱势群体。',
+          '解决{TOPIC}问题需要更包容的治理理念，让公众参与监督，让数据公开透明。',
         ],
       },
     ],
   },
-  // ─── 第6位分析师：国内政策分析师 ───
+
+  // ═════════════════════════════════════════
+  // 3. 中 — 中间派
+  // ═════════════════════════════════════════
   {
-    id: 'sun_hao',
-    name: '孙浩',
-    role: '国内政策分析师',
-    avatar: 'SH',
-    color: '#F59E0B',
-    triggerCategories: ['domestic', 'economy', 'politics'],
+    id: 'center',
+    name: '中',
+    role: '中间派',
+    avatar: '中',
+    color: '#6B7280',
+    triggerCategories: ['all'],
     templates: [
       {
-        triggerKeywords: ['两会', '全国人大', '人大', '政协', 'npc', 'two sessions'],
-        tone: 'authoritative',
+        triggerKeywords: ['economy', 'gdp', 'market', 'stock', 'trade', 'inflation', 'recession', 'bank', '经济', 'GDP', '股市', '通胀', '贸易', '央行', '利率', 'A股', '楼市'],
+        tone: 'balanced',
         variants: [
-          '本次两会释放的政策信号值得高度关注，{TOPIC}将直接影响未来一年的经济走向与民生格局。',
-          '全国人大审议的{TOPIC}反映出决策层对当前经济形势的判断，政策力度与方向均传递了明确信息。',
-          '两会期间{ORG}提出的议案涉及面广、影响深远，建议密切关注后续配套政策的落地节奏。',
+          '{TOPIC}需要在增长效率与社会公平之间找到平衡点——过度干预和完全放任都不可取，{COUNTRY}应采取务实的渐进策略。',
+          '{ORG}的政策选择面临两难：既要稳定市场预期，又要防止泡沫风险，最终需要基于数据而非意识形态做出决策。',
+          '无论左右，经济政策的检验标准应该是：中等收入群体的生活水平是否在切实提升，而非GDP的绝对数字。',
         ],
       },
       {
-        triggerKeywords: ['改革', '国务院', '政策', '发改委', '三中全会', 'reform', 'state council'],
+        triggerKeywords: ['war', 'military', 'weapon', 'army', 'missile', 'conflict', 'troops', 'nato', '战争', '军事', '武器', '导弹', '冲突', '军队', '北约'],
+        tone: 'pragmatic',
+        variants: [
+          '{TOPIC}的核心教训是：和平需要实力支撑，但军事手段必须是最后选项——{COUNTRY}应同步推进外交对话和防御建设。',
+          '对{COUNTRY}军事动态应保持冷静分析，既不过度渲染威胁，也不忽视安全挑战，理性评估才能制定有效政策。',
+          '{ORG}需要在维护地区稳定和避免军备竞赛之间走钢丝，这考验的是战略耐心而非强硬表态。',
+        ],
+      },
+      {
+        triggerKeywords: ['politics', 'election', 'government', 'policy', 'reform', 'parliament', '政治', '选举', '政府', '政策', '改革', '议会', '两会', '国务院'],
+        tone: 'moderate',
+        variants: [
+          '{TOPIC}反映了治理的复杂性——好的政策往往不是非左即右，而是在不同利益诉求之间寻找最大公约数。',
+          '{COUNTRY}的制度演进应该尊重渐进改良的逻辑，激进变革和因循守旧同样危险，稳健前行才是正道。',
+          '评估{ORG}的政策不应以意识形态划线，而应看它是否经得起实证检验，能否有效解决具体问题。',
+        ],
+      },
+      {
+        triggerKeywords: ['technology', 'ai', 'tech', 'semiconductor', 'digital', 'robot', '科技', '人工智能', '芯片', '数字', '机器人', '自动化'],
         tone: 'analytical',
         variants: [
-          '{ORG}推出的{TOPIC}改革方案力度超出预期，这标志着新一轮制度性变革正在加速推进。',
-          '从{TOPIC}的政策框架来看，顶层设计的思路清晰，但关键在于地方执行层面能否有效落实。',
-          '此次改革方案的核心在于理顺{TOPIC}领域的体制机制，预计将对相关行业产生深远影响。',
+          '{TOPIC}的发展既需要创新自由也需要合理监管——过早立法可能扼杀创新，但放任不管则可能酿成社会风险。',
+          '科技进步本身是中性的，关键在于{COUNTRY}能否建立兼顾效率与公平的治理框架，让各方利益得到平衡。',
+          '{ORG}在{TOPIC}领域的竞争态势复杂，与其预设立场，不如关注技术演进本身带来的实际影响和数据证据。',
         ],
       },
       {
-        triggerKeywords: ['GDP', '经济增长', '内循环', '双循环', 'A股', '中国经济', 'economy'],
-        tone: 'cautious',
+        triggerKeywords: ['society', 'health', 'education', 'housing', 'welfare', 'poverty', 'inequality', '社会', '医疗', '教育', '住房', '福利', '贫困', '不平等', '民生'],
+        tone: 'measured',
         variants: [
-          '当前{TOPIC}数据显示经济复苏仍在持续，但结构性矛盾依然突出，需警惕局部风险传导。',
-          '{NUMBER}%的增速虽在合理区间，但{TOPIC}领域的深层压力不容忽视，政策调控需保持定力。',
-          'A股市场对{TOPIC}的反应较为理性，投资者更关注的是政策持续性和企业盈利能力的实质改善。',
+          '{TOPIC}的解决方案需要兼顾效率和温度——纯粹的市场逻辑和完全的政府包办都有局限，{COUNTRY}应探索混合治理模式。',
+          '社会政策的制定应该基于扎实的调查研究和试点数据，{NUMBER}的数字背后需要看到结构性原因和可行的改善路径。',
+          '对{TOPIC}不必过于悲观也不应盲目乐观，{ORG}的方向基本正确，但执行细节和覆盖盲区值得持续关注。',
         ],
       },
       {
-        triggerKeywords: ['民生', '社保', '医保', '教育', '住房', '就业', 'livelihood'],
-        tone: 'empathetic',
+        triggerKeywords: ['environment', 'climate', 'carbon', 'pollution', 'energy', '环境', '气候', '碳排放', '污染', '能源', '生态'],
+        tone: 'pragmatic',
         variants: [
-          '{TOPIC}关乎亿万百姓的切身利益，政策制定必须在效率与公平之间寻找最优平衡点。',
-          '此次{ORG}在{TOPIC}领域的改革回应了民众的核心关切，后续执行效果将是检验成败的关键。',
-          '民生保障体系的完善是一个持续过程，{TOPIC}的推进需要地方财政的有效配合与制度的精细化设计。',
+          '{TOPIC}需要在环保目标和经济现实之间找到可行路径——激进的零碳时间表可能适得其反，分阶段推进更为务实。',
+          '能源转型应当是有序的——{COUNTRY}不能在新能源体系尚未成熟时仓促放弃传统能源，能源安全是底线。',
+          '{ORG}推动的绿色倡议方向正确，但必须配套经济可行性论证和受影响行业的转型支持计划。',
         ],
       },
       {
-        triggerKeywords: ['反腐', '纪委', '巡视', '审查', 'corruption'],
-        tone: 'grave',
+        triggerKeywords: ['domestic', '反腐', '乡村', '扶贫', '改革', '房地产', '社保', '医保', '就业', '城镇化', '国内'],
+        tone: 'objective',
         variants: [
-          '{ORG}对{TOPIC}案件的查处再次表明，反腐高压态势不会松懈，制度笼子正越织越密。',
-          '从{TOPIC}的案件通报来看，重点领域和关键岗位仍是监督的薄弱环节，制度建设任重道远。',
-          '反腐败斗争进入深水区，{TOPIC}暴露的系统性问题需要从体制层面加以根本性解决。',
+          '{TOPIC}的推进应当尊重不同地区的实际差异，一刀切的政策往往效果不佳，因地制宜才是务实之道。',
+          '评价{ORG}在{TOPIC}方面的成效，需要看长期趋势而非短期数据，制度建设比运动式治理更有持续性。',
+          '{TOPIC}涉及多方利益博弈，理想的方案是让各方都能接受的渐进式改良，而非零和博弈。',
+        ],
+      },
+    ],
+  },
+
+  // ═════════════════════════════════════════
+  // 4. 右 — 保守派
+  // ═════════════════════════════════════════
+  {
+    id: 'right',
+    name: '右',
+    role: '保守派',
+    avatar: '右',
+    color: '#F97316',
+    triggerCategories: ['all'],
+    templates: [
+      {
+        triggerKeywords: ['economy', 'gdp', 'market', 'stock', 'trade', 'inflation', 'recession', 'bank', '经济', 'GDP', '股市', '通胀', '贸易', '央行', '利率', 'A股', '楼市'],
+        tone: 'pro-market',
+        variants: [
+          '{TOPIC}再次证明，市场是最高效的资源配置机制——{COUNTRY}需要的是减少政府干预、降低企业税负、释放市场活力。',
+          '{ORG}应当将控制通胀和财政纪律置于首位，过度的刺激政策只会制造更大的泡沫和道德风险。',
+          '经济增长的引擎是企业家精神和私人投资，而非政府主导的产业政策——{COUNTRY}应该让市场决定资源去向。',
         ],
       },
       {
-        triggerKeywords: ['乡村', '扶贫', '脱贫', '振兴', '城镇化', 'rural'],
-        tone: 'hopeful',
+        triggerKeywords: ['war', 'military', 'weapon', 'army', 'missile', 'conflict', 'troops', 'nato', '战争', '军事', '武器', '导弹', '冲突', '军队', '北约'],
+        tone: 'hawkish',
         variants: [
-          '{TOPIC}的成果来之不易，但从脱贫攻坚向乡村振兴的转型仍面临产业基础薄弱等结构性挑战。',
-          '新型城镇化与{TOPIC}的协同推进是缩小城乡差距的关键路径，需要持续的政策投入和制度创新。',
-          '{ORG}在{TOPIC}领域的投入持续加大，但如何激发乡村内生发展动力仍是核心课题。',
+          '和平来自实力而非幻想——面对{TOPIC}，{COUNTRY}必须展示坚定的军事决心，软弱只会招致更多挑衅。',
+          '国防投入是保卫国家主权和公民安全的必要支出，{ORG}需要维持足够的威慑力以应对日益复杂的安全环境。',
+          '{TOPIC}表明，国际秩序不能依赖善意维持，{COUNTRY}需要强大的军队和可靠的同盟体系来捍卫国家利益。',
         ],
       },
       {
-        triggerKeywords: ['科技', '芯片', '自主创新', '卡脖子', '国产替代', 'technology'],
-        tone: 'strategic',
+        triggerKeywords: ['politics', 'election', 'government', 'policy', 'reform', 'parliament', '政治', '选举', '政府', '政策', '改革', '议会', '两会', '国务院'],
+        tone: 'conservative',
         variants: [
-          '{TOPIC}的突破具有里程碑意义，但核心技术自主可控是一场持久战，不可急于求成。',
-          '在{TOPIC}领域，国产替代正从"能用"向"好用"跨越，关键在于构建完整的产业生态链。',
-          '{ORG}在{TOPIC}方面的进展值得肯定，但与国际前沿相比仍需持续加大基础研究投入。',
+          '{TOPIC}应当谨慎推进——经过时间检验的制度和传统有其存在的智慧，激进变革往往带来难以预料的副作用。',
+          '小政府才是好政府——{COUNTRY}的改革重点应放在精简机构、减少审批和保护个人产权上。',
+          '{ORG}的治理应当以法治和秩序为基石，稳定的社会环境是经济发展和个人自由的前提。',
+        ],
+      },
+      {
+        triggerKeywords: ['technology', 'ai', 'tech', 'semiconductor', 'digital', 'robot', '科技', '人工智能', '芯片', '数字', '机器人', '自动化'],
+        tone: 'market-driven',
+        variants: [
+          '{TOPIC}的创新应由市场竞争驱动，而非政府的五年规划——{ORG}之间的自由竞争才是技术进步的最大动力。',
+          '对{TOPIC}的过度监管会扼杀创新——{COUNTRY}应当营造友好的营商环境，让企业在全球竞争中脱颖而出。',
+          '技术进步必然带来短期阵痛，但历史证明市场最终会创造出更多新岗位——与其补贴失业者，不如激励创业者。',
+        ],
+      },
+      {
+        triggerKeywords: ['society', 'health', 'education', 'housing', 'welfare', 'poverty', 'inequality', '社会', '医疗', '教育', '住房', '福利', '贫困', '不平等', '民生'],
+        tone: 'self-reliance',
+        variants: [
+          '解决{TOPIC}问题的根本途径是创造经济机会而非扩大福利——{COUNTRY}需要的是更多的就业岗位，而非更高的救济金。',
+          '过度的社会福利会削弱个人奋斗动力，{ORG}应着力营造公平竞争的环境，让人们通过自身努力改善生活。',
+          '家庭和社区是社会稳定的基石，{TOPIC}的解决应当重视传统价值观和自助精神，而非事事依赖政府。',
+        ],
+      },
+      {
+        triggerKeywords: ['environment', 'climate', 'carbon', 'pollution', 'energy', '环境', '气候', '碳排放', '污染', '能源', '生态'],
+        tone: 'skeptical',
+        variants: [
+          '环保重要，但不能以牺牲经济竞争力和民众生活水平为代价——{TOPIC}政策必须经过严格的成本效益分析。',
+          '{COUNTRY}不应单方面承担过高的减排义务，这只会将产业和就业输出到环境标准更低的国家，得不偿失。',
+          '技术创新而非行政管制才是解决{TOPIC}的正确路径——市场自发的效率提升比强制性的碳配额更可持续。',
+        ],
+      },
+      {
+        triggerKeywords: ['domestic', '反腐', '乡村', '扶贫', '改革', '房地产', '社保', '医保', '就业', '城镇化', '国内'],
+        tone: 'traditional',
+        variants: [
+          '{TOPIC}的解决不应一味扩大政府开支，减税降费、激活民营经济才是提升民生水平的根本之道。',
+          '{ORG}在{TOPIC}领域应该减少行政干预，让市场机制在资源配置中发挥决定性作用。',
+          '传统社会组织和家庭纽带在{TOPIC}中的作用被严重低估，不是所有问题都需要政府来解决。',
+        ],
+      },
+    ],
+  },
+
+  // ═════════════════════════════════════════
+  // 5. 极右 — 民族主义
+  // ═════════════════════════════════════════
+  {
+    id: 'far_right',
+    name: '极右',
+    role: '民族主义',
+    avatar: '极右',
+    color: '#7C3AED',
+    triggerCategories: ['all'],
+    templates: [
+      {
+        triggerKeywords: ['economy', 'gdp', 'market', 'stock', 'trade', 'inflation', 'recession', 'bank', '经济', 'GDP', '股市', '通胀', '贸易', '央行', '利率', 'A股', '楼市'],
+        tone: 'protectionist',
+        variants: [
+          '{TOPIC}再次暴露了全球化对本国产业的侵蚀——{COUNTRY}必须优先保护国内就业和战略产业，而非为国际资本打开大门。',
+          '自由贸易的最大受害者是{COUNTRY}的本土工人和中小企业，{ORG}必须实施更强硬的关税和产业保护政策。',
+          '经济主权高于一切——{COUNTRY}应当将关键供应链完全国产化，不能让国家命脉受制于外国势力。',
+        ],
+      },
+      {
+        triggerKeywords: ['war', 'military', 'weapon', 'army', 'missile', 'conflict', 'troops', 'nato', '战争', '军事', '武器', '导弹', '冲突', '军队', '北约'],
+        tone: 'nationalist',
+        variants: [
+          '{COUNTRY}的军事力量是民族尊严的象征——面对{TOPIC}，必须展现不惜一切代价捍卫国家利益的决心。',
+          '国际组织和多边机制靠不住，{COUNTRY}只能依靠自身的军事实力保障国家安全和领土完整。',
+          '{TOPIC}证明，一个没有强大军队的国家注定沦为大国博弈的棋子——{ORG}必须大幅增加军费投入。',
+        ],
+      },
+      {
+        triggerKeywords: ['politics', 'election', 'government', 'policy', 'reform', 'parliament', '政治', '选举', '政府', '政策', '改革', '议会', '两会', '国务院'],
+        tone: 'populist',
+        variants: [
+          '{TOPIC}暴露了精英阶层与普通百姓之间日益加深的裂痕——{COUNTRY}需要真正代表本国人民利益的强力领导。',
+          '所谓的全球化精英和跨国机构正在蚕食{COUNTRY}的主权，{ORG}必须将国家利益置于国际义务之上。',
+          '{COUNTRY}的政治生态需要一场深层清洗——那些出卖国家利益的建制派必须被民意的洪流淘汰。',
+        ],
+      },
+      {
+        triggerKeywords: ['technology', 'ai', 'tech', 'semiconductor', 'digital', 'robot', '科技', '人工智能', '芯片', '数字', '机器人', '自动化'],
+        tone: 'sovereignty-focused',
+        variants: [
+          '{TOPIC}事关国家技术主权——{COUNTRY}绝不能在核心技术上受制于人，必须走完全自主可控的发展道路。',
+          '外国科技巨头在{COUNTRY}的扩张是数字殖民的新形式，{ORG}必须建立本土替代方案，保护国家数据安全。',
+          '技术竞争就是国力竞争——{COUNTRY}应举国体制攻克{TOPIC}核心技术，不惜一切代价突破封锁。',
+        ],
+      },
+      {
+        triggerKeywords: ['society', 'health', 'education', 'housing', 'welfare', 'poverty', 'inequality', '社会', '医疗', '教育', '住房', '福利', '贫困', '不平等', '民生'],
+        tone: 'identity-focused',
+        variants: [
+          '{TOPIC}的根源在于过度开放和文化多元主义对社会凝聚力的瓦解——{COUNTRY}必须重塑民族认同和传统价值。',
+          '社会福利应优先保障本国公民——{COUNTRY}的资源有限，{ORG}不应将纳税人的钱用于无节制的外来人口救助。',
+          '{TOPIC}的解决之道是回归民族本位——强化社区纽带、恢复传统家庭观念、抵御外来文化侵蚀。',
+        ],
+      },
+      {
+        triggerKeywords: ['environment', 'climate', 'carbon', 'pollution', 'energy', '环境', '气候', '碳排放', '污染', '能源', '生态'],
+        tone: 'skeptical-nationalist',
+        variants: [
+          '所谓的全球气候议程不过是发达国家遏制{COUNTRY}发展的工具——我们不应为西方制定的碳排放规则自缚手脚。',
+          '{COUNTRY}的能源安全高于一切——在可靠替代方案出现之前，削减传统能源无异于自废武功。',
+          '环保不应成为打压本国产业的借口——{ORG}推动的绿色标准实质上是对发展中国家的经济殖民。',
+        ],
+      },
+      {
+        triggerKeywords: ['domestic', '反腐', '乡村', '扶贫', '改革', '房地产', '社保', '医保', '就业', '城镇化', '国内'],
+        tone: 'populist-domestic',
+        variants: [
+          '{TOPIC}的核心是要让普通百姓过上好日子——{COUNTRY}应将对外援助和国际义务的资金转投国内民生。',
+          '{ORG}在{TOPIC}中必须把本国人民利益放在第一位，不能为了国际形象而忽视国内矛盾。',
+          '基层群众对{TOPIC}的不满代表了真实的民意——精英们在空谈改革时，普通人正在承受转型的代价。',
         ],
       },
     ],
   },
 ];
 
+// ─────────────────────────────────────────
+// 导出辅助函数
+// ─────────────────────────────────────────
+
 /**
- * 根据分类获取匹配的分析师列表
+ * 获取匹配某分类的分析师列表
+ * 政治光谱模式下，所有5个立场都对所有分类发表评论
  * @param {string} category
  * @returns {object[]}
  */
 export function getAnalystsForCategory(category) {
-  return analysts.filter((a) => a.triggerCategories.includes(category));
+  return analysts;
 }
 
 export default analysts;

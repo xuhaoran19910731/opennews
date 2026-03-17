@@ -56,7 +56,7 @@
         @click.stop="toggleExpand"
         class="flex items-center gap-1 text-xs font-medium text-primary hover:text-primary-dark transition-colors duration-200"
       >
-        <span>{{ expanded ? '收起' : `查看 ${article.analysts.length} 位专家解读` }}</span>
+        <span>{{ expanded ? '收起' : '查看立场解读' }}</span>
         <span class="transition-transform duration-200" :class="expanded ? 'rotate-180' : ''">▼</span>
       </button>
     </div>

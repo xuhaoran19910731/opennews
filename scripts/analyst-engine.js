@@ -1,8 +1,8 @@
 /**
- * 分析师评论生成引擎
+ * 立场解读评论生成引擎
  *
  * 流程：
- * 1. 根据文章分类选择 1-3 个匹配分析师
+ * 1. 为每篇文章选择全部 5 个政治光谱立场
  * 2. 从标题+摘要中提取实体（国家、组织、数字）
  * 3. 按关键词命中数选取最佳模板
  * 4. 从 variants 中随机选一个
@@ -195,22 +195,14 @@ export function generateComments(article, analystsOverride) {
   const allText = `${article.title || ''} ${article.summary || ''}`;
   const lowerText = allText.toLowerCase();
 
-  // 1. 选择匹配分类的分析师（最多 3 个）
+  // 1. 使用全部传入的光谱立场
   const candidates = analystsOverride ?? getAnalystsForCategory(category);
 
-  // 若无精确匹配，退化到所有分析师随机抽取（最多 2 个）
-  let selected = candidates.length > 0 ? candidates : [];
-
-  if (selected.length === 0) {
-    // fallback：随机取 1-2 个分析师（需在外部传入全部分析师）
+  if (candidates.length === 0) {
     return [];
   }
 
-  // 随机决定使用 1-3 个分析师（不超过可用数量）
-  const count = Math.min(Math.floor(Math.random() * 3) + 1, selected.length, 3);
-  // 打乱后取前 count 个，保证随机性
-  const shuffled = [...selected].sort(() => Math.random() - 0.5);
-  const chosen = shuffled.slice(0, count);
+  const chosen = candidates;
 
   // 2. 提取实体
   const entities = extractEntities(allText);
@@ -248,15 +240,8 @@ export function generateComments(article, analystsOverride) {
  */
 export function generateCommentsForAll(articles, allAnalysts) {
   return articles.map((article) => {
-    const category = article.category || 'general';
-    let candidates = allAnalysts.filter((a) =>
-      a.triggerCategories.includes(category)
-    );
-    // fallback：无精确匹配时随机取 1-2 个
-    if (candidates.length === 0) {
-      candidates = [...allAnalysts].sort(() => Math.random() - 0.5).slice(0, 2);
-    }
-    const analysts = generateComments(article, candidates);
+    // 政治光谱模式：所有立场都对所有文章发表评论
+    const analysts = generateComments(article, allAnalysts);
     return { ...article, analysts };
   });
 }
