@@ -8,6 +8,7 @@ export const useNewsStore = defineStore('news', () => {
   const loading = ref(false)
   const error = ref(null)
   const activeCategory = ref('all')
+  const activeSource = ref(null) // null = show all sources
   const searchQuery = ref('')
 
   /**
@@ -27,6 +28,11 @@ export const useNewsStore = defineStore('news', () => {
     // Filter by category
     if (activeCategory.value !== 'all') {
       result = result.filter(a => a.category === activeCategory.value)
+    }
+
+    // Filter by source
+    if (activeSource.value) {
+      result = result.filter(a => a.source?.name === activeSource.value)
     }
 
     // Filter by search query
@@ -60,6 +66,23 @@ export const useNewsStore = defineStore('news', () => {
     return filteredArticles.value.filter(a => a._pinned).length
   })
 
+  // All unique sources with article counts (from all articles, unfiltered)
+  const allSources = computed(() => {
+    const map = {}
+    for (const a of articles.value) {
+      const name = a.source?.name
+      if (!name) continue
+      if (!map[name]) {
+        map[name] = { name, tier: a.source.tier || 3, logoColor: a.source.logoColor, count: 0 }
+      }
+      map[name].count++
+    }
+    return Object.values(map).sort((a, b) => {
+      if (a.tier !== b.tier) return a.tier - b.tier
+      return b.count - a.count
+    })
+  })
+
   // Actions
   async function fetchNews() {
     loading.value = true
@@ -88,6 +111,11 @@ export const useNewsStore = defineStore('news', () => {
 
   function setCategory(category) {
     activeCategory.value = category
+    activeSource.value = null
+  }
+
+  function setSource(sourceName) {
+    activeSource.value = activeSource.value === sourceName ? null : sourceName
   }
 
   function setSearchQuery(query) {
@@ -100,11 +128,14 @@ export const useNewsStore = defineStore('news', () => {
     loading,
     error,
     activeCategory,
+    activeSource,
     searchQuery,
     filteredArticles,
     pinnedCount,
+    allSources,
     fetchNews,
     setCategory,
+    setSource,
     setSearchQuery
   }
 })

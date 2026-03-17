@@ -446,6 +446,95 @@ export const RSS_SOURCES = [
   },
 
   // ═════════════════════════════════════════
+  // 香港媒体
+  // ═════════════════════════════════════════
+  {
+    id: 'rthk',
+    name: 'RTHK 香港电台',
+    url: 'https://rthk.hk/rss/news/clocal.xml',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'society'],
+    language: 'zh', logoColor: '#8B0000',
+    region: 'hk',
+  },
+  {
+    id: 'hk01',
+    name: 'HK01',
+    url: 'https://rsshub.app/hk01/hot',
+    tier: 3, baseScore: 5,
+    categories: ['general', 'society'],
+    language: 'zh', logoColor: '#E74C3C',
+    region: 'hk',
+  },
+  {
+    id: 'mingpao',
+    name: '明报',
+    url: 'https://rsshub.app/mingpao/pns/s00001',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'zh', logoColor: '#1B5E20',
+    region: 'hk',
+  },
+  {
+    id: 'singtao',
+    name: '星岛日报',
+    url: 'https://rsshub.app/singtao/daily/hongkong',
+    tier: 3, baseScore: 5,
+    categories: ['general', 'society'],
+    language: 'zh', logoColor: '#0D47A1',
+    region: 'hk',
+  },
+
+  // ═════════════════════════════════════════
+  // 台湾媒体
+  // ═════════════════════════════════════════
+  {
+    id: 'cna',
+    name: '中央通讯社',
+    url: 'https://rsshub.app/cna/aall',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'general'],
+    language: 'zh', logoColor: '#003B6F',
+    region: 'tw',
+  },
+  {
+    id: 'ltn',
+    name: '自由时报',
+    url: 'https://rsshub.app/ltn/rss',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'zh', logoColor: '#00A651',
+    region: 'tw',
+  },
+  {
+    id: 'udn',
+    name: '联合报',
+    url: 'https://rsshub.app/udn/news/breakingnews/1',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'zh', logoColor: '#333333',
+    region: 'tw',
+  },
+  {
+    id: 'chinatimes',
+    name: '中时新闻网',
+    url: 'https://rsshub.app/chinatimes/realtimenews',
+    tier: 3, baseScore: 5,
+    categories: ['general', 'society'],
+    language: 'zh', logoColor: '#C62828',
+    region: 'tw',
+  },
+  {
+    id: 'pts',
+    name: '公视新闻',
+    url: 'https://rsshub.app/pts/latest',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'society'],
+    language: 'zh', logoColor: '#1565C0',
+    region: 'tw',
+  },
+
+  // ═════════════════════════════════════════
   // 英语 - 区域性国际媒体（Tier-3，基础分 5）
   // ═════════════════════════════════════════
   {

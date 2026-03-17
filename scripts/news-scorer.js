@@ -1,9 +1,10 @@
 /**
  * 新闻重要性评分算法
  *
- * 综合分 = 来源权威分 × 0.2 + 关键词分 × 0.2 + 时效分 × 0.4 + 热度分 × 0.2
+ * 综合分 = 权威分×0.15 + 关键词分×0.15 + 时效分×0.35 + 来源数量分×0.20 + 热度分×0.15
  *
- * 时效性权重从 0.2 提升至 0.4，确保最新新闻获得更高排名
+ * 多源报道的新闻获得更高排名（sourceCount 权重 0.20）
+ * 时效性权重 0.35（仍是最高单项）
  * 24小时内的新闻额外获得置顶加分
  *
  * 最终 score 范围 0–10，level 1–5，score > 9 为 Breaking News
@@ -192,12 +193,25 @@ function calcPopularityScore(/* article */) {
 }
 
 // ─────────────────────────────────────────
+// 来源数量分（多源报道提权）
+// ─────────────────────────────────────────
+function calcSourceCountScore(sourceCount) {
+  const count = sourceCount || 1;
+  if (count >= 9) return 10;
+  if (count >= 6) return 8.5;
+  if (count >= 4) return 7;
+  if (count >= 3) return 5;
+  if (count >= 2) return 3;
+  return 1;
+}
+
+// ─────────────────────────────────────────
 // 主评分函数
 // ─────────────────────────────────────────
 
 /**
  * 对单篇文章进行重要性评分
- * @param {{ title: string, summary: string, publishedAt: string }} article
+ * @param {{ title: string, summary: string, publishedAt: string, sourceCount?: number }} article
  * @param {{ tier: number, baseScore: number }} sourceConfig
  * @returns {{ score: number, level: number, isBreaking: boolean, isRecent: boolean }}
  */
@@ -209,13 +223,15 @@ export function scoreArticle(article, sourceConfig) {
   const keywordScore = calcKeywordScore(text);
   const freshnessScore = calcFreshnessScore(article.publishedAt);
   const popularityScore = calcPopularityScore(article);
+  const sourceCountScore = calcSourceCountScore(article.sourceCount);
 
-  // 加权综合分 — 时效性权重 0.4（最高）
+  // 加权综合分 — 时效性 0.35 最高，来源数量 0.20 第二
   const raw =
-    authorityScore  * 0.2 +
-    keywordScore    * 0.2 +
-    freshnessScore  * 0.4 +
-    popularityScore * 0.2;
+    authorityScore    * 0.15 +
+    keywordScore      * 0.15 +
+    freshnessScore    * 0.35 +
+    sourceCountScore  * 0.20 +
+    popularityScore   * 0.15;
 
   const score = Math.min(Math.round(raw * 10) / 10, 10);
   const level = Math.min(Math.max(Math.ceil(score / 2), 1), 5);

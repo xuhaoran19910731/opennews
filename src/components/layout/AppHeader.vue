@@ -75,13 +75,12 @@ const activeCategory = computed(() => store.activeCategory)
 
 const categories = [
   { value: 'all', label: '全部' },
-  { value: 'domestic', label: '国内' },
-  { value: 'economy', label: '财经' },
-  { value: 'politics', label: '政治' },
-  { value: 'technology', label: '科技' },
-  { value: 'society', label: '社会' },
-  { value: 'military', label: '军事' },
-  { value: 'environment', label: '环境' }
+  { value: 'china', label: '中国' },
+  { value: 'germany', label: '德国' },
+  { value: 'usa', label: '美国' },
+  { value: 'asia', label: '亚洲' },
+  { value: 'global', label: '全球' },
+  { value: 'bigtech', label: '大公司头条' },
 ]
 
 function setCategory(value) {

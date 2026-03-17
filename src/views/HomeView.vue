@@ -13,6 +13,14 @@
           {{ activeCategoryLabel }}
         </span>
         <span
+          v-if="store.activeSource"
+          class="badge bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 text-xs cursor-pointer hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors"
+          @click="store.setSource(null)"
+          title="点击清除来源筛选"
+        >
+          {{ store.activeSource }} ✕
+        </span>
+        <span
           v-if="store.pinnedCount > 0"
           class="badge bg-red-500/10 text-red-600 dark:text-red-400 text-xs"
         >
@@ -46,13 +54,12 @@ onMounted(() => {
 
 const categoryLabels = {
   all: '全部',
-  domestic: '国内',
-  economy: '财经',
-  politics: '政治',
-  technology: '科技',
-  society: '社会',
-  military: '军事',
-  environment: '环境'
+  china: '中国',
+  germany: '德国',
+  usa: '美国',
+  asia: '亚洲',
+  global: '全球',
+  bigtech: '大公司头条',
 }
 
 const activeCategoryLabel = computed(() => categoryLabels[store.activeCategory] || store.activeCategory)

@@ -2,13 +2,13 @@
  * 主数据采集脚本
  *
  * 流程：
- * 1. 并行获取所有 RSS feed（10s 超时，单个失败不影响整体）
+ * 1. 并行获取所有 RSS feed（15s 超时，单个失败不影响整体）
  * 2. 若有 NEWS_API_KEY，同时调用 NewsAPI
  * 3. 合并所有文章 → 规范化格式
- * 4. 去重 → 分类 → 评分 → 降序排列 → 取前50条
- * 5. 生成分析师评论
- * 6. 写入 data/news.json 和 data/meta.json
- * 7. 打印统计信息
+ * 4. 聚类（URL去重 + 标题聚类）→ 双维分类(地理+主题) → 评分(含sourceCount) → 选取
+ * 5. 翻译非中文文章
+ * 6. 生成立场解读评论
+ * 7. 写入 data/news.json 和 data/meta.json
  */
 
 import fs from 'fs/promises';
@@ -241,16 +241,20 @@ async function main() {
   let allArticles = [...rssArticles, ...newsApiArticles];
   console.log(`\n📊 合并后总计: ${allArticles.length} 条`);
 
-  // Step 3: 去重
-  console.log('\n🔍 执行三级去重...');
+  // Step 3: 聚类（URL去重 + 标题相似度聚类）
+  console.log('\n🔍 执行聚类去重...');
   allArticles = deduplicateArticles(allArticles);
-  console.log(`   去重后: ${allArticles.length} 条`);
+  console.log(`   聚类后: ${allArticles.length} 条（含 sourceCount 字段）`);
+  const multiSourceCount = allArticles.filter(a => (a.sourceCount || 1) > 1).length;
+  if (multiSourceCount > 0) {
+    console.log(`   📊 其中 ${multiSourceCount} 条被多家媒体报道`);
+  }
 
-  // Step 4: 分类
-  console.log('\n🏷️  执行新闻分类...');
+  // Step 4: 双维分类（地理 + 主题）
+  console.log('\n🏷️  执行双维分类（地理+主题）...');
   allArticles = allArticles.map((a) => {
-    const { category, categoryLabel } = classifyArticle(a);
-    return { ...a, category, categoryLabel };
+    const { category, categoryLabel, topic, topicLabel } = classifyArticle(a);
+    return { ...a, category, categoryLabel, topic, topicLabel };
   });
 
   // Step 5: 评分
@@ -261,11 +265,11 @@ async function main() {
     return { ...a, importance };
   });
 
-  // Step 6: 按分类保证至少10条，再按分数填充
+  // Step 6: 按地理分类保证至少10条，再按分数填充
   const MIN_PER_CATEGORY = 10;
   const categoryGroups = {};
   for (const a of allArticles) {
-    const cat = a.category || 'general';
+    const cat = a.category || 'global';
     if (!categoryGroups[cat]) categoryGroups[cat] = [];
     categoryGroups[cat].push(a);
   }
@@ -292,13 +296,13 @@ async function main() {
   const topArticles = [...guaranteed, ...filler];
   topArticles.sort((a, b) => (b.importance?.score ?? 0) - (a.importance?.score ?? 0));
 
-  // 统计各分类数量
+  // 统计各地理分类数量
   const catCounts = {};
   for (const a of topArticles) {
-    const cat = a.category || 'general';
+    const cat = a.category || 'global';
     catCounts[cat] = (catCounts[cat] || 0) + 1;
   }
-  console.log(`\n🏆 选取 ${topArticles.length} 条文章（每分类至少 ${MIN_PER_CATEGORY} 条）`);
+  console.log(`\n🏆 选取 ${topArticles.length} 条文章（每地理分类至少 ${MIN_PER_CATEGORY} 条）`);
   for (const [cat, count] of Object.entries(catCounts).sort((a, b) => b[1] - a[1])) {
     console.log(`   ${cat}: ${count} 条`);
   }
@@ -335,11 +339,18 @@ async function main() {
     sourceStats[name] = (sourceStats[name] || 0) + 1;
   }
 
-  // 分类统计
+  // 地理分类统计
   const categoryStats = {};
   for (const a of finalArticles) {
-    const cat = a.category || 'general';
+    const cat = a.category || 'global';
     categoryStats[cat] = (categoryStats[cat] || 0) + 1;
+  }
+
+  // 主题分类统计
+  const topicStats = {};
+  for (const a of finalArticles) {
+    const t = a.topic || 'general';
+    topicStats[t] = (topicStats[t] || 0) + 1;
   }
 
   const meta = {
@@ -348,6 +359,7 @@ async function main() {
     totalCount: finalArticles.length,
     sourceStats,
     categoryStats,
+    topicStats,
   };
 
   await fs.writeFile(META_FILE, JSON.stringify(meta, null, 2), 'utf-8');
@@ -371,8 +383,15 @@ async function main() {
       console.log(`  ${name.padEnd(25)} ${count.toString().padStart(3)} ${bar}`);
     });
 
-  console.log('\n🏷️  分类分布:');
+  console.log('\n🌍 地理分类分布:');
   Object.entries(categoryStats)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([cat, count]) => {
+      console.log(`  ${cat.padEnd(15)} ${count}`);
+    });
+
+  console.log('\n🏷️  主题分类分布:');
+  Object.entries(topicStats)
     .sort((a, b) => b[1] - a[1])
     .forEach(([cat, count]) => {
       console.log(`  ${cat.padEnd(15)} ${count}`);

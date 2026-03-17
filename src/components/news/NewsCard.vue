@@ -12,10 +12,12 @@
         :is-breaking="article.importance?.isBreaking || false"
       />
 
-      <!-- Source badge -->
+      <!-- Source badge (clickable to filter) -->
       <span
-        class="badge text-xs font-medium px-2 py-0.5 rounded-full"
+        class="badge text-xs font-medium px-2 py-0.5 rounded-full cursor-pointer hover:opacity-80 transition-opacity"
         :class="sourceBadgeClass"
+        @click.stop="handleSourceClick"
+        :title="`筛选来自 ${article.source?.name} 的新闻`"
       >
         {{ article.source?.name || '未知来源' }}
       </span>
@@ -43,12 +45,22 @@
       {{ article.summary }}
     </p>
 
-    <!-- Bottom row: category tag + expand button -->
+    <!-- Bottom row: category tag + topic tag + sourceCount + expand button -->
     <div class="flex items-center justify-between gap-2">
-      <!-- Category label -->
-      <span class="badge bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs">
-        {{ article.categoryLabel || article.category }}
-      </span>
+      <div class="flex items-center gap-1.5 flex-wrap">
+        <!-- Geographic category label -->
+        <span class="badge bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs">
+          {{ article.categoryLabel || article.category }}
+        </span>
+        <!-- Topic label -->
+        <span v-if="article.topicLabel" class="badge bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs">
+          {{ article.topicLabel }}
+        </span>
+        <!-- Source count badge -->
+        <span v-if="article.sourceCount > 1" class="badge bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 text-xs">
+          {{ article.sourceCount }}家媒体报道
+        </span>
+      </div>
 
       <!-- Expand / collapse button -->
       <button
@@ -99,6 +111,9 @@
 import { ref, computed } from 'vue'
 import ImportanceBadge from './ImportanceBadge.vue'
 import AnalystPanel from '../analyst/AnalystPanel.vue'
+import { useNewsStore } from '../../stores/newsStore.js'
+
+const store = useNewsStore()
 
 const props = defineProps({
   article: {
@@ -122,6 +137,11 @@ function handleCardClick() {
   if (props.article.analysts && props.article.analysts.length > 0) {
     toggleExpand()
   }
+}
+
+function handleSourceClick() {
+  const name = props.article.source?.name
+  if (name) store.setSource(name)
 }
 
 // Source badge class based on tier
