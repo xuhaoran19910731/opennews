@@ -321,7 +321,17 @@ const TOPIC_KEYWORDS = {
 };
 
 // 向后兼容（旧代码可能引用 CATEGORY_KEYWORDS）
-export const CATEGORY_KEYWORDS = TOPIC_KEYWORDS;
+
+// ─────────────────────────────────────────
+// 中国国内媒体源 ID 集合（用于地理分类加权）
+// ─────────────────────────────────────────
+
+const CHINA_DOMESTIC_SOURCES = new Set([
+  'xinhua', 'people_daily', 'cctv', 'cnr', 'gmw',
+  'chinadaily', 'globaltimes',
+  'ce', 'caixin', 'jiemian', 'thepaper', 'yicai',
+  'bjrb', 'jfrb', 'nanfang', 'nfzm', 'bjnews', 'lifeweek',
+]);export const CATEGORY_KEYWORDS = TOPIC_KEYWORDS;
 
 // ─────────────────────────────────────────
 // 工具函数
@@ -391,6 +401,12 @@ function classifyGeo(article) {
 
   for (const geo of geoPriority) {
     geoScores[geo] = countHits(full, GEO_KEYWORDS[geo]);
+  }
+
+  // 3. 中国国内媒体源加权 — 来自国内媒体的文章优先归入"中国"分类
+  const sourceId = article.source?.id || '';
+  if (CHINA_DOMESTIC_SOURCES.has(sourceId)) {
+    geoScores['china'] = (geoScores['china'] || 0) + 5;
   }
 
   // 找到命中数最高的地理区域

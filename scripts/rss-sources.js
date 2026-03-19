@@ -104,7 +104,7 @@ export const RSS_SOURCES = [
     id: 'nyt_world',
     name: 'New York Times',
     url: 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
-    tier: 2, baseScore: 7,
+    tier: 1, baseScore: 10,
     categories: ['politics', 'general'],
     language: 'en', logoColor: '#000000',
   },
@@ -112,7 +112,7 @@ export const RSS_SOURCES = [
     id: 'nyt_business',
     name: 'NYT Business',
     url: 'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml',
-    tier: 2, baseScore: 7,
+    tier: 1, baseScore: 10,
     categories: ['economy'],
     language: 'en', logoColor: '#000000',
   },
@@ -120,7 +120,7 @@ export const RSS_SOURCES = [
     id: 'nyt_tech',
     name: 'NYT Technology',
     url: 'https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml',
-    tier: 2, baseScore: 7,
+    tier: 1, baseScore: 10,
     categories: ['technology'],
     language: 'en', logoColor: '#000000',
   },
@@ -139,6 +139,38 @@ export const RSS_SOURCES = [
     tier: 2, baseScore: 7,
     categories: ['politics', 'general'],
     language: 'en', logoColor: '#232323',
+  },
+  {
+    id: 'wsj_world',
+    name: 'Wall Street Journal',
+    url: 'https://feeds.a.dj.com/rss/RSSWorldNews.xml',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'economy', 'general'],
+    language: 'en', logoColor: '#0274B6',
+  },
+  {
+    id: 'wsj_business',
+    name: 'WSJ Business',
+    url: 'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
+    tier: 1, baseScore: 10,
+    categories: ['economy'],
+    language: 'en', logoColor: '#0274B6',
+  },
+  {
+    id: 'wapo_world',
+    name: 'Washington Post',
+    url: 'https://feeds.washingtonpost.com/rss/world',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'general'],
+    language: 'en', logoColor: '#000000',
+  },
+  {
+    id: 'ft_en',
+    name: 'Financial Times',
+    url: 'https://www.ft.com/rss/home',
+    tier: 1, baseScore: 10,
+    categories: ['economy', 'politics'],
+    language: 'en', logoColor: '#FFF1E0',
   },
 
   // ═════════════════════════════════════════
@@ -180,6 +212,8 @@ export const RSS_SOURCES = [
   // ═════════════════════════════════════════
   // 中国国内媒体
   // ═════════════════════════════════════════
+
+  // ── Tier-1：中央级媒体 ──
   {
     id: 'xinhua',
     name: '新华社',
@@ -205,12 +239,54 @@ export const RSS_SOURCES = [
     language: 'zh', logoColor: '#1A6FB4',
   },
   {
+    id: 'cnr',
+    name: '央广网',
+    url: 'https://rsshub.app/cnr/news',
+    tier: 1, baseScore: 10,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#D71920',
+  },
+  {
+    id: 'gmw',
+    name: '光明日报',
+    url: 'https://rsshub.app/gmw/news',
+    tier: 1, baseScore: 10,
+    categories: ['domestic', 'politics'],
+    language: 'zh', logoColor: '#CC0000',
+  },
+  {
+    id: 'chinadaily',
+    name: '中国日报',
+    url: 'https://www.chinadaily.com.cn/rss/china_rss.xml',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#003366',
+  },
+
+  // ── Tier-2：全国性主流媒体 ──
+  {
+    id: 'ce',
+    name: '经济日报',
+    url: 'https://rsshub.app/ce/important',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'economy'],
+    language: 'zh', logoColor: '#1A5276',
+  },
+  {
     id: 'caixin',
     name: '财新网',
     url: 'https://rsshub.app/caixin/latest',
     tier: 2, baseScore: 7,
     categories: ['domestic', 'economy'],
     language: 'zh', logoColor: '#0066CC',
+  },
+  {
+    id: 'jiemian',
+    name: '界面新闻',
+    url: 'https://rsshub.app/jiemian/list/4',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'economy'],
+    language: 'zh', logoColor: '#1A1A1A',
   },
   {
     id: 'thepaper',
@@ -221,12 +297,12 @@ export const RSS_SOURCES = [
     language: 'zh', logoColor: '#1A1A1A',
   },
   {
-    id: 'chinadaily',
-    name: '中国日报',
-    url: 'https://www.chinadaily.com.cn/rss/china_rss.xml',
+    id: 'yicai',
+    name: '第一财经',
+    url: 'https://rsshub.app/yicai/brief',
     tier: 2, baseScore: 7,
-    categories: ['domestic', 'general'],
-    language: 'zh', logoColor: '#003366',
+    categories: ['domestic', 'economy'],
+    language: 'zh', logoColor: '#0066CC',
   },
   {
     id: 'globaltimes',
@@ -235,6 +311,56 @@ export const RSS_SOURCES = [
     tier: 2, baseScore: 7,
     categories: ['domestic', 'politics'],
     language: 'zh', logoColor: '#BD0000',
+  },
+  {
+    id: 'bjrb',
+    name: '北京日报',
+    url: 'https://rsshub.app/bjd/news',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#CC0000',
+  },
+  {
+    id: 'jfrb',
+    name: '解放日报',
+    url: 'https://rsshub.app/jfdaily/news',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#CC0000',
+  },
+  {
+    id: 'nanfang',
+    name: '南方日报',
+    url: 'https://rsshub.app/southcn/nfapp/important',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'general'],
+    language: 'zh', logoColor: '#003399',
+  },
+  {
+    id: 'nfzm',
+    name: '南方周末',
+    url: 'https://rsshub.app/infzm/2',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'society'],
+    language: 'zh', logoColor: '#1A1A1A',
+  },
+  {
+    id: 'bjnews',
+    name: '新京报',
+    url: 'https://rsshub.app/bjnews/news',
+    tier: 2, baseScore: 7,
+    categories: ['domestic', 'society'],
+    language: 'zh', logoColor: '#E74C3C',
+  },
+
+  // ── Tier-3：杂志 / 周刊 ──
+  {
+    id: 'lifeweek',
+    name: '三联生活周刊',
+    url: 'https://rsshub.app/lifeweek/index',
+    tier: 3, baseScore: 5,
+    categories: ['society', 'general'],
+    language: 'zh', logoColor: '#333333',
   },
 
   // ═════════════════════════════════════════
@@ -279,6 +405,14 @@ export const RSS_SOURCES = [
     tier: 2, baseScore: 7,
     categories: ['politics', 'society'],
     language: 'de', logoColor: '#000000',
+  },
+  {
+    id: 'sz',
+    name: 'Süddeutsche Zeitung',
+    url: 'https://rss.sueddeutsche.de/alles',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'de', logoColor: '#333333',
   },
 
   // ═════════════════════════════════════════
@@ -360,6 +494,14 @@ export const RSS_SOURCES = [
     categories: ['politics', 'general'],
     language: 'ar', logoColor: '#006DAB',
   },
+  {
+    id: 'alarabiya',
+    name: 'العربية (Al Arabiya)',
+    url: 'https://www.alarabiya.net/feed/rss2/ar.xml',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'ar', logoColor: '#FF6600',
+  },
 
   // ═════════════════════════════════════════
   // 俄语 (Русский) 媒体
@@ -437,12 +579,64 @@ export const RSS_SOURCES = [
     language: 'ja', logoColor: '#0076D1',
   },
   {
-    id: 'nikkei',
+    id: 'nhk_economy',
     name: 'NHK Economy',
     url: 'https://www3.nhk.or.jp/rss/news/cat5.xml',
     tier: 2, baseScore: 7,
+    categories: ['economy'],
+    language: 'ja', logoColor: '#0076D1',
+  },
+  {
+    id: 'yomiuri',
+    name: '読売新聞 (Yomiuri)',
+    url: 'https://www.yomiuri.co.jp/feed/',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'general'],
+    language: 'ja', logoColor: '#000000',
+  },
+  {
+    id: 'asahi',
+    name: '朝日新聞 (Asahi)',
+    url: 'https://rss.asahi.com/rss/asahi/newsheadlines.rdf',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'general'],
+    language: 'ja', logoColor: '#003B8E',
+  },
+  {
+    id: 'nikkei',
+    name: '日経新聞 (Nikkei)',
+    url: 'https://feedx.net/rss/nikkei.xml',
+    tier: 1, baseScore: 10,
     categories: ['economy', 'technology'],
-    language: 'ja', logoColor: '#003F87',
+    language: 'zh', logoColor: '#003F87',
+  },
+
+  // ═════════════════════════════════════════
+  // 韩语 (한국어) 媒体
+  // ═════════════════════════════════════════
+  {
+    id: 'yonhap',
+    name: 'Yonhap News (韩联社)',
+    url: 'https://en.yna.co.kr/RSS/news.xml',
+    tier: 1, baseScore: 10,
+    categories: ['politics', 'general'],
+    language: 'en', logoColor: '#004A94',
+  },
+  {
+    id: 'chosun',
+    name: '朝鮮日報 (Chosun Ilbo)',
+    url: 'https://rsshub.app/chosun/sisa-news',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'ko', logoColor: '#1A1A1A',
+  },
+  {
+    id: 'joongang',
+    name: '中央日報 (JoongAng Ilbo)',
+    url: 'https://rsshub.app/joins/news',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'ko', logoColor: '#000080',
   },
 
   // ═════════════════════════════════════════
@@ -535,13 +729,13 @@ export const RSS_SOURCES = [
   },
 
   // ═════════════════════════════════════════
-  // 英语 - 区域性国际媒体（Tier-3，基础分 5）
+  // 英语 - 区域性国际媒体
   // ═════════════════════════════════════════
   {
     id: 'aljazeera_en',
     name: 'Al Jazeera EN',
     url: 'https://www.aljazeera.com/xml/rss/all.xml',
-    tier: 3, baseScore: 5,
+    tier: 2, baseScore: 7,
     categories: ['politics', 'general'],
     language: 'en', logoColor: '#F5A623',
   },
@@ -568,6 +762,32 @@ export const RSS_SOURCES = [
     tier: 3, baseScore: 5,
     categories: ['politics', 'economy'],
     language: 'en', logoColor: '#FFCA2D',
+  },
+
+  // ── 印度媒体 ──
+  {
+    id: 'thehindu',
+    name: 'The Hindu',
+    url: 'https://www.thehindu.com/feeder/default.rss',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'society'],
+    language: 'en', logoColor: '#003B73',
+  },
+  {
+    id: 'toi',
+    name: 'Times of India',
+    url: 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'en', logoColor: '#E42529',
+  },
+  {
+    id: 'ndtv',
+    name: 'NDTV',
+    url: 'https://feeds.feedburner.com/ndtvnews-top-stories',
+    tier: 2, baseScore: 7,
+    categories: ['politics', 'general'],
+    language: 'en', logoColor: '#E42529',
   },
   {
     id: 'hindustan_times',
